@@ -1,0 +1,25 @@
+---
+title: Events
+override:tags: []
+layout: layouts/base.njk
+permalink: '/events/index.html'
+eleventyNavigation:
+  key: Events
+  order: 2
+---
+
+<div class="default-container px-4 py-16">
+    <h2 class="font-mono text-primary-800 mb-8">OUR EVENTS</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+        {% for event in collections.events | sort("start_date", false) %}
+            <div class="relative group">
+                {% image eleventy.env.root + "/src" + event.data.thumbnail, event.data.title, "600px" %}
+                <a href="{{ event.url }}" class="block text-primary-600 mb-2 mt-4 font-semibold text-xl stretched-link group-hover:underline">{{ event.data.title }}</a>
+                <p>{{ event.data.start_date|readableDate }}</p>
+                {% if event.data.time %}
+                    <p class="text-neutral-700">{{ event.data.time }}</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</div>

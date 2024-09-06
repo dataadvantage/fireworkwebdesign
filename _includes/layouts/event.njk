@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+---
+
+<div class="default-container px-6 py-20">
+    <div class="mb-12">
+        <h1 class="mb-4 text-primary-800 font-mono">{{ title }}</h1>
+        <p>{{ start_date|readableDate }}</p>
+        {% if time %}
+            <p class="text-neutral-700">{{ time }}</p>
+        {% endif %}
+    </div>
+    {% image eleventy.env.root + "/src" + thumbnail, title , "600px" %}
+    {{ content|safe }}
+</div>

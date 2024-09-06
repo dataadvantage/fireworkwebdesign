@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+---
+
+<div class="default-container py-12 px-6">
+    <p class="mb-2 text-sm">
+        <a href="/" class="inline-block text-neutral-600 hover:underline">HOME</a>
+        /
+        <a href="/songs" class="text-neutral-600 hover:underline">SONGS</a>
+    </p>
+    <h1 class="mb-6 font-medium text-primary-800">{{ title }}</h1>
+    <div class="max-w-full overflow-x-hidden [&_iframe]:max-w-full text-neutral-800 prose">
+        {{ content|safe }}
+    </div>
+</div>
