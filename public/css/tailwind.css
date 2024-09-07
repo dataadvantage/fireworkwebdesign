@@ -1358,6 +1358,182 @@ h4 {
   right: 1rem;
 }
 
+.top-\[100\%\] {
+  top: 100%;
+}
+
+.bottom-\[90\%\] {
+  bottom: 90%;
+}
+
+.bottom-\[80\%\] {
+  bottom: 80%;
+}
+
+.right-\[70\%\] {
+  right: 70%;
+}
+
+.right-\[50\%\] {
+  right: 50%;
+}
+
+.bottom-\[70\%\] {
+  bottom: 70%;
+}
+
+.right-\[300px\] {
+  right: 300px;
+}
+
+.bottom-\[0\] {
+  bottom: 0;
+}
+
+.bottom-\[800px\] {
+  bottom: 800px;
+}
+
+.bottom-\[50\%\] {
+  bottom: 50%;
+}
+
+.right-\[25\%\] {
+  right: 25%;
+}
+
+.bottom-\[40\%\] {
+  bottom: 40%;
+}
+
+.bottom-\[30\%\] {
+  bottom: 30%;
+}
+
+.right-\[10\%\] {
+  right: 10%;
+}
+
+.right-\[5\%\] {
+  right: 5%;
+}
+
+.right-\[1\%\] {
+  right: 1%;
+}
+
+.right-\[1000px\] {
+  right: 1000px;
+}
+
+.right-\[0\] {
+  right: 0;
+}
+
+.left-\[0\] {
+  left: 0;
+}
+
+.left-\[50px\] {
+  left: 50px;
+}
+
+.-left-\[50\%\] {
+  left: -50%;
+}
+
+.-left-\[1000px\] {
+  left: -1000px;
+}
+
+.-left-\[1200px\] {
+  left: -1200px;
+}
+
+.bottom-\[75\%\] {
+  bottom: 75%;
+}
+
+.-left-\[900px\] {
+  left: -900px;
+}
+
+.-left-\[700px\] {
+  left: -700px;
+}
+
+.bottom-\[85\%\] {
+  bottom: 85%;
+}
+
+.bottom-\[87\%\] {
+  bottom: 87%;
+}
+
+.bottom-\[88\%\] {
+  bottom: 88%;
+}
+
+.-top-\[100px\] {
+  top: -100px;
+}
+
+.-top-\[1800px\] {
+  top: -1800px;
+}
+
+.-top-\[1900px\] {
+  top: -1900px;
+}
+
+.-top-\[1700px\] {
+  top: -1700px;
+}
+
+.-top-\[1750px\] {
+  top: -1750px;
+}
+
+.-bottom-\[1750px\] {
+  bottom: -1750px;
+}
+
+.-top-\[2000px\] {
+  top: -2000px;
+}
+
+.-bottom-\[1850px\] {
+  bottom: -1850px;
+}
+
+.-top-\[2050px\] {
+  top: -2050px;
+}
+
+.-bottom-\[2050px\] {
+  bottom: -2050px;
+}
+
+.-left-\[1100px\] {
+  left: -1100px;
+}
+
+.-left-\[1050px\] {
+  left: -1050px;
+}
+
+.-left-\[800px\] {
+  left: -800px;
+}
+
+.-right-\[1050px\] {
+  right: -1050px;
+}
+
+.-right-\[800px\] {
+  right: -800px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1467,6 +1643,22 @@ h4 {
   height: 100%;
 }
 
+.h-\[1800px\] {
+  height: 1800px;
+}
+
+.h-\[1900px\] {
+  height: 1900px;
+}
+
+.h-\[2000px\] {
+  height: 2000px;
+}
+
+.h-\[2100px\] {
+  height: 2100px;
+}
+
 .max-h-0 {
   max-height: 0px;
 }
@@ -1497,6 +1689,38 @@ h4 {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[1000px\] {
+  width: 1000px;
+}
+
+.w-\[1050px\] {
+  width: 1050px;
+}
+
+.w-\[850px\] {
+  width: 850px;
+}
+
+.w-\[900px\] {
+  width: 900px;
+}
+
+.w-\[1800px\] {
+  width: 1800px;
+}
+
+.w-\[1900px\] {
+  width: 1900px;
+}
+
+.w-\[2000px\] {
+  width: 2000px;
+}
+
+.w-\[2100px\] {
+  width: 2100px;
 }
 
 .min-w-4 {
@@ -1692,6 +1916,30 @@ h4 {
 .bg-yellow-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 252 232 / var(--tw-bg-opacity));
+}
+
+.bg-primary-700\/15 {
+  background-color: rgb(15 96 155 / 0.15);
+}
+
+.bg-yellow-700\/50 {
+  background-color: rgb(161 98 7 / 0.5);
+}
+
+.bg-red-700\/50 {
+  background-color: rgb(185 28 28 / 0.5);
+}
+
+.bg-green-700\/50 {
+  background-color: rgb(21 128 61 / 0.5);
+}
+
+.bg-orange-700\/50 {
+  background-color: rgb(194 65 12 / 0.5);
+}
+
+.bg-purple-700\/50 {
+  background-color: rgb(126 34 206 / 0.5);
 }
 
 .bg-gradient-to-br {
@@ -2915,6 +3163,34 @@ h4 {
     top: -2rem;
   }
 
+  .md\:-left-\[1200px\] {
+    left: -1200px;
+  }
+
+  .md\:-left-\[1400px\] {
+    left: -1400px;
+  }
+
+  .md\:-left-\[900px\] {
+    left: -900px;
+  }
+
+  .md\:-left-\[700px\] {
+    left: -700px;
+  }
+
+  .md\:-left-\[500px\] {
+    left: -500px;
+  }
+
+  .md\:-left-\[400px\] {
+    left: -400px;
+  }
+
+  .md\:-right-\[500px\] {
+    right: -500px;
+  }
+
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -3057,6 +3333,210 @@ h4 {
 
   .lg\:right-32 {
     right: 8rem;
+  }
+
+  .lg\:-top-\[2000px\] {
+    top: -2000px;
+  }
+
+  .lg\:-top-\[0\] {
+    top: 0;
+  }
+
+  .lg\:-top-\[50\%\] {
+    top: -50%;
+  }
+
+  .lg\:left-0 {
+    left: 0px;
+  }
+
+  .lg\:-right-\[100\%\] {
+    right: -100%;
+  }
+
+  .lg\:-right-\[900\%\] {
+    right: -900%;
+  }
+
+  .lg\:-right-\[90\%\] {
+    right: -90%;
+  }
+
+  .lg\:-left-full {
+    left: -100%;
+  }
+
+  .lg\:-top-0 {
+    top: -0px;
+  }
+
+  .lg\:-left-0 {
+    left: -0px;
+  }
+
+  .lg\:-left-\[100px\] {
+    left: -100px;
+  }
+
+  .lg\:-left-\[90\%\] {
+    left: -90%;
+  }
+
+  .lg\:-left-\[100\%\] {
+    left: -100%;
+  }
+
+  .lg\:-left-\[120\%\] {
+    left: -120%;
+  }
+
+  .lg\:-left-\[130\%\] {
+    left: -130%;
+  }
+
+  .lg\:-left-\[1000px\] {
+    left: -1000px;
+  }
+
+  .lg\:-left-\[1200px\] {
+    left: -1200px;
+  }
+
+  .lg\:-left-\[1800px\] {
+    left: -1800px;
+  }
+
+  .lg\:-left-\[1900px\] {
+    left: -1900px;
+  }
+
+  .lg\:-top-\[1000px\] {
+    top: -1000px;
+  }
+
+  .lg\:-left-\[1700px\] {
+    left: -1700px;
+  }
+
+  .lg\:-top-\[1200px\] {
+    top: -1200px;
+  }
+
+  .lg\:-top-\[1400px\] {
+    top: -1400px;
+  }
+
+  .lg\:-top-\[800px\] {
+    top: -800px;
+  }
+
+  .lg\:-right-\[1800px\] {
+    right: -1800px;
+  }
+
+  .lg\:right-\[1800px\] {
+    right: 1800px;
+  }
+
+  .lg\:-right-\[1900px\] {
+    right: -1900px;
+  }
+
+  .lg\:-right-\[900px\] {
+    right: -900px;
+  }
+
+  .lg\:-right-\[700px\] {
+    right: -700px;
+  }
+
+  .lg\:-right-\[100px\] {
+    right: -100px;
+  }
+
+  .lg\:-left-\[1100px\] {
+    left: -1100px;
+  }
+
+  .lg\:left-\[1100px\] {
+    left: 1100px;
+  }
+
+  .lg\:left-\[1800px\] {
+    left: 1800px;
+  }
+
+  .lg\:left-\[1700px\] {
+    left: 1700px;
+  }
+
+  .lg\:left-\[1600px\] {
+    left: 1600px;
+  }
+
+  .lg\:left-\[1000px\] {
+    left: 1000px;
+  }
+
+  .lg\:left-\[1200px\] {
+    left: 1200px;
+  }
+
+  .lg\:left-\[1400px\] {
+    left: 1400px;
+  }
+
+  .lg\:left-\[1300px\] {
+    left: 1300px;
+  }
+
+  .lg\:-top-\[1100px\] {
+    top: -1100px;
+  }
+
+  .lg\:-top-\[900px\] {
+    top: -900px;
+  }
+
+  .lg\:left-\[1500px\] {
+    left: 1500px;
+  }
+
+  .lg\:-top-\[700px\] {
+    top: -700px;
+  }
+
+  .lg\:left-\[1350px\] {
+    left: 1350px;
+  }
+
+  .lg\:right-\[1300px\] {
+    right: 1300px;
+  }
+
+  .lg\:right-\[1350px\] {
+    right: 1350px;
+  }
+
+  .lg\:-right-\[1350px\] {
+    right: -1350px;
+  }
+
+  .lg\:-right-\[1300px\] {
+    right: -1300px;
+  }
+
+  .lg\:-right-\[200px\] {
+    right: -200px;
+  }
+
+  .lg\:-right-\[1950px\] {
+    right: -1950px;
+  }
+
+  .lg\:-right-\[2020px\] {
+    right: -2020px;
   }
 
   .lg\:col-span-1 {
