@@ -3746,6 +3746,18 @@ h4 {
 }
 
 @media (min-width: 768px) {
+  .\[\&_img\]\:md\:h-\[400px\] img {
+    height: 400px;
+  }
+
+  .\[\&_img\]\:md\:h-\[300px\] img {
+    height: 300px;
+  }
+
+  .\[\&_img\]\:md\:h-\[250px\] img {
+    height: 250px;
+  }
+
   .\[\&_img\]\:md\:w-full img {
     width: 100%;
   }
