@@ -74,7 +74,9 @@ eleventyNavigation:
   </div>
 </div>
 <!-- Why Choose Us -->
-<div class="py-20 md:py-32">
+<div class="py-20 md:py-32 relative overflow-hidden">
+  <div class="absolute w-[500px] left-[200px] aspect-square bg-primary-100 rounded-full blur-[200px] -z-10"></div>
+  <div class="absolute w-[300px] right-[400px] bottom-0 aspect-square bg-secondary-100 rounded-full blur-[200px] -z-10"></div>
   <div class="default-container px-6 lg:px-0">
     <h2 class="text-center uppercase text-primary-800 text-sm mb-2">Why Choose Us</h2>
     <p class="font-bold text-3xl md:text-4xl text-center mb-12">
@@ -82,12 +84,15 @@ eleventyNavigation:
       <span class="text-orange-600 font-extrabold">Firework</span>
     </p>
     <div class="grid lg:grid-cols-2 gap-6">
-      <div class="px-4 md:max-w-[80%] mx-auto">
-        We understand that your website is more than just an online presence—it’s the digital face of your business. Here's why
-        businesses trust us to deliver exceptional results:
+      <div class="px-4 md:max-w-[80%] mx-auto flex h-full items-center">
+        <p class="text-xl md:text-2xl lg:text-3xl relative font-serif tracking-wider leading-snug text-center my-8">
+          <i class="fas fa-quote-left fa-2x text-neutral-100 absolute -top-4 md:-top-8 -left-4 md:-left-8 -z-10"></i>
+          We understand that your website is more than just an online presence—it’s the digital face of your business. Here's why
+          businesses trust us to deliver exceptional results:
+        </p>
       </div>
       <div>
-        <div class="flex md:max-w-[80%] mx-auto lg:max-w-full gap-6 mb-2 hover:bg-secondary-200 transition p-4 rounded-lg">
+        <div class="flex md:max-w-[80%] mx-auto lg:max-w-full gap-6 mb-2 hover:bg-secondary-100/50 transition p-4 rounded-lg">
           <i class="fal fa-fw fa-medal fa-2x text-secondary-600 min-w-10 mt-2"></i>
           <div>
             <p class="font-semibold text-xl mb-2">
@@ -100,7 +105,7 @@ eleventyNavigation:
             </p>
           </div>
         </div>
-        <div class="flex md:max-w-[80%] mx-auto lg:max-w-full gap-6 mb-2 hover:bg-secondary-200 transition p-4 rounded-lg">
+        <div class="flex md:max-w-[80%] mx-auto lg:max-w-full gap-6 mb-2 hover:bg-secondary-100/50 transition p-4 rounded-lg">
           <i class="fal fa-phone-laptop fa-2x fa-fw text-secondary-600 min-w-10 mt-2"></i>
           <div>
             <p class="font-semibold text-xl mb-2">
@@ -114,7 +119,7 @@ eleventyNavigation:
             </p>
           </div>
         </div>
-        <div class="flex md:max-w-[80%] mx-auto lg:max-w-full gap-6 mb-2 hover:bg-secondary-200 transition p-4 rounded-lg">
+        <div class="flex md:max-w-[80%] mx-auto lg:max-w-full gap-6 mb-2 hover:bg-secondary-100/50 transition p-4 rounded-lg">
           <i class="fal fa-user-headset fa-2x text-secondary-600 fa-fw min-w-10 mt-2"></i>
           <div>
             <p class="font-semibold text-xl mb-2">
