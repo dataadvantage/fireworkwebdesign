@@ -2397,6 +2397,14 @@ h4 {
   color: rgb(232 230 225 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
+.\!underline {
+  text-decoration-line: underline !important;
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -3709,6 +3717,14 @@ h4 {
 .\[\&_img\]\:grayscale img {
   --tw-grayscale: grayscale(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.\[\&_img\]\:duration-1000 img {
+  transition-duration: 1000ms;
+}
+
+.\[\&_img\]\:duration-500 img {
+  transition-duration: 500ms;
 }
 
 .hover\:\[\&_img\]\:grayscale-0 img:hover {
