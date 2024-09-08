@@ -1,4 +1,4 @@
 module.exports = {
-	email: "datadavantage.th@gmail.com",
-	phones: ["+66882246883"],
+	email: "contact@fireworkwebdesign.com",
+	phone: ["+66882246883", "+6688 2246883"],
 };

@@ -9,7 +9,7 @@
             </p>
             <p class="cs-text">
                 Ready to spark your next project?<br/>
-                <a href="#" class="text-blue-600">Contact</a>
+                <a href="/contact-us" class="text-blue-600 hover:underline">Contact</a>
                 us today for a free consultation.
             </p>
         </div>
@@ -28,7 +28,7 @@
                 <a class="cs-nav-link" href="">Portfolio</a>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="">Contact</a>
+                <a class="cs-nav-link" href="/contact-us">Contact</a>
             </li>
         </ul>
         <ul class="cs-nav">
@@ -54,10 +54,10 @@
                 <span class="cs-header">Contact</span>
             </li>
             <li class="cs-contact-li">
-                <a class="cs-contact-link underline" href="tel: +66882246883">(+66) 88 224 6883</a>
+                <a class="cs-contact-link" href="tel: {{contacts.phone[0]}}">{{contacts.phone[1]}}</a>
             </li>
             <li class="cs-contact-li">
-                <a class="cs-contact-link underline" href="mailto:contact@fireworkwebdesign.com">contact@fireworkwebdesign.com</a>
+                <a class="cs-contact-link" href="mailto:{{contacts.email}}">{{contacts.email}}</a>
             </li>
         </ul>
     </div>
