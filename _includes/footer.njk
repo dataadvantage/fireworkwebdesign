@@ -16,22 +16,15 @@
         <!-- Links -->
         <ul class="cs-nav">
             <li class="cs-nav-li">
-                <span class="cs-header">Sitemap</span>
+                <span class="cs-header">Quick links</span>
             </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="">About</a>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="">Services</a>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="">Portfolio</a>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/contact-us">Contact</a>
-            </li>
+            {% for item in collections.all | eleventyNavigation %}
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="{{ item.url }}">{{ item.key }}</a>
+                </li>
+            {% endfor %}
         </ul>
-        <ul class="cs-nav">
+        <!-- <ul class="cs-nav">
             <li class="cs-nav-li">
                 <span class="cs-header">Services</span>
             </li>
@@ -47,17 +40,17 @@
             <li class="cs-nav-li">
                 <a class="cs-nav-link" href="">Contact</a>
             </li>
-        </ul>
+        </ul> -->
         <!-- Contact Info -->
         <ul class="cs-contact">
             <li class="cs-nav-li">
                 <span class="cs-header">Contact</span>
             </li>
             <li class="cs-contact-li">
-                <a class="cs-contact-link" href="tel: {{contacts.phone[0]}}">{{contacts.phone[1]}}</a>
+                <a class="cs-contact-link" href="tel: {{ contacts.phone[0] }}">{{ contacts.phone[1] }}</a>
             </li>
             <li class="cs-contact-li">
-                <a class="cs-contact-link" href="mailto:{{contacts.email}}">{{contacts.email}}</a>
+                <a class="cs-contact-link" href="mailto:{{ contacts.email }}">{{ contacts.email }}</a>
             </li>
         </ul>
     </div>
