@@ -2248,6 +2248,11 @@ h4 {
   padding-bottom: 0.625rem;
 }
 
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -3601,6 +3606,11 @@ h4 {
   .md\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .md\:text-6xl {

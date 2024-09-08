@@ -86,7 +86,12 @@ eleventyNavigation:
         </dl>
       </div>
     </div>
-    <form action="#" method="POST" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48" name="contact us" netlify>
+    <form
+      action="/contact-us-complete"
+      method="POST"
+      class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
+      name="contact us"
+      netlify>
       <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
         <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
@@ -98,22 +103,10 @@ eleventyNavigation:
                 id="first-name"
                 autocomplete="given-name"
                 required
-                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300
+                class="block w-full border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300
                   placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
             </div>
           </div>
-          {# <div>
-                                                                                                                                                                  <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
-                                                                                                                                                                  <div class="mt-2.5">
-                                                                                                                                                                    <input
-                                                                                                                                                                      type="text"
-                                                                                                                                                                      name="last-name"
-                                                                                                                                                                      id="last-name"
-                                                                                                                                                                      autocomplete="family-name"
-                                                                                                                                                                      class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300
-                                                                                                                                                                        placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                                                                                                                                                                  </div>
-                                                                                                                                                                </div> #}
           <div class="sm:col-span-2">
             <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
             <div class="mt-2.5">
@@ -123,7 +116,7 @@ eleventyNavigation:
                 id="email"
                 required
                 autocomplete="email"
-                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300
+                class="block w-full border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300
                   placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
             </div>
           </div>
@@ -136,7 +129,7 @@ eleventyNavigation:
                 id="phone-number"
                 autocomplete="tel"
                 required
-                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300
+                class="block w-full border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300
                   placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
             </div>
           </div>
@@ -148,7 +141,7 @@ eleventyNavigation:
                 id="message"
                 rows="4"
                 required
-                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300
+                class="block w-full border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300
                   placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
             </div>
           </div>
