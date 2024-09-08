@@ -1,8 +1,8 @@
 <footer id="cs-footer-272">
     <div
-        class="cs-container">
+        class="default-container md:flex px-4">
         <!-- Logo Group -->
-        <div class="cs-logo-group">
+        <div class="flex-1">
             <p class="uppercase inline-block mb-4 font-bold tracking-widest">
                 <span class="text-orange-600">Firework</span><br/>
                 <span class="font-light text-primary-800">Web Design</span>
@@ -14,44 +14,28 @@
             </p>
         </div>
         <!-- Links -->
-        <ul class="cs-nav">
-            <li class="cs-nav-li">
-                <span class="cs-header">Quick links</span>
-            </li>
-            {% for item in collections.all | eleventyNavigation %}
+        <div class="md:flex md:gap-8 lg:gap-16">
+            <ul class="mb-6">
                 <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="{{ item.url }}">{{ item.key }}</a>
+                    <span class="cs-header">Quick links</span>
                 </li>
-            {% endfor %}
-        </ul>
-        <!-- <ul class="cs-nav">
-            <li class="cs-nav-li">
-                <span class="cs-header">Services</span>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="">About</a>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="">Services</a>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="">Portfolio</a>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="">Contact</a>
-            </li>
-        </ul> -->
-        <!-- Contact Info -->
-        <ul class="cs-contact">
-            <li class="cs-nav-li">
-                <span class="cs-header">Contact</span>
-            </li>
-            <li class="cs-contact-li">
-                <a class="cs-contact-link" href="tel: {{ contacts.phone[0] }}">{{ contacts.phone[1] }}</a>
-            </li>
-            <li class="cs-contact-li">
-                <a class="cs-contact-link" href="mailto:{{ contacts.email }}">{{ contacts.email }}</a>
-            </li>
-        </ul>
+                {% for item in collections.all | eleventyNavigation %}
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="{{ item.url }}">{{ item.key }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+            <ul class="mb-6">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Contact</span>
+                </li>
+                <li class="cs-contact-li">
+                    <a class="cs-contact-link" href="tel: {{ contacts.phone[0] }}">{{ contacts.phone[1] }}</a>
+                </li>
+                <li class="cs-contact-li">
+                    <a class="cs-contact-link" href="mailto:{{ contacts.email }}">{{ contacts.email }}</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </footer>
