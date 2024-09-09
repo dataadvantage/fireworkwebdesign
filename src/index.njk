@@ -39,7 +39,7 @@ eleventyNavigation:
         <h2 class="uppercase text-primary-800 text-sm mb-2">Our Services</h2>
         <p class="font-bold text-3xl md:text-4xl">
           At
-          <span class="text-orange-600 font-extrabold">Firework</span>
+          <span class="text-orange-600 font-extrabold uppercase">Firework</span>
           , we offer a full suite of web services tailored to your business needs
         </p>
       </div>
@@ -93,7 +93,7 @@ eleventyNavigation:
     <h2 class="text-center uppercase text-primary-800 text-sm mb-2">Why Choose Us</h2>
     <p class="font-bold text-3xl md:text-4xl text-center mb-12">
       Why Businesses Trust
-      <span class="text-orange-600 font-extrabold">Firework</span>
+      <span class="text-orange-600 font-extrabold uppercase">Firework</span>
     </p>
     <div class="grid lg:grid-cols-2 gap-6">
       <div class="px-4 md:max-w-[80%] mx-auto flex h-full items-center">
@@ -176,7 +176,9 @@ eleventyNavigation:
         </p>
         <div class="group mt-8 relative">
           <i class="fal fa-cog hover:rotate-180 transition duration-500 cursor-pointer peer"></i>
-          <p class="absolute opacity-0 peer-hover:opacity-100 text-xs text-gray-500 w-full text-center left-0 right-0">
+          <p
+            id="spin-me-text"
+            class="absolute opacity-0 peer-hover:opacity-100 text-xs text-gray-500 w-full text-center left-0 right-0">
             Click to spin me!</p>
         </div>
       </div>
@@ -224,16 +226,25 @@ eleventyNavigation:
 </div>
 <script>
   let deg = 360;
-  let grayScale = 0
+  let grayScale = 0;
+  let times = 0;
   const spinButton = document.querySelector('#portrait-container i');
   const image = document.querySelector('#portrait-container img');
+  const spinMeText = document.querySelector('#spin-me-text');
   console.log(spinButton, image);
   spinButton.addEventListener('click', () => {
+    times += 1
     deg *= 2;
     grayScale += 10
     console.log(deg);
     image.style.transform = `rotate(${deg}deg)`;
     image.style.filter = `grayscale(${grayScale}%)`;
+    if (times >= 10) {
+      spinMeText.innerHTML = '<a href="/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
+      spinMeText.classList.remove('opacity-0')
+    } else {
+      spinMeText.textContent = ('You have spun me ' + times + ' times');
+    }
   });
   console.log(spinButton, image);
 </script>
