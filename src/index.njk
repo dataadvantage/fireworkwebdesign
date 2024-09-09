@@ -166,12 +166,19 @@ eleventyNavigation:
           <span class="text-sm text-gray-400">Owner & Developer</span>
         </p>
       </div>
-      <div class="text-center [&_img]:mx-auto [&_img]:w-3/4 md:[&_img]:w-full">
+      <div
+        id="portrait-container"
+        class="text-center [&_img]:mx-auto [&_img]:w-3/4 md:[&_img]:w-full [&_img]:transition [&_img]:duration-500">
         {% image './static/img/james-2.jpg', 'James', '400px' %}
         <p class="text-center md:hidden mt-8">
           <span class="text-lg font-semibold tracking-wider">James</span><br/>
           <span class="text-sm text-gray-400">Owner & Developer</span>
         </p>
+        <div class="group mt-8 relative">
+          <i class="fal fa-cog hover:rotate-180 transition duration-500 cursor-pointer peer"></i>
+          <p class="absolute opacity-0 peer-hover:opacity-100 text-xs text-gray-500 w-full text-center left-0 right-0">
+            Click to spin me!</p>
+        </div>
       </div>
     </div>
   </div>
@@ -215,3 +222,18 @@ eleventyNavigation:
     </svg>
   </div>
 </div>
+<script>
+  let deg = 360;
+  let grayScale = 0
+  const spinButton = document.querySelector('#portrait-container i');
+  const image = document.querySelector('#portrait-container img');
+  console.log(spinButton, image);
+  spinButton.addEventListener('click', () => {
+    deg *= 2;
+    grayScale += 10
+    console.log(deg);
+    image.style.transform = `rotate(${deg}deg)`;
+    image.style.filter = `grayscale(${grayScale}%)`;
+  });
+  console.log(spinButton, image);
+</script>
