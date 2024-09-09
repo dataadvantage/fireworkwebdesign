@@ -2069,6 +2069,11 @@ h4 {
   color: rgb(234 88 12 / var(--tw-text-opacity));
 }
 
+.text-primary-600 {
+  --tw-text-opacity: 1;
+  color: rgb(24 111 175 / var(--tw-text-opacity));
+}
+
 .text-primary-800 {
   --tw-text-opacity: 1;
   color: rgb(10 85 140 / var(--tw-text-opacity));
@@ -2111,11 +2116,6 @@ h4 {
 .text-zinc-900 {
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
-}
-
-.text-primary-600 {
-  --tw-text-opacity: 1;
-  color: rgb(24 111 175 / var(--tw-text-opacity));
 }
 
 .underline {
