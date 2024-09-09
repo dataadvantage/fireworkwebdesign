@@ -86,7 +86,7 @@ eleventyNavigation:
   </div>
 </div>
 <!-- Why Choose Us -->
-<div class="py-20 md:py-32 relative overflow-hidden">
+<div class="py-20 md:py-32 relative overflow-hidden shadow">
   <div class="absolute w-[500px] left-[200px] aspect-square bg-primary-100 rounded-full blur-[200px] -z-10"></div>
   <div class="absolute w-[300px] right-[400px] bottom-0 aspect-square bg-secondary-100 rounded-full blur-[200px] -z-10"></div>
   <div class="default-container px-6 lg:px-0">
@@ -144,6 +144,34 @@ eleventyNavigation:
             </p>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="relative">
+  <div class="max-w-4xl mx-auto py-20 px-8">
+    <h2 class="uppercase text-primary-800 text-sm mb-12 text-center">Who We Are</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-gray-600 md:col-span-2 flex flex-col justify-center">
+        <p class="mb-6 tracking-wider leading-relaxed">
+          <span class="text-3xl font-serif tracking-wider">Hi there!</span>
+          I’m James, the founder and lead developer here at
+          <span class="text-orange-600 font-bold">FIREWORK</span>. I love creating websites that not only look great but work
+            smoothly behind the scenes. I love taking care of all the technical stuff—so you don’t have to. From building custom
+            designs to handling the maintenance that keeps everything running, I’m here to make your life easier and your business
+            shine online.
+        </p>
+        <p class="hidden md:block">
+          <span class="text-lg font-semibold tracking-wider">James</span><br/>
+          <span class="text-sm text-gray-400">Owner & Developer</span>
+        </p>
+      </div>
+      <div class="text-center [&_img]:mx-auto [&_img]:w-3/4 md:[&_img]:w-full">
+        {% image './static/img/james-2.jpg', 'James', '400px' %}
+        <p class="text-center md:hidden mt-8">
+          <span class="text-lg font-semibold tracking-wider">James</span><br/>
+          <span class="text-sm text-gray-400">Owner & Developer</span>
+        </p>
       </div>
     </div>
   </div>
