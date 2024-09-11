@@ -1,7 +1,7 @@
 module.exports = {
-	title: "Firework Web Design & Development",
+	title: "FIREWORK - Web design and development",
 	description:
-		"Firework webdesign is a web design company in Bangkok, Thailand. We provide web design, web development, and digital marketing services.",
+		"FIREWORK is a web design company in Bangkok, Thailand. We provide web design, web development, and digital marketing services.",
 	url: "https://www.fireworkwebdesign.com",
 	language: "en",
 	author: {
