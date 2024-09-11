@@ -32,7 +32,7 @@ eleventyNavigation:
     lg:-top-[700px] lg:-right-[2020px]"></div>
 </div>
 <!-- Services -->
-<div class="bg-zinc-50 py-20 md:py-32 shadow-sm">
+<div class="bg-zinc-50 py-20 md:py-32 px-6">
   <div class="default-container px-6 lg:px-0">
     <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
       <div class="border-r-primary-800 border-2 border-transparent md:col-span-2 pr-4">
@@ -86,7 +86,7 @@ eleventyNavigation:
   </div>
 </div>
 <!-- Why Choose Us -->
-<div class="py-20 md:py-32 relative overflow-hidden shadow">
+<div class="py-20 md:py-32 relative overflow-hidden">
   <div class="absolute w-[500px] left-[200px] aspect-square bg-primary-100 rounded-full blur-[200px] -z-10"></div>
   <div class="absolute w-[300px] right-[400px] bottom-0 aspect-square bg-secondary-100 rounded-full blur-[200px] -z-10"></div>
   <div class="default-container px-6 lg:px-0">
@@ -148,83 +148,8 @@ eleventyNavigation:
     </div>
   </div>
 </div>
-<div class="bg-zinc-50 py-20 md:py-32 shadow-sm">
-  <div class="default-container px-6 lg:px-0">
-    <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
-      <div class="border-r-primary-800 border-2 border-transparent md:col-span-2 pr-4">
-        <h2 class="uppercase text-primary-800 text-sm mb-2">Our Packages</h2>
-        <p class="font-bold text-3xl md:text-4xl">
-          Choose from our range of packages to suit your business needs
-        </p>
-      </div>
-    </div>
-    <div class="grid md:grid-cols-3 gap-6 [&_*]:duration-500">
-      <div>
-        <div class="bg-zinc-100/50 px-6 py-6 shadow">
-          <p class="text-gray-500 mb-2">
-            <i class="fal fa-user"></i>
-            Personal</p>
-          <p class="text-gray-500 mb-6 text-sm">
-            <span class="text-5xl font-bold text-primary-800">8,000</span>
-            THB
-          </p>
-          <p class="mb-4">
-            Single page website for personal use or portfolio, complete with custom design and domain.
-          </p>
-          <ul>
-            <li class="flex">
-              <i class="fal fa-check-circle text-green-600 mr-2 mt-1"></i>
-              <span>Custom web design with 2 revisions</span>
-            </li>
-            <li class="flex">
-              <i class="mt-1 fal fa-check-circle text-green-600 mr-2"></i>
-              <span>Free domain</span>
-            </li>
-            <li class="flex">
-              <i class="mt-1 fal fa-check-circle text-gray-600 mr-2"></i>
-              <span>Google Analytics & Search Console</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="bg-zinc-200/50 px-6 py-6 shadow relative">
-        <span class="absolute top-2 right-2 text-xs bg-red-600 px-2 text-white">Most Popular</span>
-        <p class="text-gray-500 mb-2">
-          <i class="fal fa-building"></i>
-          Business
-        </p>
-        <p class="text-gray-500 mb-6 text-sm">
-          <span class="text-5xl font-bold text-primary-800">25,000</span>
-          THB
-        </p>
-        <p class="mb-4">
-          5-page website for small businesses or startups, complete with setting up custom business email and Google services.
-        </p>
-        <ul>
-          <li class="flex">
-            <i class="fal fa-check-circle text-green-600 mr-2 mt-1"></i>
-            <span>Custom web design with 2 revisions</span>
-          </li>
-          <li class="flex">
-            <i class="mt-1 fal fa-check-circle text-green-600 mr-2"></i>
-            <span>Free domain</span>
-          </li>
-          <li class="flex">
-            <i class="mt-1 fal fa-check-circle text-gray-600 mr-2"></i>
-            <span>Custom business email</span>
-          </li>
-          <li class="flex">
-            <i class="mt-1 fal fa-check-circle text-gray-600 mr-2"></i>
-            <span>Google Analytics & Search Console</span>
-          </li>
-          <li class="flex">
-            <i class="mt-1 fal fa-check-circle text-gray-600 mr-2"></i>
-            <span>Google Business Profile</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<div class="bg-zinc-50">
+  {% include '_includes/components/pricing.njk' %}
 </div>
 <!-- Who We Are -->
 <div class="relative">
