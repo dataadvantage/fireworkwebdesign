@@ -3192,6 +3192,10 @@ h4 {
     gap: 2rem;
   }
 
+  .md\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .md\:self-stretch {
     align-self: stretch;
   }
@@ -3357,6 +3361,10 @@ h4 {
 
   .lg\:gap-16 {
     gap: 4rem;
+  }
+
+  .lg\:gap-10 {
+    gap: 2.5rem;
   }
 
   .lg\:self-center {
