@@ -236,12 +236,10 @@ eleventyNavigation:
   const spinButton = document.querySelector('#portrait-container i');
   const image = document.querySelector('#portrait-container img');
   const spinMeText = document.querySelector('#spin-me-text');
-  console.log(spinButton, image);
   spinButton.addEventListener('click', () => {
     times += 1
     deg *= 2;
     grayScale += 10
-    console.log(deg);
     image.style.transform = `rotate(${deg}deg)`;
     image.style.filter = `grayscale(${grayScale}%)`;
     if (times >= 10) {
@@ -251,5 +249,4 @@ eleventyNavigation:
       spinMeText.textContent = ('You have spun me ' + times + ' times');
     }
   });
-  console.log(spinButton, image);
 </script>
