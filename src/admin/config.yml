@@ -12,27 +12,26 @@ public_folder: "/static/img"
 # local_backend: true
 # publish_mode: editorial_workflow
 collections:
-  # - label: "Event"
-  #   name: "event"
-  #   folder: "src/events"
-  #   create: true
-  #   editor:
-  #     preview: false
-  #   fields:
-  #     - { label: "Title", name: "title", widget: "string" }
-  #     - { label: "Start date", name: "start_date", widget: "datetime" }
-  #     - { label: "Time", name: "time", widget: "string" }
-  #     - { label: "Body", name: "body", widget: "markdown" }
-  #     - { label: "Thumbnail", name: "thumbnail", widget: "image" }
-  # - label: "Song"
-  #   name: "song"
-  #   folder: "src/songs"
-  #   create: true
-  #   editor:
-  #     preview: false
-  #   fields:
-  #     - { label: "Title", name: "title", widget: "string" }
-  #     - { label: "Body", name: "body", widget: "markdown" }
+  - name: "blog"
+    label: "Blog"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "URL Slug",
+          name: "url",
+          widget: "string",
+          hint: 'Specify where the page will be written to. If you use "Blog Post", the post will be accessible from "blog/blog-post"',
+        }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Image Caption", name: "imageAlt", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
   - label: "Settings"
     name: "settings"
     editor:
