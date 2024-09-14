@@ -25,7 +25,7 @@ module.exports = function (eleventyConfig) {
 		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css",
 		"./node_modules/alpinejs/dist/cdn.min.js": "/js/alpine.js",
 		"./src/admin/config.yml": "./admin/config.yml",
-		"./src/projects/images": "/projects/images",
+		"./src/static/img": "/static/img",
 	});
 
 	// Run Eleventy when these files change:
