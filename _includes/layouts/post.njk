@@ -1,5 +1,7 @@
 ---
 layout: layouts/base.njk
+eleventyComputed:
+    facebook_image: "{% getImage eleventy.env.root + '/src' + image, '900px' %}"
 ---
 
 <div class="bg-amber-50/25 shadow px-6">

@@ -1339,6 +1339,22 @@ h4 {
   z-index: 10;
 }
 
+.order-1 {
+  order: 1;
+}
+
+.order-10 {
+  order: 10;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1403,6 +1419,10 @@ h4 {
   margin-top: 2.5rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mt-16 {
   margin-top: 4rem;
 }
@@ -1425,10 +1445,6 @@ h4 {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-12 {
-  margin-top: 3rem;
 }
 
 .block {
@@ -1622,6 +1638,10 @@ h4 {
 
 .gap-16 {
   gap: 4rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-6 {
@@ -3017,6 +3037,10 @@ h4 {
 
   .md\:top-12 {
     top: 3rem;
+  }
+
+  .md\:order-1 {
+    order: 1;
   }
 
   .md\:col-span-2 {

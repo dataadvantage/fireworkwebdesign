@@ -30,6 +30,26 @@ module.exports = function (eleventyConfig) {
 		return dimensions;
 	});
 
+	eleventyConfig.addAsyncShortcode(
+		"getImage",
+		async function getImage(src, width) {
+			let input;
+			if (isFullUrl(src)) {
+				input = src;
+			} else {
+				input = relativeToInputPath(this.page.inputPath, src);
+			}
+
+			let metadata = await eleventyImage(input, {
+				widths: [width],
+				formats: ["webp"],
+				outputDir: path.join(eleventyConfig.dir.output, "img"), // Advanced usage note: `eleventyConfig.dir` works here because we’re using addPlugin.
+			});
+
+			return metadata["webp"][0].url;
+		}
+	);
+
 	// Eleventy Image shortcode
 	// https://www.11ty.dev/docs/plugins/image/
 	eleventyConfig.addAsyncShortcode(
