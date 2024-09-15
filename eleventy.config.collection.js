@@ -6,6 +6,12 @@ module.exports = function (eleventyConfig) {
 		return result;
 	});
 
+	eleventyConfig.addFilter("filter", (array, field, value) => {
+		return array.filter((i) => {
+			return i.data[field] === value;
+		});
+	});
+
 	eleventyConfig.addFilter("unique", (array) => {
 		return [...new Set(array)];
 	});

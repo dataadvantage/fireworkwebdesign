@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+eleventyComputed:
+    facebook_image: "{% getImage eleventy.env.root + '/src' + image, '900px' %}"
+---
+
+<div class="shadow px-6">
+    <div class="max-w-5xl mx-auto prose py-10 md:py-24">
+        <a href="/" class="hover:underline no-underline text-gray-500 text-sm">HOME</a>
+        /
+        <a href="/portfolio/" class="no-underline hover:underline text-gray-500 text-sm">PORTFOLIO</a>
+        <h1>{{ title }}</h1>
+        <div>
+            {% image eleventy.env.root + "/src" + image, imageAlt, "1200px" %}
+        </div>
+        {{ content | safe }}
+    </div>
+</div>

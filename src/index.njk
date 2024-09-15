@@ -85,6 +85,50 @@ eleventyNavigation:
     </div>
   </div>
 </div>
+<!-- Portfolio -->
+<div class="bg-white py-20 md:py-24 px-6">
+  <div class="default-container lg:px-0">
+    <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
+      <div class="border-r-primary-800 border-2 border-transparent md:col-span-2 md:col-start-3 pr-4">
+        <h2 class="uppercase text-right text-primary-800 text-sm mb-2">Our works</h2>
+        <p class="font-bold text-3xl md:text-4xl text-right">
+          Our recent projects
+        </p>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-10">
+      {% for project in collections.portfolio | filter("featured", true) | head(3) %}
+        <div>
+          <div class="relative group">
+            <div class="mb-4 h-[250px] [&_img]:h-full [&_img]:object-cover [&_img]:object-center shadow">
+              {% image eleventy.env.root + '/src' + project.data.image, project.data.imageAlt, "400px" %}
+            </div>
+            <div>
+              <p class="mb-4 font-bold text-lg">
+                {{ project.data.title }}
+              </p>
+            </div>
+            {# <a href="{{ project.url }}" class="absolute inset-0"></a> #}
+          </div>
+          <div class="-my-4">
+            {% if project.data.liveUrl %}
+              <a
+                href="https://{{ project.data.liveUrl }}"
+                class="text-primary-800 hover:text-primary-600 hover:underline"
+                target="_blank">
+                {{ project.data.liveUrl }}
+              </a>
+            {% elif project.data.portfolioUrl %}
+              <a href="{{ portfolioBaseUrl + project.data.portfolioUrl + "/index.html" }}" class="text-primary-800 hover:text-primary-600 hover:underline" target="_blank">
+                {{ project.data.portfolioUrl }}
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
 <!-- Why Choose Us -->
 <div class="py-20 md:py-32 relative overflow-hidden">
   <div class="absolute w-[500px] left-[200px] aspect-square bg-primary-100 rounded-full blur-[200px] -z-10"></div>
@@ -190,7 +234,7 @@ eleventyNavigation:
     </div>
   </div>
 </div>
-<!-- Cal to action -->
+<!-- Call to action -->
 <div class="group bg-sky-950 flex flex-wrap items-center relative">
   <div class="[&_img]:grayscale group-hover:[&_img]:grayscale-0 [&_*]:transition md:w-[40%] bg-yellow-50 self-stretch
       [&_img]:h-full [&_img]:object-cover [&_img]:duration-500">
