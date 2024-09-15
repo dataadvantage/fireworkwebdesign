@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Our works - FIREWORK Web Design
-description: A collection of our works in web design and development.
+description: Collection of our works in web design and development.
 override:tags: false
 permalink: /portfolio/index.html
 eleventyNavigation:
@@ -23,13 +23,16 @@ eleventyNavigation:
                             {% image eleventy.env.root + '/src' + project.data.image, project.data.imageAlt, "400px" %}
                         </div>
                         <div>
-                            <p class="mb-4 font-bold text-lg group-hover:underline">
-                                {{ project.data.title }}
+                            <p class="mb-2 font-bold text-lg group-hover:underline">
+                                {{ project.data.name }}
+                            </p>
+                            <p class="text-gray-600">
+                                {{ project.data.description }}
                             </p>
                         </div>
                         <a href="{{ project.url }}" class="absolute inset-0"></a>
                     </div>
-                    <div class="-my-4">
+                    <div class="mt-4">
                         {% if project.data.liveUrl %}
                             <a
                                 href="https://{{ project.data.liveUrl }}"
@@ -42,6 +45,7 @@ eleventyNavigation:
                                 {{ project.data.portfolioUrl }}
                             </a>
                         {% endif %}
+                        <i class="fal fa-external-link text-xs ml-2"></i>
                     </div>
                 </div>
             {% endfor %}
