@@ -32,7 +32,7 @@ eleventyNavigation:
                                 {{ project.data.description }}
                             </p>
                         </div>
-                        <a href="{{ project.url }}" class="absolute inset-0"></a>
+                        <a href="{{ project.url }}" class="absolute inset-0" aria-label="{{ project.data.name }}"></a>
                     </div>
                     <div class="mt-4">
                         {% if project.data.liveUrl %}
