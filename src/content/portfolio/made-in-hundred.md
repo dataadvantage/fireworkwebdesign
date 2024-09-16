@@ -15,8 +15,6 @@ Made In Hundred approached Firework Web Design with a clear vision for their web
 
 {% image eleventy.env.root + "/src/static/img/made-in-hundred-overview.png", "Made in Hundred overview", "800px" %}
 
----
-
 **Key Features:**
 
 - **Custom Setup on Squarespace:**  
@@ -28,12 +26,10 @@ Made In Hundred approached Firework Web Design with a clear vision for their web
 - **Custom Email Setup:**  
   In addition to the website, we helped Made In Hundred set up custom emails for their team, further professionalizing their online presence.
 
----
-
 {% image eleventy.env.root + "/src/static/img/made-in-hundred-clients.png", "Made in Hundred clients gallery", "800px" %}
 
 {% image eleventy.env.root + "/src/static/img/made-in-hundred-client.png", "Made in Hundred's works", "800px" %}
 
-<p class="text-gray-500 w-4/5 text-xs text-center italic">Images from the Made In Hundred website</p>
+<p class="text-gray-500 w-4/5 text-xs mx-auto text-center italic">Images from the Made In Hundred website</p>
 
 The new Squarespace website has empowered Made In Hundred to take full control of their digital presence. With the ability to update content and design independently, the client now has a dynamic platform to showcase their team, services, and clients. The addition of custom emails for their team members has enhanced internal and external communications, providing a seamless experience for clients and partners alike.

@@ -15,8 +15,6 @@ Firework Web Design partnered with Fresh Code Clinic to create a custom-designed
 
 {% image eleventy.env.root + "/src/static/img/freshcode-products.png", "Fresh Code Clinic offers and services", "800px" %}
 
----
-
 **Key Features:**
 
 - **Custom Web Design:**  
