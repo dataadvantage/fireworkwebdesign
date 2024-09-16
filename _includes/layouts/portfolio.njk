@@ -4,18 +4,24 @@ eleventyComputed:
     facebook_image: "{% getImage eleventy.env.root + '/src' + image, '900px' %}"
 ---
 
-<div class="shadow px-6">
-    <div class="max-w-5xl mx-auto prose py-10 md:py-24">
+<div class="px-6 py-10 lg:py-16">
+    <div class="max-w-prose mx-auto ">
         <a href="/" class="hover:underline no-underline text-gray-500 text-sm">HOME</a>
         /
-        <a href="/portfolio/" class="no-underline hover:underline text-gray-500 text-sm">PORTFOLIO</a>
-        <h1>{{ title }}</h1>
-        <p class="text-gray-600">{{ description }}</p>
-        <div>
-            {% image eleventy.env.root + "/src" + image, imageAlt, "1200px" %}
+        <a href="/portfolio/" class="no-underline hover:underline text-primary-800 text-sm">PORTFOLIO</a>
+        <h1>{{ name }}</h1>
+    </div>
+    <div class="max-w-5xl mx-auto prose">
+        <div class="[&_img]:mx-auto shadow">
+            {% image eleventy.env.root + "/src" + image, imageAlt, "600px, 1200px", "(max-width: 600px) 600px, 1200px", false %}
         </div>
-        <div class="prose">
+        <div class="prose mx-auto prose-headings:text-primary-800 prose-strong:text-primary-800 [&_img]:shadow">
             {{ content | safe }}
         </div>
     </div>
+</div>
+<div class="grid md:grid-cols-2 px-8 gap-6">
+    {% for image in images %}
+        {% image eleventy.env.root + '/src' + image.src, image.alt, "1000px" %}
+    {% endfor %}
 </div>

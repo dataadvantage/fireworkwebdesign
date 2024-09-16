@@ -12,15 +12,15 @@ eleventyNavigation:
 <div class="shadow">
     <div class="default-container py-24 px-6 ">
         <h2 class="uppercase text-primary-800 text-sm mb-2">Our Works</h2>
-        <p class="font-bold text-3xl md:text-4xl mb-16">
+        <p class="font-bold text-3xl md:text-4xl mb-16 md:w-1/2">
             Our works in web design and development
         </p>
         <div class="grid md:grid-cols-3 gap-8">
             {% for project in collections.portfolio %}
                 <div>
                     <div class="relative group">
-                        <div class="mb-4 h-[300px] [&_img]:h-full [&_img]:object-cover [&_img]:object-center">
-                            {% image eleventy.env.root + '/src' + project.data.image, project.data.imageAlt, "400px" %}
+                        <div class="mb-4 h-[250px] [&_img]:h-full [&_img]:object-cover [&_img]:object-center">
+                            {% image eleventy.env.root + '/src' + project.data.image, project.data.imageAlt, "600px" %}
                         </div>
                         <div>
                             <p class="mb-2 font-bold text-lg group-hover:underline">

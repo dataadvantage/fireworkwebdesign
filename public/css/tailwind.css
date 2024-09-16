@@ -1347,11 +1347,6 @@ h4 {
   order: 3;
 }
 
-.-my-4 {
-  margin-top: -1rem;
-  margin-bottom: -1rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1367,14 +1362,14 @@ h4 {
   margin-bottom: 0.75rem;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .-mr-2 {
@@ -1407,6 +1402,10 @@ h4 {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .mr-1 {
@@ -1451,10 +1450,6 @@ h4 {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
 }
 
 .block {
@@ -1521,10 +1516,6 @@ h4 {
   height: 250px;
 }
 
-.h-\[300px\] {
-  height: 300px;
-}
-
 .h-full {
   height: 100%;
 }
@@ -1535,6 +1526,10 @@ h4 {
 
 .w-3\/4 {
   width: 75%;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .w-6 {
@@ -1595,6 +1590,10 @@ h4 {
 
 .max-w-7xl {
   max-width: 80rem;
+}
+
+.max-w-prose {
+  max-width: 65ch;
 }
 
 .max-w-xl {
@@ -2018,6 +2017,10 @@ h4 {
   padding-right: 1rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -2116,6 +2119,10 @@ h4 {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .leading-6 {
@@ -3008,6 +3015,16 @@ h4 {
   opacity: 1;
 }
 
+.prose-headings\:text-primary-800 :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  --tw-text-opacity: 1;
+  color: rgb(10 85 140 / var(--tw-text-opacity));
+}
+
+.prose-strong\:text-primary-800 :is(:where(strong):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  --tw-text-opacity: 1;
+  color: rgb(10 85 140 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
@@ -3346,6 +3363,23 @@ h4 {
     padding-bottom: 12rem;
   }
 
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .lg\:pt-24 {
+    padding-top: 6rem;
+  }
+
+  .lg\:pt-20 {
+    padding-top: 5rem;
+  }
+
+  .lg\:pt-16 {
+    padding-top: 4rem;
+  }
+
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -3378,6 +3412,11 @@ h4 {
 
 .\[\&_\*\]\:duration-500 * {
   transition-duration: 500ms;
+}
+
+.\[\&_image\+em\]\:\!text-primary-900 image+em {
+  --tw-text-opacity: 1 !important;
+  color: rgb(0 62 107 / var(--tw-text-opacity)) !important;
 }
 
 .\[\&_img\]\:relative img {
