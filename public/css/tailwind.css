@@ -1755,6 +1755,10 @@ h4 {
   background-color: rgb(255 251 235 / 0.25);
 }
 
+.bg-amber-50\/30 {
+  background-color: rgb(255 251 235 / 0.3);
+}
+
 .bg-amber-50\/50 {
   background-color: rgb(255 251 235 / 0.5);
 }
@@ -1820,15 +1824,6 @@ h4 {
 .bg-zinc-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
-}
-
-.bg-amber-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 251 235 / var(--tw-bg-opacity));
-}
-
-.bg-amber-50\/30 {
-  background-color: rgb(255 251 235 / 0.3);
 }
 
 .bg-gradient-to-br {
@@ -2232,6 +2227,11 @@ h4 {
   color: rgb(234 88 12 / var(--tw-text-opacity));
 }
 
+.text-primary-400 {
+  --tw-text-opacity: 1;
+  color: rgb(64 152 215 / var(--tw-text-opacity));
+}
+
 .text-primary-600 {
   --tw-text-opacity: 1;
   color: rgb(24 111 175 / var(--tw-text-opacity));
@@ -2298,11 +2298,6 @@ h4 {
 .text-zinc-900 {
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
-}
-
-.text-primary-400 {
-  --tw-text-opacity: 1;
-  color: rgb(64 152 215 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2959,9 +2954,19 @@ h4 {
   color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
+.hover\:text-gray-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.hover\:text-primary-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(38 128 194 / var(--tw-text-opacity));
 }
 
 .hover\:text-primary-600:hover {
@@ -2972,21 +2977,6 @@ h4 {
 .hover\:text-primary-900:hover {
   --tw-text-opacity: 1;
   color: rgb(0 62 107 / var(--tw-text-opacity));
-}
-
-.hover\:text-primary-400:hover {
-  --tw-text-opacity: 1;
-  color: rgb(64 152 215 / var(--tw-text-opacity));
-}
-
-.hover\:text-gray-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
-.hover\:text-primary-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(38 128 194 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -3150,10 +3140,6 @@ h4 {
 
   .md\:hidden {
     display: none;
-  }
-
-  .md\:h-\[200px\] {
-    height: 200px;
   }
 
   .md\:w-1\/2 {
