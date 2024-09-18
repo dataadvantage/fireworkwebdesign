@@ -24,6 +24,8 @@ module.exports = function (eleventyConfig) {
 		"./public/": "/",
 		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css",
 		"./node_modules/alpinejs/dist/cdn.min.js": "/js/alpine.js",
+		"./node_modules/@alpinejs/intersect/dist/cdn.min.js":
+			"/js/alpine.intersect.js",
 		"./src/admin/config.yml": "./admin/config.yml",
 		"./src/static/img": "/static/img",
 	});
