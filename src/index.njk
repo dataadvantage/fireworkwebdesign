@@ -110,7 +110,20 @@ eleventyNavigation:
             </div>
             <a href="{{ project.url }}" class="absolute inset-0" aria-label="{{ project.data.name }}"></a>
           </div>
-          <div class="my-4"></div>
+          <div class="mt-2 text-sm">
+            {% if project.data.liveUrl %}
+              <a
+                href="https://{{ project.data.liveUrl }}"
+                class="text-primary-800 hover:text-primary-600 hover:underline"
+                target="_blank">
+                {{ project.data.liveUrl }}
+              </a>
+            {% elif project.data.portfolioUrl %}
+              <a href="{{ portfolioBaseUrl + project.data.portfolioUrl + "/index.html" }}" class="text-primary-800 hover:text-primary-600 hover:underline" target="_blank">
+                {{ project.data.portfolioUrl }}
+              </a>
+            {% endif %}
+          </div>
         </div>
       {% endfor %}
     </div>
