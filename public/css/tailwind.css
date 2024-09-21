@@ -1226,6 +1226,11 @@ h4 {
   inset: 0px;
 }
 
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
+}
+
 .inset-y-0 {
   top: 0px;
   bottom: 0px;
@@ -1339,6 +1344,10 @@ h4 {
   z-index: 10;
 }
 
+.z-\[1000000\] {
+  z-index: 1000000;
+}
+
 .order-2 {
   order: 2;
 }
@@ -1360,11 +1369,6 @@ h4 {
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
-}
-
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .my-8 {
@@ -1450,10 +1454,6 @@ h4 {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.ml-1 {
-  margin-left: 0.25rem;
 }
 
 .block {
@@ -2951,6 +2951,11 @@ h4 {
 
 .hover\:bg-secondary-100\/50:hover {
   background-color: rgb(255 243 196 / 0.5);
+}
+
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .hover\:text-gray-200:hover {

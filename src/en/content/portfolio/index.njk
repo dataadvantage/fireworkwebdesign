@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: Our works - FIREWORK Web Design
 description: Collection of our works in web design and development.
 override:tags: false
-permalink: /portfolio/index.html
+permalink: "{{locale}}/portfolio/index.html"
 eleventyComputed:
     title: Our Works - FIREWORK Web Design
 eleventyNavigation:
@@ -18,7 +18,7 @@ eleventyNavigation:
             Our works in web design and development
         </p>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {% for project in collections.portfolio %}
+            {% for project in collections.portfolio | filter('locale', lang) %}
                 <div>
                     <div class="relative group">
                         <div class="mb-4 h-[250px] [&_img]:h-full [&_img]:object-cover [&_img]:object-center">

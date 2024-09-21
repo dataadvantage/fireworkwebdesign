@@ -6,7 +6,10 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginNavigation = require("@11ty/eleventy-navigation");
-const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+const {
+	EleventyHtmlBasePlugin,
+	EleventyI18nPlugin,
+} = require("@11ty/eleventy");
 
 const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
@@ -18,14 +21,18 @@ module.exports = function (eleventyConfig) {
 	// You may remove this if you can use JSON
 	eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
-	// Copy the contents of the `public` folder to the output folder
-	// For example, `./public/css/` ends up in `_site/css/`
+	eleventyConfig.addPlugin(EleventyI18nPlugin, {
+		// any valid BCP 47-compatible language tag is supported
+		defaultLanguage: "en", // Required, this site uses "en"
+	});
+
 	eleventyConfig.addPassthroughCopy({
 		"./public/": "/",
 		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css",
 		"./node_modules/alpinejs/dist/cdn.min.js": "/js/alpine.js",
 		"./node_modules/@alpinejs/intersect/dist/cdn.min.js":
 			"/js/alpine.intersect.js",
+		"./node_modules/svg-country-flags/png100px/": "/img/flags/",
 		"./src/admin/config.yml": "./admin/config.yml",
 		"./src/static/img": "/static/img",
 	});
@@ -51,6 +58,11 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginBundle);
 
 	// Filters
+	eleventyConfig.addFilter("log", (value) => {
+		console.log(value);
+		return value;
+	});
+
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
 		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(

@@ -1,14 +1,20 @@
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addFilter("field", (array, field) => {
 		const result = array.map((i) => {
-			return i.data[field];
+			if (i.data !== undefined) {
+				return i.data[field];
+			}
+			return i[field];
 		});
 		return result;
 	});
 
 	eleventyConfig.addFilter("filter", (array, field, value) => {
 		return array.filter((i) => {
-			return i.data[field] === value;
+			if (i.data !== undefined) {
+				return i.data[field] === value;
+			}
+			return i[field] === value;
 		});
 	});
 

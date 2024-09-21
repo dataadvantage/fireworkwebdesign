@@ -12,9 +12,40 @@ public_folder: "/static/img"
 # local_backend: true
 # publish_mode: editorial_workflow
 collections:
-  - name: "portfolio"
-    label: "Portfolio"
-    folder: "src/content/portfolio"
+  - name: "portfolio_th"
+    label: "Portfolio (TH)"
+    folder: "src/th/content/portfolio"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Live url",
+          name: "liveUrl",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Static url",
+          name: "portfolioUrl",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "URL Slug",
+          name: "url",
+          widget: "string",
+          hint: 'Specify where the page will be written to. If you use "Blog Post", the post will be accessible from "blog/blog-post"',
+        }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Image Caption", name: "imageAlt", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+  - name: "portfolio_en"
+    label: "Portfolio (EN)"
+    folder: "src/en/content/portfolio"
     create: true
     slug: "{{slug}}"
     fields:

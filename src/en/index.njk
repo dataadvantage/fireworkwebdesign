@@ -17,7 +17,7 @@ eleventyNavigation:
     <div class="text-center">
       <a
         class="btn-primary-lg bg-orange-600 hover:bg-orange-700 text-white hover:text-gray-200 uppercase"
-        href="/contact-us/">
+        href="/{{ lang }}/contact-us/">
         Consult for free
       </a>
     </div>
@@ -48,7 +48,7 @@ eleventyNavigation:
       <div class="group">
         <div class="[&_img]:md:h-[250px] [&_img]:h-[200px] [&_img]:object-cover group-hover:[&_img]:scale-110 overflow-hidden
             [&_*]:transition-transform">
-          {% image './static/img/our-services-web-design.jpg', 'Custom web design', '400px' %}
+          {% image eleventy.env.root + '/src/static/img/our-services-web-design.jpg', 'Custom web design', '400px' %}
         </div>
         <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Custom Web Design</p>
         <p class="text-neutral-600">Beautiful, user-friendly designs tailored to your brand.</p>
@@ -56,7 +56,7 @@ eleventyNavigation:
       <div class="group">
         <div class="[&_img]:md:h-[250px] [&_img]:h-[200px] [&_img]:object-cover group-hover:[&_img]:scale-110 overflow-hidden
             [&_*]:transition-transform">
-          {% image './static/img/our-services-web-development.jpg', 'Web development', '400px' %}
+          {% image eleventy.env.root + '/src/static/img/our-services-web-development.jpg', 'Web development', '400px' %}
         </div>
         <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Web Development</p>
         <p class="text-neutral-600">High-quality coding to ensure your site is fast, secure, and easy to maintain.</p>
@@ -64,7 +64,7 @@ eleventyNavigation:
       <div class="group">
         <div class="[&_img]:md:h-[250px] [&_img]:h-[200px] [&_img]:object-cover group-hover:[&_img]:scale-110 overflow-hidden
             [&_*]:transition-transform">
-          {% image './static/img/our-services-web-analytics.jpg', 'Web development', '400px' %}
+          {% image eleventy.env.root + '/src/static/img/our-services-web-analytics.jpg', 'Web development', '400px' %}
         </div>
         <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Web Analytics</p>
         <p class="text-neutral-600">Track your site performance with modern analytic tools.</p>
@@ -72,14 +72,16 @@ eleventyNavigation:
       <div class="group">
         <div class="[&_img]:md:h-[250px] [&_img]:h-[200px] [&_img]:object-cover group-hover:[&_img]:scale-110 overflow-hidden
             [&_*]:transition-transform">
-          {% image './static/img/our-services-responsive-design.jpg', 'Responsive design', '400px' %}
+          {% image eleventy.env.root + '/src/static/img/our-services-responsive-design.jpg', 'Responsive design', '400px' %}
         </div>
         <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Responsive Design</p>
         <p class="text-neutral-600">Mobile-friendly websites that look perfect on any device.</p>
       </div>
     </div>
     <div class="text-center mt-16">
-      <a href="/services/" class="btn-primary bg-orange-600 hover:bg-orange-700 text-white hover:text-gray-200 uppercase">
+      <a
+        href="/{{ lang }}/services/"
+        class="btn-primary bg-orange-600 hover:bg-orange-700 text-white hover:text-gray-200 uppercase">
         View all services
       </a>
     </div>
@@ -97,7 +99,7 @@ eleventyNavigation:
       </div>
     </div>
     <div class="grid md:grid-cols-3 gap-10">
-      {% for project in collections.portfolio | filter("featured", true) | head(3) %}
+      {% for project in collections.portfolio | filter("featured", true) | filter("lang", lang) | head(3) %}
         <div>
           <div class="relative group">
             <div class="mb-4 h-[250px] [&_img]:h-full [&_img]:object-cover [&_img]:object-center shadow">
@@ -218,7 +220,7 @@ eleventyNavigation:
         id="portrait-container"
         class="text-center [&_img]:mx-auto [&_img]:w-3/4 md:[&_img]:w-full [&_img]:transition [&_img]:duration-500
           [&_img]:shadow">
-        {% image './static/img/james-2.jpg', 'James', '400px' %}
+        {% image eleventy.env.root + '/src/static/img/james-2.jpg', 'James', '400px' %}
         <p class="text-center md:hidden mt-8">
           <span class="text-lg font-semibold tracking-wider">James</span><br/>
           <span class="text-sm text-gray-400">Owner & Developer</span>
@@ -238,7 +240,7 @@ eleventyNavigation:
 <div class="group bg-sky-950 flex flex-wrap items-center relative">
   <div class="[&_img]:grayscale group-hover:[&_img]:grayscale-0 [&_*]:transition md:w-[40%] bg-yellow-50 self-stretch
       [&_img]:h-full [&_img]:object-cover [&_img]:duration-500">
-    {% image './static/img/firework-1.jpg', 'Firework', '1920px' %}
+    {% image eleventy.env.root + '/src/static/img/firework-1.jpg', 'Firework', '1920px' %}
   </div>
   <div class="pt-24 pb-28 px-8 md:px-16 lg:px-32 md:flex-1 relative">
     <p class="uppercase text-orange-600 mb-2 text-sm md:text-base font-semibold">Ready to spark your next project?</p>
@@ -287,7 +289,7 @@ eleventyNavigation:
     image.style.transform = `rotate(${deg}deg)`;
     image.style.filter = `grayscale(${grayScale}%)`;
     if (times >= 5) {
-      spinMeText.innerHTML = '<a href="/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
+      spinMeText.innerHTML = '<a href="/ {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
       spinMeText.classList.remove('opacity-0')
     } else {
       spinMeText.textContent = ('You have spun me ' + times + ' times');

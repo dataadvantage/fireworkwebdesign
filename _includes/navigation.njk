@@ -9,7 +9,7 @@
         </a>
       </div>
       <div class="hidden sm:ml-6 sm:flex">
-        {% for item in collections.all | eleventyNavigation %}
+        {% for item in collections.all | eleventyNavigation | filter('locale', locale) %}
           <div class="relative flex px-4 py-10 group">
             <a href="{{ item.url }}" class="text-sm after:duration-300 after:inset-0 overflow-x-hidden relative after:-translate-x-[105%] hover:after:translate-x-0 after:transition after:content-[''] after:absolute after:border-b-2 after:border-primary-900 inline-flex items-center px-1 font-medium {% if page.url == item.url %}text-primary-900 after:translate-x-0{% else %}text-neutral-400{% endif %} hover:text-primary-900 transition">{{ item.key | upper }}</a>
             {% if item.children | length > 0 %}
@@ -23,6 +23,21 @@
             {% endif %}
           </div>
         {% endfor %}
+        {# loop though site.languages #}
+        <div class="text-sm relative text-gray-400 font-medium flex items-center px-4 group cursor-pointer">
+          <img src="/img/flags/{{ metadata.languages | filter('code', lang) | field('flag') | first }}" width="20" class="mr-1"/>
+            {{ lang | upper }}
+          <div class="absolute inset-x-0 top-full shadow z-[1000000] bg-white pt-2 px-4 opacity-0 group-hover:opacity-100 transition">
+            {% for lgg in metadata.languages %}
+              {% if lgg.code != lang %}
+                <a href="/{{ lgg.code }}/" class="flex mb-2 text-center hover:text-black">
+                  <img src="/img/flags/{{ lgg.flag }}" width="20" class="mr-1"/>
+                  <span>{{ lgg.code | upper }}</span>
+                </a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
       </div>
       <div
         class="-mr-2 flex items-center sm:hidden">
@@ -70,7 +85,7 @@
   <!-- Mobile menu, show/hide based on menu state. -->
   <div class="sm:hidden" id="mobile-menu" x-show="open" x-cloak x-transition>
     <div class="space-y-1 pb-3 pt-2 px-4">
-      {% for item in collections.all | eleventyNavigation %}
+      {% for item in collections.all | eleventyNavigation | filter('locale', locale) %}
         <div x-data="{subMenuOpen: false}">
           <div class="py-2 pl-3 pr-4 flex">
             <a href="{{ item.url }}" class="flex-1 text-base font-medium {% if page.url == item.url %}text-primary-900{% else %}text-neutral-400{% endif %} hover:text-primary-900">
@@ -90,6 +105,32 @@
           {% endif %}
         </div>
       {% endfor %}
+      <div x-data="{subMenuOpen: false}">
+        <div class="py-2 pl-3 pr-4 flex">
+          <a
+            href="#"
+            class="uppercase flex flex-1 text-base font-medium {% if page.url == item.url %}text-primary-900{% else
+              %}text-neutral-400{% endif %} hover:text-primary-900">
+            Languages
+          </a>
+          <span
+            class="text-primary-800 px-2 cursor-pointer"
+            @click="subMenuOpen = !subMenuOpen"
+            :class="subMenuOpen && 'rotate-180'">
+            &#9660;</span>
+        </div>
+        <div class="pl-6 transition-all" x-show="subMenuOpen" x-cloak x-transition>
+          {% for lgg in metadata.languages %}
+            <a
+              href="/{{ lgg.code }}"
+              class="flex my-3 items-center px-1 font-medium {% if page.url == child.url %}text-primary-900{% else %}text-neutral-400{%
+                endif %} hover:text-primary-900 transition">
+              <img src="/img/flags/{{ lgg.flag }}" width="20" class="mr-1"/>
+              <span>{{ lgg.code | upper }}</span>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
     </div>
   </div>
 </nav>
