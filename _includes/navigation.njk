@@ -30,9 +30,9 @@
           <div class="absolute inset-x-0 top-full shadow z-[1000000] bg-white pt-2 px-4 opacity-0 group-hover:opacity-100 transition">
             {% for lgg in metadata.languages %}
               {% if lgg.code != lang %}
-                <a href="/{{ lgg.code }}/" class="flex mb-2 text-center hover:text-black">
+                <a href="/{{ lgg.code }}/" class="flex mb-2 text-center hover:text-black text-sm">
                   <img src="/img/flags/{{ lgg.flag }}" width="20" class="mr-1"/>
-                  <span>{{ lgg.code | upper }}</span>
+                  <span class="text-sm">{{ lgg.code | upper }}</span>
                 </a>
               {% endif %}
             {% endfor %}
@@ -120,7 +120,7 @@
           {% for lgg in metadata.languages %}
             <a
               href="/{{ lgg.code }}"
-              class="flex my-3 items-center px-1 font-medium {% if page.url == child.url %}text-primary-900{% else %}text-neutral-400{%
+              class="flex my-3 items-center px-1 font-medium {% if lgg.code == lang %}text-primary-900{% else %}text-neutral-400{%
                 endif %} hover:text-primary-900 transition">
               <img src="/img/flags/{{ lgg.flag }}" width="20" class="mr-2"/>
               <span>{{ lgg.code | upper }}</span>
