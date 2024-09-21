@@ -106,17 +106,14 @@
         </div>
       {% endfor %}
       <div x-data="{subMenuOpen: false}">
-        <div class="py-2 pl-3 pr-4 flex">
+        <div class="py-2 pl-3 pr-4 flex" @click="subMenuOpen = !subMenuOpen">
           <a
             href="#"
             class="uppercase flex flex-1 text-base font-medium {% if page.url == item.url %}text-primary-900{% else
               %}text-neutral-400{% endif %} hover:text-primary-900">
             Languages
           </a>
-          <span
-            class="text-primary-800 px-2 cursor-pointer"
-            @click="subMenuOpen = !subMenuOpen"
-            :class="subMenuOpen && 'rotate-180'">
+          <span class="text-primary-800 px-2 cursor-pointer" :class="subMenuOpen && 'rotate-180'">
             &#9660;</span>
         </div>
         <div class="pl-6 transition-all" x-show="subMenuOpen" x-cloak x-transition>
@@ -125,7 +122,7 @@
               href="/{{ lgg.code }}"
               class="flex my-3 items-center px-1 font-medium {% if page.url == child.url %}text-primary-900{% else %}text-neutral-400{%
                 endif %} hover:text-primary-900 transition">
-              <img src="/img/flags/{{ lgg.flag }}" width="20" class="mr-1"/>
+              <img src="/img/flags/{{ lgg.flag }}" width="20" class="mr-2"/>
               <span>{{ lgg.code | upper }}</span>
             </a>
           {% endfor %}

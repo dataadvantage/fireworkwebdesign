@@ -1,0 +1,298 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+
+<!-- Hero -->
+<div class="bg-gradient-to-br from-primary-800 to-primary-500 from-40% overflow-hidden relative">
+  <div class="default-container py-40 md:py-56 px-6">
+    <h1 class="text-center font-sans text-4xl md:text-6xl font-bold mb-8 text-white">
+      Modern Business <br/>Web Design & Development
+    </h1>
+    <p class="text-center text-lg md:w-1/2 mx-auto mb-12 text-zinc-100">
+      We hand-craft web designs and development that help businesses like yours stand out.
+    </p>
+    <div class="text-center">
+      <a
+        class="btn-primary-lg bg-orange-600 hover:bg-orange-700 text-white hover:text-gray-200 uppercase"
+        href="/{{ lang }}/contact-us/">
+        Consult for free
+      </a>
+    </div>
+  </div>
+  <div class="absolute bg-primary-700/50 w-[2000px] h-[2000px] aspect-square rounded-full -top-[1900px] -left-[1000px]
+    md:-left-[400px] lg:-top-[50%] lg:-left-[1900px]"></div>
+  <div class="absolute bg-primary-700/50 w-[1800px] h-[1800px] aspect-square rounded-full -top-[1750px] -left-[700px]
+    lg:-top-[800px] lg:-left-[1700px]"></div>
+  <div class="absolute bg-primary-700/50 w-[1900px] h-[1900px] aspect-square rounded-full -bottom-[1850px] -right-[1050px]
+    md:-right-[500px] lg:-top-[900px] lg:-right-[1800px]"></div>
+  <div class="absolute bg-primary-700/50 w-[2100px] h-[2100px] aspect-square rounded-full -bottom-[2050px] -right-[800px]
+    lg:-top-[700px] lg:-right-[2020px]"></div>
+</div>
+<!-- Services -->
+<div class="bg-zinc-50 py-20 md:py-32 px-6">
+  <div class="default-container lg:px-0">
+    <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
+      <div class="border-r-primary-800 border-2 border-transparent md:col-span-2 pr-4">
+        <h2 class="uppercase text-primary-800 text-sm mb-2">Our Services</h2>
+        <p class="font-bold text-3xl md:text-4xl">
+          At
+          <span class="text-orange-600 font-extrabold uppercase">Firework</span>
+          , we offer a full suite of web services tailored to your business needs
+        </p>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 [&_*]:duration-500">
+      <div class="group">
+        <div class="[&_img]:md:h-[250px] [&_img]:h-[200px] [&_img]:object-cover group-hover:[&_img]:scale-110 overflow-hidden
+            [&_*]:transition-transform">
+          {% image eleventy.env.root + '/src/static/img/our-services-web-design.jpg', 'Custom web design', '400px' %}
+        </div>
+        <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Custom Web Design</p>
+        <p class="text-neutral-600">Beautiful, user-friendly designs tailored to your brand.</p>
+      </div>
+      <div class="group">
+        <div class="[&_img]:md:h-[250px] [&_img]:h-[200px] [&_img]:object-cover group-hover:[&_img]:scale-110 overflow-hidden
+            [&_*]:transition-transform">
+          {% image eleventy.env.root + '/src/static/img/our-services-web-development.jpg', 'Web development', '400px' %}
+        </div>
+        <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Web Development</p>
+        <p class="text-neutral-600">High-quality coding to ensure your site is fast, secure, and easy to maintain.</p>
+      </div>
+      <div class="group">
+        <div class="[&_img]:md:h-[250px] [&_img]:h-[200px] [&_img]:object-cover group-hover:[&_img]:scale-110 overflow-hidden
+            [&_*]:transition-transform">
+          {% image eleventy.env.root + '/src/static/img/our-services-web-analytics.jpg', 'Web development', '400px' %}
+        </div>
+        <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Web Analytics</p>
+        <p class="text-neutral-600">Track your site performance with modern analytic tools.</p>
+      </div>
+      <div class="group">
+        <div class="[&_img]:md:h-[250px] [&_img]:h-[200px] [&_img]:object-cover group-hover:[&_img]:scale-110 overflow-hidden
+            [&_*]:transition-transform">
+          {% image eleventy.env.root + '/src/static/img/our-services-responsive-design.jpg', 'Responsive design', '400px' %}
+        </div>
+        <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Responsive Design</p>
+        <p class="text-neutral-600">Mobile-friendly websites that look perfect on any device.</p>
+      </div>
+    </div>
+    <div class="text-center mt-16">
+      <a
+        href="/{{ lang }}/services/"
+        class="btn-primary bg-orange-600 hover:bg-orange-700 text-white hover:text-gray-200 uppercase">
+        View all services
+      </a>
+    </div>
+  </div>
+</div>
+<!-- Portfolio -->
+<div class="bg-white py-20 md:py-24 px-6">
+  <div class="default-container lg:px-0">
+    <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
+      <div class="border-r-primary-800 border-2 border-transparent md:col-span-2 md:col-start-3 pr-4">
+        <h2 class="uppercase text-right text-primary-800 text-sm mb-2">Our works</h2>
+        <p class="font-bold text-3xl md:text-4xl text-right">
+          Our recent projects
+        </p>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-10">
+      {% for project in collections.portfolio | filter("featured", true) | filter("lang", lang) | head(3) %}
+        <div>
+          <div class="relative group">
+            <div class="mb-4 h-[250px] [&_img]:h-full [&_img]:object-cover [&_img]:object-center shadow">
+              {% image eleventy.env.root + '/src' + project.data.image, project.data.imageAlt, "600px" %}
+            </div>
+            <div>
+              <p class="font-bold text-lg group-hover:underline">
+                {{ project.data.name }}
+              </p>
+            </div>
+            <a href="{{ project.url }}" class="absolute inset-0" aria-label="{{ project.data.name }}"></a>
+          </div>
+          <div class="mt-2">
+            {% if project.data.liveUrl %}
+              <a
+                href="https://{{ project.data.liveUrl }}"
+                class="text-primary-800 hover:text-primary-600 hover:underline"
+                target="_blank">
+                {{ project.data.liveUrl }}
+              </a>
+            {% elif project.data.portfolioUrl %}
+              <a href="{{ portfolioBaseUrl + project.data.portfolioUrl + "/index.html" }}" class="text-primary-800 hover:text-primary-600 hover:underline" target="_blank">
+                {{ project.data.portfolioUrl }}
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<!-- Why Choose Us -->
+<div class="py-20 md:py-32 relative overflow-hidden">
+  <div class="absolute w-[500px] left-[200px] aspect-square bg-primary-100 rounded-full blur-[200px] -z-10"></div>
+  <div class="absolute w-[300px] right-[400px] bottom-0 aspect-square bg-secondary-100 rounded-full blur-[200px] -z-10"></div>
+  <div class="default-container px-6 lg:px-0">
+    <h2 class="text-center uppercase text-primary-800 text-sm mb-2">Why Choose Us</h2>
+    <p class="font-bold text-3xl md:text-4xl text-center mb-12">
+      Why Businesses Trust
+      <span class="text-orange-600 font-extrabold uppercase">Firework</span>
+    </p>
+    <div class="grid lg:grid-cols-2 gap-6">
+      <div class="px-4 md:max-w-[80%] mx-auto flex h-full items-center">
+        <p class="text-xl md:text-2xl lg:text-3xl relative font-serif tracking-wider leading-snug text-center my-8">
+          <i class="fas fa-quote-left fa-2x text-neutral-100 absolute -top-4 md:-top-8 -left-4 md:-left-8 -z-10"></i>
+          We understand that your website is more than just an online presence — it’s the digital face of your business. Here's
+          why businesses trust us to deliver exceptional results:
+        </p>
+      </div>
+      <div>
+        <div class="flex md:max-w-[80%] mx-auto lg:max-w-full gap-6 mb-2 hover:bg-secondary-100/50 transition p-4 rounded-lg">
+          <i class="fal fa-fw fa-medal fa-2x text-secondary-600 min-w-10 mt-2"></i>
+          <div>
+            <p class="font-semibold text-xl mb-2">
+              Expert Team with Diverse Experience
+            </p>
+            <p class="text-slate-700">
+              Our team consists of seasoned web designers, developers, and digital strategists with years of experience in various
+              industries.
+              <span class="hidden md:inline">We pride ourselves on delivering high-quality websites without unnecessary delays.</span>
+            </p>
+          </div>
+        </div>
+        <div class="flex md:max-w-[80%] mx-auto lg:max-w-full gap-6 mb-2 hover:bg-secondary-100/50 transition p-4 rounded-lg">
+          <i class="fal fa-phone-laptop fa-2x fa-fw text-secondary-600 min-w-10 mt-2"></i>
+          <div>
+            <p class="font-semibold text-xl mb-2">
+              Mobile-First & SEO-Friendly Design
+            </p>
+            <p>
+              With the majority of users accessing websites via mobile devices, we prioritize creating mobile-first designs that
+              provide seamless user experiences across all devices.<span class="hidden md:inline">
+                Plus, our websites are built with search engine optimization (SEO) in mind, so you’ll be found more easily by potential
+                customers.</span>
+            </p>
+          </div>
+        </div>
+        <div class="flex md:max-w-[80%] mx-auto lg:max-w-full gap-6 mb-2 hover:bg-secondary-100/50 transition p-4 rounded-lg">
+          <i class="fal fa-user-headset fa-2x text-secondary-600 fa-fw min-w-10 mt-2"></i>
+          <div>
+            <p class="font-semibold text-xl mb-2">
+              Comprehensive Support & Maintenance
+            </p>
+            <p>
+              Building your site is just the beginning. We provide ongoing support and maintenance to ensure that your website stays
+              updated, secure, and running smoothly.<span class="hidden md:inline">
+                You can count on us to be there when you need updates, performance improvements, or even a complete refresh.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-zinc-50">
+  {% include '_includes/components/pricing.njk' %}
+</div>
+<!-- Who We Are -->
+<div class="relative">
+  <div class="max-w-4xl mx-auto py-20 px-8">
+    <h2 class="uppercase text-primary-800 text-sm mb-12 text-center">Who We Are</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-gray-600 md:col-span-2 flex flex-col justify-center">
+        <p class="mb-6 tracking-wider leading-relaxed">
+          <span class="text-3xl font-serif tracking-wider">Hi there!</span>
+          I’m James, the founder and lead developer here at
+          <span class="text-orange-600 font-bold">FIREWORK</span>. I love creating websites that not only look great but work
+            smoothly behind the scenes. I love taking care of all the technical stuff—so you don’t have to. From building custom
+            designs to handling the maintenance that keeps everything running, I’m here to make your life easier and your business
+            shine online.
+        </p>
+        <p class="hidden md:block">
+          <span class="text-lg font-semibold tracking-wider">James</span><br/>
+          <span class="text-sm text-gray-400">Owner & Developer</span>
+        </p>
+      </div>
+      <div
+        id="portrait-container"
+        class="text-center [&_img]:mx-auto [&_img]:w-3/4 md:[&_img]:w-full [&_img]:transition [&_img]:duration-500
+          [&_img]:shadow">
+        {% image eleventy.env.root + '/src/static/img/james-2.jpg', 'James', '400px' %}
+        <p class="text-center md:hidden mt-8">
+          <span class="text-lg font-semibold tracking-wider">James</span><br/>
+          <span class="text-sm text-gray-400">Owner & Developer</span>
+        </p>
+        <div class="group mt-8 relative">
+          <i class="fal fa-cog hover:rotate-180 transition duration-500 cursor-pointer peer"></i>
+          <p
+            id="spin-me-text"
+            class="absolute opacity-0 peer-hover:opacity-100 text-xs text-gray-500 w-full text-center left-0 right-0">
+            Click to spin me!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Call to action -->
+<div class="group bg-sky-950 flex flex-wrap items-center relative">
+  <div class="[&_img]:grayscale group-hover:[&_img]:grayscale-0 [&_*]:transition md:w-[40%] bg-yellow-50 self-stretch
+      [&_img]:h-full [&_img]:object-cover [&_img]:duration-500">
+    {% image eleventy.env.root + '/src/static/img/firework-1.jpg', 'Firework', '1920px' %}
+  </div>
+  <div class="pt-24 pb-28 px-8 md:px-16 lg:px-32 md:flex-1 relative">
+    <p class="uppercase text-orange-600 mb-2 text-sm md:text-base font-semibold">Ready to spark your next project?</p>
+    <p class="font-semibold text-3xl lg:text-4xl text-white mb-6">
+      Let’s Build Something<br/> Great Together!
+    </p>
+    <p class="text-white mb-12 lg:max-w-[80%]">
+      Whether you're starting from scratch or looking to revamp your current site, we are here to make it happen. Let’s
+      discuss how we can help you build the perfect website for your business.
+    </p>
+    <a
+      class="btn-primary-lg bg-orange-600 hover:bg-orange-700 text-white hover:text-gray-200 uppercase"
+      href="/contact-us/">
+      Get a free consultation
+    </a>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-64 right-4 lg:right-32 top-8 stroke-sky-900/15 absolute">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813
+          2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0
+          0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75
+          6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5
+          18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25
+          2.25 0 0 0-1.423 1.423Z"/>
+    </svg>
+  </div>
+</div>
+<script>
+  let deg = 360;
+  let grayScale = 0;
+  let times = 0;
+  const spinButton = document.querySelector('#portrait-container i');
+  const image = document.querySelector('#portrait-container img');
+  const spinMeText = document.querySelector('#spin-me-text');
+  spinButton.addEventListener('click', () => {
+    times += 1
+    deg *= 2;
+    grayScale += 10
+    image.style.transform = `rotate(${deg}deg)`;
+    image.style.filter = `grayscale(${grayScale}%)`;
+    if (times >= 5) {
+      spinMeText.innerHTML = '<a href="/ {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
+      spinMeText.classList.remove('opacity-0')
+    } else {
+      spinMeText.textContent = ('You have spun me ' + times + ' times');
+    }
+  });
+</script>
