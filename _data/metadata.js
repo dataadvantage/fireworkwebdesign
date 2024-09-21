@@ -5,7 +5,7 @@ module.exports = {
 	},
 	description: {
 		en: "We provide web design, web development, and digital marketing services for your business.",
-		th: "รับออกแบบและพัฒนาเว็บไซต์สำหรับธุรกิจ และบริการทางดิจิทัลอื่นๆ",
+		th: "รับออกแบบและพัฒนาเว็บไซต์สำหรับธุรกิจ และบริการทางดิจิทัลอื่น",
 	},
 	url: "https://www.fireworkwebdesign.com",
 	author: {
