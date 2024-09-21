@@ -2,13 +2,13 @@
   <div class="default-container px-4">
     <div class="flex justify-between items-center">
       <div class="py-4">
-        <a href="/" class="uppercase font-bold text-primary-900 tracking-widest inline-block">
+        <a href="/{{ lang }}/" class="uppercase font-bold text-primary-900 tracking-widest inline-block">
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-700">Firework</span><br/>
           <span class="font-light">Web Design</span>
           {# {% image eleventy.env.root + "/public/img/logo.png", "AVIV Studio logo", "100px, 150px", "(max-width: 400px) 100vw, 150px" %} #}
         </a>
       </div>
-      <div class="hidden sm:ml-6 sm:flex">
+      <div class="hidden sm:ml-6 lg:flex">
         {% for item in collections.all | eleventyNavigation | filter('locale', locale) %}
           <div class="relative flex px-4 py-10 group">
             <a href="{{ item.url }}" class="text-sm after:duration-300 after:inset-0 overflow-x-hidden relative after:-translate-x-[105%] hover:after:translate-x-0 after:transition after:content-[''] after:absolute after:border-b-2 after:border-primary-900 inline-flex items-center px-1 font-medium {% if page.url == item.url %}text-primary-900 after:translate-x-0{% else %}text-neutral-400{% endif %} hover:text-primary-900 transition">{{ item.key | upper }}</a>
@@ -40,7 +40,7 @@
         </div>
       </div>
       <div
-        class="-mr-2 flex items-center sm:hidden">
+        class="-mr-2 flex items-center lg:hidden">
         <!-- Mobile menu button -->
         <button
           type="button"
@@ -83,7 +83,7 @@
     </div>
   </div>
   <!-- Mobile menu, show/hide based on menu state. -->
-  <div class="sm:hidden" id="mobile-menu" x-show="open" x-cloak x-transition>
+  <div class="lg:hidden" id="mobile-menu" x-show="open" x-cloak x-transition>
     <div class="space-y-1 pb-3 pt-2 px-4">
       {% for item in collections.all | eleventyNavigation | filter('locale', locale) %}
         <div x-data="{subMenuOpen: false}">
