@@ -1,4 +1,4 @@
-<nav class="shadow font-fahkwang font-extralight" x-data="{open: false}">
+<nav class="shadow font-fahkwang font-extralight {% if lang == 'th' %}font-noto{% endif %}" x-data="{open: false}">
   <div class="default-container px-4">
     <div class="flex justify-between items-center">
       <div class="py-4">
@@ -111,7 +111,11 @@
             href="#"
             class="uppercase flex flex-1 text-base font-medium {% if page.url == item.url %}text-primary-900{% else
               %}text-neutral-400{% endif %} hover:text-primary-900">
-            Languages
+            {% if lang == 'en' %}
+              Languages
+            {% elif lang == 'th' %}
+              เลือกภาษา
+            {% endif %}
           </a>
           <span class="text-primary-800 px-2 cursor-pointer" :class="subMenuOpen && 'rotate-180'">
             &#9660;</span>
