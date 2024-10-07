@@ -98,7 +98,7 @@ eleventyNavigation:
         </p>
       </div>
     </div>
-    <div class="grid md:grid-cols-3 gap-10">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
       {% for project in collections.portfolio | filter("featured", true) | filter("lang", lang) | head(3) %}
         <div>
           <div class="relative group">
@@ -289,7 +289,7 @@ eleventyNavigation:
     image.style.transform = `rotate(${deg}deg)`;
     image.style.filter = `grayscale(${grayScale}%)`;
     if (times >= 5) {
-      spinMeText.innerHTML = '<a href="/ {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
+      spinMeText.innerHTML = '<a href="/    {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
       spinMeText.classList.remove('opacity-0')
     } else {
       spinMeText.textContent = ('You have spun me ' + times + ' times');

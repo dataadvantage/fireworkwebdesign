@@ -7,6 +7,7 @@ imageAlt: Fresh Code Clinic
 liveUrl: www.freshcodeclinic.com
 portfolioUrl: www.freshcodeclinic.com
 featured: true
+alert: เนื้อหาในหน้านี้รองรับเฉพาะภาษาอังกฤษ
 ---
 
 **Project Overview:**

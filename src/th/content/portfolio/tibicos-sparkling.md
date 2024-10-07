@@ -12,6 +12,7 @@ images:
     alt: Tibicos Sparkling homepage
   - src: /static/img/tibicos-home-2.png
     alt: Tibicos Sparkling homepage
+alert: เนื้อหาในหน้านี้รองรับเฉพาะภาษาอังกฤษ
 ---
 
 **Project Overview:**

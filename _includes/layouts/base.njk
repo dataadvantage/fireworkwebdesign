@@ -54,6 +54,13 @@
 
     </head>
     <body>
+        {% if alert %}
+        <div class="bg-yellow-200 py-2 text-gray-700">
+            <div class="default-container px-4">
+                {{ alert | safe }}
+            </div>
+        </div>
+        {% endif %}
         {% include 'navigation.njk' %}
         <main id="skip">
             {{ content | safe }}

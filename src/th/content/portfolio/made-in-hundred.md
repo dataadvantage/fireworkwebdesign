@@ -7,6 +7,7 @@ imageAlt: Made in Hundred
 liveUrl: www.madeinhundred.com
 portfolioUrl: www.madeinhundred.com
 featured: true
+alert: เนื้อหาในหน้านี้รองรับเฉพาะภาษาอังกฤษ
 ---
 
 **Project Overview:**
