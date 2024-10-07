@@ -52,11 +52,15 @@
             gtag('config', 'G-Q31QHX2E1K');
         </script>
 
+        {# Fonts #}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         {% if alert %}
         <div class="bg-yellow-200 py-2 text-gray-700">
-            <div class="default-container px-4">
+            <div class="default-container px-4 font-noto">
                 {{ alert | safe }}
             </div>
         </div>

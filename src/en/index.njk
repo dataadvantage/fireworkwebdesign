@@ -169,7 +169,7 @@ eleventyNavigation:
             <p class="font-semibold text-xl mb-2">
               Mobile-First & SEO-Friendly Design
             </p>
-            <p>
+            <p class="text-slate-700">
               With the majority of users accessing websites via mobile devices, we prioritize creating mobile-first designs that
               provide seamless user experiences across all devices.<span class="hidden md:inline">
                 Plus, our websites are built with search engine optimization (SEO) in mind, so you’ll be found more easily by potential
@@ -183,7 +183,7 @@ eleventyNavigation:
             <p class="font-semibold text-xl mb-2">
               Comprehensive Support & Maintenance
             </p>
-            <p>
+            <p class="text-slate-700">
               Building your site is just the beginning. We provide ongoing support and maintenance to ensure that your website stays
               updated, secure, and running smoothly.<span class="hidden md:inline">
                 You can count on us to be there when you need updates, performance improvements, or even a complete refresh.</span>
@@ -289,7 +289,7 @@ eleventyNavigation:
     image.style.transform = `rotate(${deg}deg)`;
     image.style.filter = `grayscale(${grayScale}%)`;
     if (times >= 5) {
-      spinMeText.innerHTML = '<a href="/  {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
+      spinMeText.innerHTML = '<a href="/{{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
       spinMeText.classList.remove('opacity-0')
     } else {
       spinMeText.textContent = ('You have spun me ' + times + ' times');

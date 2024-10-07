@@ -1,8 +1,12 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ["src/**/*.{html,md,njk,js}", "_includes/**/*.{html,md,njk,js}"],
 	theme: {
 		extend: {
+			fontFamily: {
+				noto: ['"Noto Sans Thai"', ...defaultTheme.fontFamily.sans],
+			},
 			colors: {
 				primary: {
 					900: "#003E6B",

@@ -3,43 +3,51 @@
     <div class="default-container px-6 lg:px-0">
         <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
             <div class="border-r-primary-800 border-2 border-transparent md:col-span-3 lg:col-span-2 pr-4">
-                <h2 class="uppercase text-primary-800 text-sm mb-2">Our Packages</h2>
-                <p class="font-bold text-3xl md:text-4xl">
-                    Choose from our packages to suit your business needs
-                </p>
+                {% if lang == 'en' %}
+                    <h2 class="uppercase text-primary-800 text-sm mb-2">Our Packages</h2>
+                    <p class="font-bold text-3xl md:text-4xl">
+                        Choose from our packages to suit your business needs
+                    </p>
+                {% elif lang == 'th' %}
+                    <h2 class="uppercase text-primary-800 text-sm mb-2 font-noto">แพ็คแกจราคา</h2>
+                    <p class="text-3xl md:text-4xl font-medium font-noto">
+                        เลือกแพ็คเกจที่เหมาะกับธุรกิจของคุณ
+                    </p>
+                {% endif %}
             </div>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-0 [&_*]:duration-500 items-center">
             <div class="md:self-stretch lg:self-center">
-                <div class="bg-zinc-200/50 px-6 py-6 shadow h-full">
+                <div class="bg-zinc-200/50 px-6 py-6 shadow h-full font-noto">
                     <p class="text-gray-500 mb-4">
                         <i class="fal fa-user mr-1"></i>
-                        Personal</p>
+                        Personal
+                    </p>
                     <p class="text-gray-500 mb-6 text-sm">
                         <span class="text-5xl font-bold text-primary-800 mr-2">12,000</span>
                         THB
                     </p>
                     <p class="mb-4">
-                        Single page website for personal use or portfolio, complete with custom design and domain.
+                        เว็บไซต์หนึ่งหน้าสำหรับการใช้ส่วนตัวหรือพอร์ตโฟลิโอ พร้อมกับการออกแบบและโดเมนที่กำหนดเอง
                     </p>
                     <ul>
                         <li class="flex">
                             <i class="fal fa-check-circle text-green-600 mr-2 mt-1"></i>
-                            <span>Custom web design with 2 revisions</span>
+                            <span>ออกแบบเว็บไซต์พร้อมแก้ไขได้ 2 ครั้ง</span>
                         </li>
                         <li class="flex">
                             <i class="mt-1 fal fa-check-circle text-green-600 mr-2"></i>
-                            <span>Free domain</span>
+                            <span>ฟรีค่าจดโดเมน</span>
                         </li>
                         <li class="flex">
                             <i class="mt-1 fal fa-check-circle text-green-600 mr-2"></i>
-                            <span>Google Analytics & Search Console</span>
+                            <span>พร้อมติดตั้ง Google Analytics และ Search Console</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="bg-primary-900 px-6 py-6 shadow relative">
-                <span class="absolute top-3 right-3 text-xs bg-red-600 px-2 text-white">Most Popular</span>
+            <div class="bg-primary-900 px-6 py-6 shadow relative font-noto">
+                <span class="absolute top-3 right-3 text-xs bg-red-600 px-2 text-white">แพ็คเกจแนะนำ</span>
                 <p class="text-gray-300 mb-4">
                     <i class="fal fa-building mr-1"></i>
                     Business
@@ -49,66 +57,66 @@
                     THB
                 </p>
                 <p class="mb-4 text-gray-200">
-                    5-page website for small businesses or startups, custom business email and Google services integration.
+                    เว็บไซต์ 5 หน้าสำหรับธุรกิจขนาดเล็กหรือสตาร์ทอัพ พร้อมกับอีเมลธุรกิจและการจัดการระบบ Google Business Profile
                 </p>
                 <ul>
                     <li class="flex text-gray-200">
                         <i class="fal fa-check-circle text-green-400 mr-2 mt-1"></i>
-                        <span>Custom web design with 2 revisions</span>
+                        <span>ออกแบบเว็บไซต์พร้อมแก้ไขได้ 2 ครั้ง</span>
                     </li>
                     <li class="flex text-gray-200">
                         <i class="mt-1 fal fa-check-circle text-green-400 mr-2"></i>
-                        <span>Free domain</span>
+                        <span>ฟรีค่าโดเมน</span>
                     </li>
                     <li class="flex text-gray-200">
                         <i class="mt-1 fal fa-check-circle text-green-400 mr-2"></i>
-                        <span>Content update & maintainance</span>
+                        <span>การจัดการแก้ไขและเพิ่มเนื้อหาบนเว็บไซต์</span>
                     </li>
                     <li class="flex text-gray-200">
                         <i class="mt-1 fal fa-check-circle text-green-400 mr-2"></i>
-                        <span>Custom business email</span>
+                        <span>จัดการระบบอีเมลเฉพาะของธุรกิจ</span>
                     </li>
                     <li class="flex text-gray-200">
                         <i class="mt-1 fal fa-check-circle text-green-400 mr-2"></i>
-                        <span>Google Analytics & Search Console</span>
+                        <span>ติดตั้ง Google Analytics และ Search Console</span>
                     </li>
                     <li class="flex text-gray-200">
                         <i class="mt-1 fal fa-check-circle text-green-400 mr-2"></i>
-                        <span>Google Business Profile</span>
+                        <span>การจัดการ Google Business Profile</span>
                     </li>
                 </ul>
             </div>
             <div class="md:col-span-2 lg:col-span-1">
-                <div class="bg-zinc-200/50 px-6 py-6 shadow">
+                <div class="bg-zinc-200/50 px-6 py-6 shadow font-noto">
                     <p class="text-gray-500 mb-4">
                         <i class="fal fa-starship mr-1"></i>
                         Enterprise</p>
                     <p class="text-primary-800 mb-6 text-3xl font-bold">
-                        Custom service for your business
+                        การพัฒนาเฉพาะสำหรับธุรกิจ
                     </p>
                     <p class="mb-4">
-                        Software development, e-commerce, or other complex projects that require custom solutions.
+                        พัฒนาซอฟท์แวร์ ทำระบบ e-commerce หรือโปรเจคที่ซับซ้อน ที่ต้องการนักพัฒนาโดยเฉพาะ
                     </p>
                     <ul>
                         <li class="flex">
                             <i class="fal fa-check-circle text-green-600 mr-2 mt-1"></i>
-                            <span>E-Commerce website</span>
+                            <span>เว็บไซต์ E-Commerce</span>
                         </li>
                         <li class="flex">
                             <i class="mt-1 fal fa-check-circle text-green-600 mr-2"></i>
-                            <span>Custom software development</span>
+                            <span>พัฒนาซอฟท์แวร์เฉพาะทาง</span>
                         </li>
                         <li class="flex">
                             <i class="mt-1 fal fa-check-circle text-green-600 mr-2"></i>
-                            <span>Software engineer solution</span>
+                            <span>ทีมงานนักพัฒนาโดยเฉพาะ</span>
                         </li>
                         <li class="flex">
                             <i class="mt-1 fal fa-check-circle text-green-600 mr-2"></i>
-                            <span>Brand consultation</span>
+                            <span>ปรึกษาด้านการตลาดและการทำแบรนด์ดิ้ง</span>
                         </li>
                         <li class="flex">
                             <i class="mt-1 fal fa-check-circle text-green-600 mr-2"></i>
-                            <span>Digital marketing & graphics design</span>
+                            <span>วางแผลการตลาด และงานกราฟฟิกดีไซน์</span>
                         </li>
                     </ul>
                 </div>

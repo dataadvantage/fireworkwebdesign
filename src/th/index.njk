@@ -6,19 +6,19 @@ eleventyNavigation:
 ---
 
 <!-- Hero -->
-<div class="bg-gradient-to-br from-primary-800 to-primary-500 from-40% overflow-hidden relative">
+<div class="bg-gradient-to-br from-primary-800 to-primary-500 from-40% overflow-hidden relative font-noto">
   <div class="default-container py-40 md:py-56 px-6">
-    <h1 class="text-center font-sans text-4xl md:text-6xl font-bold mb-8 text-white">
-      Modern Business <br/>Web Design & Development
+    <h1 class="text-center font-noto text-4xl md:text-6xl mb-8 text-white">
+      พัฒนาเว็บไซต์ด้วยทีมงานมืออาชีพ
     </h1>
     <p class="text-center text-lg md:w-1/2 mx-auto mb-12 text-zinc-100">
-      We hand-craft web designs and development that help businesses like yours stand out.
+      เราออกแบบและพัฒนาเว็บไซต์ พร้อมติดตั้งระบบการวิเคราะห์ข้อมูลเพื่อให้ธุรกิจของคุณเติบโตได้อย่างมีประสิทธิภาพ
     </p>
     <div class="text-center">
       <a
-        class="btn-primary-lg bg-orange-600 hover:bg-orange-700 text-white hover:text-gray-200 uppercase"
+        class="btn-primary-lg bg-orange-600 hover:bg-orange-700 text-white hover:text-gray-200 uppercase font-normal"
         href="/{{ lang }}/contact-us/">
-        Consult for free
+        ปรึกษาฟรี
       </a>
     </div>
   </div>
@@ -36,11 +36,11 @@ eleventyNavigation:
   <div class="default-container lg:px-0">
     <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
       <div class="border-r-primary-800 border-2 border-transparent md:col-span-2 pr-4">
-        <h2 class="uppercase text-primary-800 text-sm mb-2">Our Services</h2>
-        <p class="font-bold text-3xl md:text-4xl">
-          At
+        <h2 class="uppercase text-primary-800 text-sm mb-2 font-noto">บริการของเรา</h2>
+        <p class="text-3xl md:text-4xl font-noto font-medium">
+          ที่
           <span class="text-orange-600 font-extrabold uppercase">Firework</span>
-          , we offer a full suite of web services tailored to your business needs
+          เรารับออกแบบและพัฒนาเว็บไซต์ให้ตรงกับความต้องการของธุรกิจของคุณ
         </p>
       </div>
     </div>
@@ -50,8 +50,10 @@ eleventyNavigation:
             [&_*]:transition-transform">
           {% image eleventy.env.root + '/src/static/img/our-services-web-design.jpg', 'Custom web design', '400px' %}
         </div>
-        <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Custom Web Design</p>
-        <p class="text-neutral-600">Beautiful, user-friendly designs tailored to your brand.</p>
+        <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Web Design</p>
+        <p class="text-neutral-600 font-noto">
+          ออกแบบเว็บไซต์ที่สวยงามและใช้งานง่าย ตรงตามแบรนด์ของคุณ
+        </p>
       </div>
       <div class="group">
         <div class="[&_img]:md:h-[250px] [&_img]:h-[200px] [&_img]:object-cover group-hover:[&_img]:scale-110 overflow-hidden
@@ -59,7 +61,9 @@ eleventyNavigation:
           {% image eleventy.env.root + '/src/static/img/our-services-web-development.jpg', 'Web development', '400px' %}
         </div>
         <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Web Development</p>
-        <p class="text-neutral-600">High-quality coding to ensure your site is fast, secure, and easy to maintain.</p>
+        <p class="text-neutral-600 font-noto">
+          เขียนโค้ดคุณภาพสูงเพื่อให้เว็บไซต์ของคุณเร็ว ปลอดภัย และง่ายต่อการจัดการ
+        </p>
       </div>
       <div class="group">
         <div class="[&_img]:md:h-[250px] [&_img]:h-[200px] [&_img]:object-cover group-hover:[&_img]:scale-110 overflow-hidden
@@ -67,7 +71,9 @@ eleventyNavigation:
           {% image eleventy.env.root + '/src/static/img/our-services-web-analytics.jpg', 'Web development', '400px' %}
         </div>
         <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Web Analytics</p>
-        <p class="text-neutral-600">Track your site performance with modern analytic tools.</p>
+        <p class="text-neutral-600 font-noto">
+          ติดตามประสิทธิภาพของเว็บไซต์ของคุณด้วยเครื่องมือวิเคราะห์ทันสมัย
+        </p>
       </div>
       <div class="group">
         <div class="[&_img]:md:h-[250px] [&_img]:h-[200px] [&_img]:object-cover group-hover:[&_img]:scale-110 overflow-hidden
@@ -75,14 +81,16 @@ eleventyNavigation:
           {% image eleventy.env.root + '/src/static/img/our-services-responsive-design.jpg', 'Responsive design', '400px' %}
         </div>
         <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Responsive Design</p>
-        <p class="text-neutral-600">Mobile-friendly websites that look perfect on any device.</p>
+        <p class="text-neutral-600 font-noto">
+          พัฒนาเว็บไซต์ให้ลูกค้าสามารถเข้าถึงได้ง่ายทบนทุกอุปกรณ์
+        </p>
       </div>
     </div>
     <div class="text-center mt-16">
       <a
         href="/{{ lang }}/services/"
-        class="btn-primary bg-orange-600 hover:bg-orange-700 text-white hover:text-gray-200 uppercase">
-        View all services
+        class="btn-primary bg-orange-600 hover:bg-orange-700 text-white hover:text-gray-200 uppercase font-noto font-normal">
+        ดูรายละเอียดบริการของเรา
       </a>
     </div>
   </div>
@@ -92,9 +100,9 @@ eleventyNavigation:
   <div class="default-container lg:px-0">
     <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
       <div class="border-r-primary-800 border-2 border-transparent md:col-span-2 md:col-start-3 pr-4">
-        <h2 class="uppercase text-right text-primary-800 text-sm mb-2">Our works</h2>
-        <p class="font-bold text-3xl md:text-4xl text-right">
-          Our recent projects
+        <h2 class="uppercase text-right text-primary-800 text-sm mb-2 font-noto">ผลงานของเรา</h2>
+        <p class="text-3xl md:text-4xl text-right font-noto font-medium">
+          ชมผลงานล่าสุดของเรา
         </p>
       </div>
     </div>
@@ -136,57 +144,56 @@ eleventyNavigation:
   <div class="absolute w-[500px] left-[200px] aspect-square bg-primary-100 rounded-full blur-[200px] -z-10"></div>
   <div class="absolute w-[300px] right-[400px] bottom-0 aspect-square bg-secondary-100 rounded-full blur-[200px] -z-10"></div>
   <div class="default-container px-6 lg:px-0">
-    <h2 class="text-center uppercase text-primary-800 text-sm mb-2">Why Choose Us</h2>
-    <p class="font-bold text-3xl md:text-4xl text-center mb-12">
-      Why Businesses Trust
+    <h2 class="text-center uppercase text-primary-800 text-sm mb-2 font-noto">ความเชี่ยวชาญ</h2>
+    <p class="text-3xl md:text-4xl text-center mb-12 font-noto font-medium">
+      สาเหตุที่ลูกค้าเลือกใช้บริการของ
       <span class="text-orange-600 font-extrabold uppercase">Firework</span>
     </p>
     <div class="grid lg:grid-cols-2 gap-6">
       <div class="px-4 md:max-w-[80%] mx-auto flex h-full items-center">
         <p class="text-xl md:text-2xl lg:text-3xl relative font-serif tracking-wider leading-snug text-center my-8">
           <i class="fas fa-quote-left fa-2x text-neutral-100 absolute -top-4 md:-top-8 -left-4 md:-left-8 -z-10"></i>
-          We understand that your website is more than just an online presence — it’s the digital face of your business. Here's
-          why businesses trust us to deliver exceptional results:
+          เราเข้าใจว่าเว็บไซต์ไม่ใช่แค่การเข้าถึงออนไลน์ แค่คือเบื้องหน้าของธุรกิจของคุณ
         </p>
       </div>
       <div>
         <div class="flex md:max-w-[80%] mx-auto lg:max-w-full gap-6 mb-2 hover:bg-secondary-100/50 transition p-4 rounded-lg">
           <i class="fal fa-fw fa-medal fa-2x text-secondary-600 min-w-10 mt-2"></i>
           <div>
-            <p class="font-semibold text-xl mb-2">
-              Expert Team with Diverse Experience
+            <p class="text-xl mb-2">
+              เรามีทีมงานที่มีประสบการณ์และความเชี่ยวชาญ
             </p>
-            <p class="text-slate-700">
-              Our team consists of seasoned web designers, developers, and digital strategists with years of experience in various
-              industries.
-              <span class="hidden md:inline">We pride ourselves on delivering high-quality websites without unnecessary delays.</span>
+            <p class="text-slate-700 font-noto">
+              ทีมงานของเราประกอบด้วยนักออกแบบเว็บไซต์ นักพัฒนาเว็บ และผู้กำกับดิจิทัลที่มีประสบการณ์หลายปีในอุตสาหกรรมต่างๆ
+              <span class="hidden md:inline">
+                เรามีความพร้อมที่จะสร้างเว็บไซต์ที่สวยงามและมีประสิทธิภาพให้กับธุรกิจของคุณ
+              </span>
             </p>
           </div>
         </div>
         <div class="flex md:max-w-[80%] mx-auto lg:max-w-full gap-6 mb-2 hover:bg-secondary-100/50 transition p-4 rounded-lg">
           <i class="fal fa-phone-laptop fa-2x fa-fw text-secondary-600 min-w-10 mt-2"></i>
           <div>
-            <p class="font-semibold text-xl mb-2">
-              Mobile-First & SEO-Friendly Design
+            <p class="text-xl mb-2">
+              Mobile-First & SEO-Friendly
             </p>
-            <p>
-              With the majority of users accessing websites via mobile devices, we prioritize creating mobile-first designs that
-              provide seamless user experiences across all devices.<span class="hidden md:inline">
-                Plus, our websites are built with search engine optimization (SEO) in mind, so you’ll be found more easily by potential
-                customers.</span>
+            <p class="text-slate-700 font-noto">
+              ด้วยการเข้าถึงเว็บไซต์ผ่านอุปกรณ์มือถือที่สูงขึ้น ทำให้เราให้ความสำคัญกับการสร้างเว็บไซต์ที่เข้าถึงได้ง่าย
+              <span class="hidden md:inline">
+                และเรายังให้ความสำคัญกับ SEO ทำให้เว็บไซต์ของคุณมีโอกาสที่จะถูกค้นหาได้ง่ายขึ้น
+              </span>
             </p>
           </div>
         </div>
         <div class="flex md:max-w-[80%] mx-auto lg:max-w-full gap-6 mb-2 hover:bg-secondary-100/50 transition p-4 rounded-lg">
           <i class="fal fa-user-headset fa-2x text-secondary-600 fa-fw min-w-10 mt-2"></i>
           <div>
-            <p class="font-semibold text-xl mb-2">
-              Comprehensive Support & Maintenance
+            <p class="text-xl mb-2">
+              การดูแลหลังการขายอย่างต่อเนื่อง และครบวงจร
             </p>
-            <p>
-              Building your site is just the beginning. We provide ongoing support and maintenance to ensure that your website stays
-              updated, secure, and running smoothly.<span class="hidden md:inline">
-                You can count on us to be there when you need updates, performance improvements, or even a complete refresh.</span>
+            <p class="font-noto text-slate-700">
+              การสร้างเว็บไซต์เพียงเพื่อเริ่มต้นเท่านั้น ทีมงานของเรายังมีการดูแลและบำรุงรักษาเว็บไซต์ของคุณอย่างต่อเนื่อง
+              ให้เว็บไซต์ของคุณปลอดภัย และทำงานได้อย่างไม่สะดุด
             </p>
           </div>
         </div>
@@ -243,18 +250,17 @@ eleventyNavigation:
     {% image eleventy.env.root + '/src/static/img/firework-1.jpg', 'Firework', '1920px' %}
   </div>
   <div class="pt-24 pb-28 px-8 md:px-16 lg:px-32 md:flex-1 relative">
-    <p class="uppercase text-orange-600 mb-2 text-sm md:text-base font-semibold">Ready to spark your next project?</p>
-    <p class="font-semibold text-3xl lg:text-4xl text-white mb-6">
-      Let’s Build Something<br/> Great Together!
+    <p class="uppercase text-orange-600 mb-2 text-sm md:text-base font-noto">ยังมีข้อสงสัย</p>
+    <p class="font-semibold text-3xl lg:text-4xl text-white mb-6 font-noto">
+      เราพร้อมให้คำปรึกษา<br/>โดยไม่มีค่าใช้จ่าย
     </p>
-    <p class="text-white mb-12 lg:max-w-[80%]">
-      Whether you're starting from scratch or looking to revamp your current site, we are here to make it happen. Let’s
-      discuss how we can help you build the perfect website for your business.
+    <p class="text-white mb-12 lg:max-w-[80%] font-noto">
+      ไม่ว่าคุณกำลังมีไอเดียใหม่ๆ หรือต้องการปรับปรุงเว็บไซต์ที่มีอยู่แล้ว เราพร้อมที่จะช่วยคุณเสมอ
     </p>
     <a
-      class="btn-primary-lg bg-orange-600 hover:bg-orange-700 text-white hover:text-gray-200 uppercase"
+      class="btn-primary-lg bg-orange-600 hover:bg-orange-700 text-white hover:text-gray-200 uppercase font-noto font-normal"
       href="/contact-us/">
-      Get a free consultation
+      รับคำปรึกษาฟรี
     </a>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -289,7 +295,7 @@ eleventyNavigation:
     image.style.transform = `rotate(${deg}deg)`;
     image.style.filter = `grayscale(${grayScale}%)`;
     if (times >= 5) {
-      spinMeText.innerHTML = '<a href="/    {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
+      spinMeText.innerHTML = '<a href="/{{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
       spinMeText.classList.remove('opacity-0')
     } else {
       spinMeText.textContent = ('You have spun me ' + times + ' times');
