@@ -28,26 +28,54 @@
                         THB
                     </p>
                     <p class="mb-4">
-                        เว็บไซต์หนึ่งหน้าสำหรับการใช้ส่วนตัวหรือพอร์ตโฟลิโอ พร้อมกับการออกแบบและโดเมนที่กำหนดเอง
+                        {% if lang == 'th' %}
+                            เว็บไซต์หนึ่งหน้าสำหรับการใช้ส่วนตัวหรือพอร์ตโฟลิโอ พร้อมกับการออกแบบและโดเมนที่กำหนดเอง
+                        {% else %}
+                            Single page website for personal use or portfolio, complete with custom design and domain.
+                        {% endif %}
                     </p>
                     <ul>
                         <li class="flex">
                             <i class="fal fa-check-circle text-green-600 mr-2 mt-1"></i>
-                            <span>ออกแบบเว็บไซต์พร้อมแก้ไขได้ 2 ครั้ง</span>
+                            <span>
+                                {% if lang == 'th' %}
+                                    ออกแบบเว็บไซต์พร้อมแก้ไขได้ 2 ครั้ง
+                                {% else %}
+                                    Custom web design with 2 revisions
+                                {% endif %}
+                            </span>
                         </li>
                         <li class="flex">
                             <i class="mt-1 fal fa-check-circle text-green-600 mr-2"></i>
-                            <span>ฟรีค่าจดโดเมน</span>
+                            <span>
+                                {% if lang == 'th' %}
+                                    ฟรีค่าจดโดเมน
+                                {% else %}
+                                    Free domain
+                                {% endif %}
+                            </span>
                         </li>
                         <li class="flex">
                             <i class="mt-1 fal fa-check-circle text-green-600 mr-2"></i>
-                            <span>พร้อมติดตั้ง Google Analytics และ Search Console</span>
+                            <span>
+                                {% if lang == 'th' %}
+                                    พร้อมติดตั้ง Google Analytics และ Search Console
+                                {% else %}
+                                    Google Analytics & Search Console
+                                {% endif %}
+                            </span>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="bg-primary-900 px-6 py-6 shadow relative font-noto">
-                <span class="absolute top-3 right-3 text-xs bg-red-600 px-2 text-white">แพ็คเกจแนะนำ</span>
+                <span class="absolute top-3 right-3 text-xs bg-red-600 px-2 text-white">
+                    {% if lang == 'th' %}
+                        แพ็คเกจแนะนำ
+                    {% else %}
+                        Most Popular
+                    {% endif %}
+                </span>
                 <p class="text-gray-300 mb-4">
                     <i class="fal fa-building mr-1"></i>
                     Business
@@ -57,32 +85,72 @@
                     THB
                 </p>
                 <p class="mb-4 text-gray-200">
-                    เว็บไซต์ 5 หน้าสำหรับธุรกิจขนาดเล็กหรือสตาร์ทอัพ พร้อมกับอีเมลธุรกิจและการจัดการระบบ Google Business Profile
+                    {% if lang == 'th'%}
+                        เว็บไซต์ 5 หน้าสำหรับธุรกิจขนาดเล็กหรือสตาร์ทอัพ พร้อมกับอีเมลธุรกิจและการจัดการระบบ Google Business Profile
+                    {% else %}
+                        5-page website for small businesses or startups, custom business email and Google services integration.
+                    {% endif %}
                 </p>
                 <ul>
                     <li class="flex text-gray-200">
                         <i class="fal fa-check-circle text-green-400 mr-2 mt-1"></i>
-                        <span>ออกแบบเว็บไซต์พร้อมแก้ไขได้ 2 ครั้ง</span>
+                        <span>
+                            {% if lang == 'th'%}
+                                ออกแบบเว็บไซต์พร้อมแก้ไขได้ 2 ครั้ง
+                            {% else %}
+                                Custom web design with 2 revisions
+                            {% endif %}
+                        </span>
                     </li>
                     <li class="flex text-gray-200">
                         <i class="mt-1 fal fa-check-circle text-green-400 mr-2"></i>
-                        <span>ฟรีค่าโดเมน</span>
+                        <span>
+                            {% if lang == 'th'%}
+                                ฟรีค่าโดเมน
+                            {% else %}
+                                Free domain
+                            {% endif %}
+                        </span>
                     </li>
                     <li class="flex text-gray-200">
                         <i class="mt-1 fal fa-check-circle text-green-400 mr-2"></i>
-                        <span>การจัดการแก้ไขและเพิ่มเนื้อหาบนเว็บไซต์</span>
+                        <span>
+                            {% if lang == 'th'%}
+                                การจัดการแก้ไขและเพิ่มเนื้อหาบนเว็บไซต์
+                            {% else %}
+                                Content update & maintainance
+                            {% endif %}
+                        </span>
                     </li>
                     <li class="flex text-gray-200">
                         <i class="mt-1 fal fa-check-circle text-green-400 mr-2"></i>
-                        <span>จัดการระบบอีเมลเฉพาะของธุรกิจ</span>
+                        <span>
+                            {% if lang == 'th '%}
+                                จัดการระบบอีเมลเฉพาะของธุรกิจ
+                            {% else %}
+                                Custom business email
+                            {% endif %}
+                        </span>
                     </li>
                     <li class="flex text-gray-200">
                         <i class="mt-1 fal fa-check-circle text-green-400 mr-2"></i>
-                        <span>ติดตั้ง Google Analytics และ Search Console</span>
+                        <span>
+                            {% if lang == 'th'%}
+                                ติดตั้ง Google Analytics และ Search Console
+                            {% else %}
+                                Google Analytics & Search Console<
+                            {% endif %}
+                        </span>
                     </li>
                     <li class="flex text-gray-200">
                         <i class="mt-1 fal fa-check-circle text-green-400 mr-2"></i>
-                        <span>การจัดการ Google Business Profile</span>
+                        <span>
+                            {% if lang == 'th'%}
+                                การจัดการ Google Business Profile
+                            {% else %}
+                                Google Business Profile
+                            {% endif %}
+                        </span>
                     </li>
                 </ul>
             </div>
@@ -92,31 +160,69 @@
                         <i class="fal fa-starship mr-1"></i>
                         Enterprise</p>
                     <p class="text-primary-800 mb-6 text-3xl font-bold">
-                        การพัฒนาเฉพาะสำหรับธุรกิจ
+                        {% if lang == 'th'%}
+                            การพัฒนาเฉพาะสำหรับธุรกิจ
+                        {% else %}
+                            Custom service for your business
+                        {% endif %}
                     </p>
                     <p class="mb-4">
-                        พัฒนาซอฟท์แวร์ ทำระบบ e-commerce หรือโปรเจคที่ซับซ้อน ที่ต้องการนักพัฒนาโดยเฉพาะ
+                        {% if lang == 'th'%}
+                            พัฒนาซอฟท์แวร์ ทำระบบ e-commerce หรือโปรเจคที่ซับซ้อน ที่ต้องการนักพัฒนาโดยเฉพาะ
+                        {% else %}
+                            Software development, e-commerce, or other complex projects that require custom solutions.
+                        {% endif %}
                     </p>
                     <ul>
                         <li class="flex">
                             <i class="fal fa-check-circle text-green-600 mr-2 mt-1"></i>
-                            <span>เว็บไซต์ E-Commerce</span>
+                            <span>
+                                {% if lang == 'th'%}
+                                    เว็บไซต์ E-Commerce
+                                {% else %}
+                                    E-Commerce website
+                                {% endif %}
+                            </span>
                         </li>
                         <li class="flex">
                             <i class="mt-1 fal fa-check-circle text-green-600 mr-2"></i>
-                            <span>พัฒนาซอฟท์แวร์เฉพาะทาง</span>
+                            <span>
+                                {% if lang == 'th'%}
+                                    พัฒนาซอฟท์แวร์เฉพาะทาง
+                                {% else %}
+                                    Custom software development
+                                {% endif %}
+                            </span>
                         </li>
                         <li class="flex">
                             <i class="mt-1 fal fa-check-circle text-green-600 mr-2"></i>
-                            <span>ทีมงานนักพัฒนาโดยเฉพาะ</span>
+                            <span>
+                                {% if lang == 'th'%}
+                                    ทีมงานนักพัฒนาโดยเฉพาะ
+                                {% else %}
+                                    Software engineer solution
+                                {% endif %}
+                            </span>
                         </li>
                         <li class="flex">
                             <i class="mt-1 fal fa-check-circle text-green-600 mr-2"></i>
-                            <span>ปรึกษาด้านการตลาดและการทำแบรนด์ดิ้ง</span>
+                            <span>
+                                {% if lang == 'th' %}
+                                    ปรึกษาด้านการตลาดและการทำแบรนด์ดิ้ง
+                                {% else %}
+                                    Brand consultation
+                                {% endif %}
+                            </span>
                         </li>
                         <li class="flex">
                             <i class="mt-1 fal fa-check-circle text-green-600 mr-2"></i>
-                            <span>วางแผลการตลาด และงานกราฟฟิกดีไซน์</span>
+                            <span>
+                                {% if lang == 'th'%}
+                                    วางแผลการตลาด และงานกราฟฟิกดีไซน์
+                                {% else %}
+                                    Digital marketing & graphics design
+                                {% endif %}
+                            </span>
                         </li>
                     </ul>
                 </div>
