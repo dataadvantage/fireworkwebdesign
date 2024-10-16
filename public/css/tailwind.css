@@ -39,16 +39,6 @@
   position: relative;
 }
 
-.cs-text {
-  font-size: var(--bodyFontSize);
-  line-height: 1.5em;
-  text-align: inherit;
-  width: 100%;
-  max-width: 40.625rem;
-  margin: 0;
-  color: var(--bodyTextColor);
-}
-
 /* ! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com */
 
 /*
@@ -2179,6 +2169,11 @@ h4 {
   color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
+.text-blue-700 {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
 .text-gray-200 {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
@@ -2320,6 +2315,11 @@ h4 {
 .text-zinc-900 {
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
+}
+
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .underline {
