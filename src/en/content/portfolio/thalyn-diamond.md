@@ -23,17 +23,17 @@ The website was built to showcase their exquisite collection of lab-grown diamon
 
 {% image eleventy.env.root + "/src/static/img/thalyn-diamond-single-product.png", "Thalyn Diamond single product page", "800px" %}
 
-<p class="text-center text-gray-600 text-sm">Thalyn Diamon products</p>
+<p class="pb-8 italic text-center text-gray-600 text-sm">Thalyn Diamond products</p>
 
 {% image eleventy.env.root + "/src/static/img/thalyn-diamond-history.png", "Thalyn Diamond history section", "800px" %}
 
 {% image eleventy.env.root + "/src/static/img/thalyn-diamond-history-2.png", "Thalyn Diamond history section", "800px" %}
 
-<p class="text-center text-gray-600 text-sm">Thalyn Diamon history section</p>
+<p class="pb-8 italic text-center text-gray-600 text-sm">Thalyn Diamond history section</p>
 
 {% image eleventy.env.root + "/src/static/img/thalyn-diamond-reviews.png", "Thalyn Diamond customer reviews", "800px" %}
 
-<p class="text-center text-gray-600 text-sm">Display customer reviews for creditability</p>
+<p class="pb-8 italic text-center text-gray-600 text-sm">Display customer reviews for creditability</p>
 
 To ensure the website is optimized for performance and insights, we integrated:
 
