@@ -19,7 +19,7 @@ alert: เนื้อหาในหน้านี้รองรับเฉ�
             Our works in web design and development
         </p>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {% for project in collections.portfolio | filter('locale', lang) %}
+            {% for project in collections.portfolio | filter('locale', lang) | reverse %}
                 <div>
                     <div class="relative group">
                         <div class="mb-4 h-[250px] [&_img]:h-full [&_img]:object-cover [&_img]:object-center">
