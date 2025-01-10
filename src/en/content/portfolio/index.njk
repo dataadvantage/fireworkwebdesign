@@ -24,6 +24,13 @@ eleventyNavigation:
                         <div class="mb-4 h-[250px] [&_img]:h-full [&_img]:object-cover [&_img]:object-center">
                             {% image eleventy.env.root + '/src' + project.data.image, project.data.imageAlt, "600px" %}
                         </div>
+                        <div class="mb-4 flex font-light">
+                            {% for s in project.data.tagged %}
+                                <span class="{{ s.style }} px-2 py-1 mr-2 rounded-full text-xs">
+                                    {{ s.title }}
+                                </span>
+                            {% endfor %}
+                        </div>
                         <div>
                             <p class="mb-2 font-bold text-lg group-hover:underline">
                                 {{ project.data.name }}

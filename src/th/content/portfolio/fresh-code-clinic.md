@@ -8,6 +8,11 @@ liveUrl: www.freshcodeclinic.com
 portfolioUrl: www.freshcodeclinic.com
 featured: true
 alert: เนื้อหาในหน้านี้รองรับเฉพาะภาษาอังกฤษ
+tagged:
+  - title: WordPress
+    style: bg-blue-900 text-white
+  - title: Multilingual
+    style: bg-green-700 text-white
 ---
 
 **Project Overview:**

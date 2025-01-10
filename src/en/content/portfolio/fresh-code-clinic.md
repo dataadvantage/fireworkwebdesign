@@ -7,6 +7,11 @@ imageAlt: Fresh Code Clinic
 liveUrl: www.freshcodeclinic.com
 portfolioUrl: www.freshcodeclinic.com
 featured: true
+tagged:
+  - title: WordPress
+    style: bg-blue-900 text-white
+  - title: Multilingual
+    style: bg-green-700 text-white
 ---
 
 **Project Overview:**

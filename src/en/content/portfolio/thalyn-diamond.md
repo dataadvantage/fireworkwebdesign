@@ -7,6 +7,13 @@ imageAlt: Thalyn Diamond
 liveUrl: www.thalyndiamond.com
 portfolioUrl: www.thalyndiamond.com
 featured: true
+tagged:
+  - title: Static Site
+    style: bg-green-700 text-white
+  - title: Google Analytics
+    style: bg-blue-800 text-white
+  - title: Google Search Console
+    style: bg-blue-800 text-white
 ---
 
 **Project Summary: Thalyn Diamond Website Development**

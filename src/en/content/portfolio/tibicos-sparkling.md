@@ -12,6 +12,13 @@ images:
     alt: Tibicos Sparkling homepage
   - src: /static/img/tibicos-home-2.png
     alt: Tibicos Sparkling homepage
+tagged:
+  - title: E-commerce
+    style: bg-green-700 text-white
+  - title: WordPress
+    style: bg-blue-900 text-white
+  - title: WooCommerce
+    style: bg-red-700 text-white
 ---
 
 **Project Overview:**

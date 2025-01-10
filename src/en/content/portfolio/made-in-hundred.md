@@ -7,6 +7,9 @@ imageAlt: Made in Hundred
 liveUrl: www.madeinhundred.com
 portfolioUrl: www.madeinhundred.com
 featured: true
+tagged:
+  - title: Squarespace
+    style: bg-green-700 text-white
 ---
 
 **Project Overview:**
