@@ -11,9 +11,9 @@ eleventyComputed:
             /
             <a href="/{{ lang }}/portfolio/" class="no-underline hover:underline text-primary-800 text-sm">PORTFOLIO</a>
             <h1 class="mb-4">{{ name }}</h1>
-            <div class="mb-4 flex font-light">
+            <div class="mb-4 flex flex-wrap font-light gap-2">
                 {% for s in tagged %}
-                    <span class="{{ s.style }} px-2 py-1 mr-2 rounded-full text-xs">
+                    <span class="{{ s.style }} px-2 py-1 rounded-full text-xs">
                         {{ s.title }}
                     </span>
                 {% endfor %}

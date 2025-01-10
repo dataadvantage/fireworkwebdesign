@@ -25,9 +25,9 @@ alert: เนื้อหาในหน้านี้รองรับเฉ�
                         <div class="mb-4 h-[250px] [&_img]:h-full [&_img]:object-cover [&_img]:object-center">
                             {% image eleventy.env.root + '/src' + project.data.image, project.data.imageAlt, "600px" %}
                         </div>
-                        <div class="mb-4 flex font-light">
+                        <div class="mb-4 flex flex-wrap gap-2 font-light">
                             {% for s in project.data.tagged %}
-                                <span class="{{ s.style }} px-2 py-1 mr-2 rounded-full text-xs">
+                                <span class="{{ s.style }} px-2 py-1 rounded-full text-xs">
                                     {{ s.title }}
                                 </span>
                             {% endfor %}
