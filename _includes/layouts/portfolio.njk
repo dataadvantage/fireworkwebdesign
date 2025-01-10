@@ -10,7 +10,14 @@ eleventyComputed:
             <a href="/{{ lang }}" class="hover:underline no-underline text-gray-500 text-sm">HOME</a>
             /
             <a href="/{{ lang }}/portfolio/" class="no-underline hover:underline text-primary-800 text-sm">PORTFOLIO</a>
-            <h1>{{ name }}</h1>
+            <h1 class="mb-4">{{ name }}</h1>
+            <div class="mb-4 flex font-light">
+                {% for s in tagged %}
+                    <span class="{{ s.style }} px-2 py-1 mr-2 rounded-full text-xs">
+                        {{ s.title }}
+                    </span>
+                {% endfor %}
+            </div>
         </div>
         <div class="max-w-5xl mx-auto prose">
             <div class="[&_img]:mx-auto">
