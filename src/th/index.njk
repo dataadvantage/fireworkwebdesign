@@ -6,7 +6,7 @@ eleventyNavigation:
 ---
 
 <!-- Hero -->
-<div class="bg-gradient-to-br from-primary-800 to-primary-500 from-40% overflow-hidden relative font-noto">
+<div class="bg-linear-to-br from-primary-800 to-primary-500 from-40% overflow-hidden relative font-noto">
   <div class="default-container py-40 md:py-56 px-6">
     <h1 class="text-center font-noto text-4xl md:text-6xl mb-8 text-white">
       พัฒนาเว็บไซต์<br/>ด้วยทีมงานมืออาชีพ
@@ -44,10 +44,10 @@ eleventyNavigation:
         </p>
       </div>
     </div>
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 [&_*]:duration-500">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 **:duration-500">
       <div class="group">
-        <div class="[&_img]:md:h-[250px] [&_img]:h-[200px] [&_img]:object-cover group-hover:[&_img]:scale-110 overflow-hidden
-            [&_*]:transition-transform">
+        <div class="md:[&_img]:h-[250px] [&_img]:h-[200px] [&_img]:object-cover [&_img]:group-hover:scale-110 overflow-hidden
+            **:transition-transform">
           {% image eleventy.env.root + '/src/static/img/our-services-web-design.jpg', 'Custom web design', '400px' %}
         </div>
         <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Web Design</p>
@@ -56,8 +56,8 @@ eleventyNavigation:
         </p>
       </div>
       <div class="group">
-        <div class="[&_img]:md:h-[250px] [&_img]:h-[200px] [&_img]:object-cover group-hover:[&_img]:scale-110 overflow-hidden
-            [&_*]:transition-transform">
+        <div class="md:[&_img]:h-[250px] [&_img]:h-[200px] [&_img]:object-cover [&_img]:group-hover:scale-110 overflow-hidden
+            **:transition-transform">
           {% image eleventy.env.root + '/src/static/img/our-services-web-development.jpg', 'Web development', '400px' %}
         </div>
         <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Web Development</p>
@@ -66,8 +66,8 @@ eleventyNavigation:
         </p>
       </div>
       <div class="group">
-        <div class="[&_img]:md:h-[250px] [&_img]:h-[200px] [&_img]:object-cover group-hover:[&_img]:scale-110 overflow-hidden
-            [&_*]:transition-transform">
+        <div class="md:[&_img]:h-[250px] [&_img]:h-[200px] [&_img]:object-cover [&_img]:group-hover:scale-110 overflow-hidden
+            **:transition-transform">
           {% image eleventy.env.root + '/src/static/img/our-services-web-analytics.jpg', 'Web development', '400px' %}
         </div>
         <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Web Analytics</p>
@@ -76,8 +76,8 @@ eleventyNavigation:
         </p>
       </div>
       <div class="group">
-        <div class="[&_img]:md:h-[250px] [&_img]:h-[200px] [&_img]:object-cover group-hover:[&_img]:scale-110 overflow-hidden
-            [&_*]:transition-transform">
+        <div class="md:[&_img]:h-[250px] [&_img]:h-[200px] [&_img]:object-cover [&_img]:group-hover:scale-110 overflow-hidden
+            **:transition-transform">
           {% image eleventy.env.root + '/src/static/img/our-services-responsive-design.jpg', 'Responsive design', '400px' %}
         </div>
         <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Responsive Design</p>
@@ -110,7 +110,7 @@ eleventyNavigation:
       {% for project in collections.portfolio | filter("featured", true) | filter("lang", lang) | reverse | head(3) %}
         <div>
           <div class="relative group">
-            <div class="mb-4 h-[250px] [&_img]:h-full [&_img]:object-cover [&_img]:object-center shadow">
+            <div class="mb-4 h-[250px] [&_img]:h-full [&_img]:object-cover [&_img]:object-center shadow-sm">
               {% image eleventy.env.root + '/src' + project.data.image, project.data.imageAlt, "600px" %}
             </div>
             <div class="mb-4 flex flex-wrap gap-2 font-light">
@@ -233,7 +233,7 @@ eleventyNavigation:
       <div
         id="portrait-container"
         class="text-center [&_img]:mx-auto [&_img]:w-3/4 md:[&_img]:w-full [&_img]:transition [&_img]:duration-500
-          [&_img]:shadow">
+          [&_img]:shadow-sm">
         {% image eleventy.env.root + '/src/static/img/james-2.jpg', 'James', '400px' %}
         <p class="text-center md:hidden mt-8">
           <span class="text-lg font-semibold tracking-wider">James</span><br/>
@@ -252,7 +252,7 @@ eleventyNavigation:
 </div>
 <!-- Call to action -->
 <div class="group bg-sky-950 flex flex-wrap items-center relative">
-  <div class="[&_img]:grayscale group-hover:[&_img]:grayscale-0 [&_*]:transition md:w-[40%] bg-yellow-50 self-stretch
+  <div class="[&_img]:grayscale [&_img]:group-hover:grayscale-0 **:transition md:w-[40%] bg-yellow-50 self-stretch
       [&_img]:h-full [&_img]:object-cover [&_img]:duration-500">
     {% image eleventy.env.root + '/src/static/img/firework-1.jpg', 'Firework', '1920px' %}
   </div>

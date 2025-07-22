@@ -1,9 +1,9 @@
-<nav class="shadow font-fahkwang font-extralight {% if lang == 'th' %}font-noto{% endif %}" x-data="{open: false}">
+<nav class="shadow-sm font-fahkwang font-extralight {% if lang == 'th' %}font-noto{% endif %}" x-data="{open: false}">
   <div class="default-container px-4">
     <div class="flex justify-between items-center">
       <div class="py-4">
         <a href="/{{ lang }}/" class="uppercase font-bold text-primary-900 tracking-widest inline-block">
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-700">Firework</span><br/>
+          <span class="text-transparent bg-clip-text bg-linear-to-r from-orange-500 to-orange-700">Firework</span><br/>
           <span class="font-light">Web Design</span>
           {# {% image eleventy.env.root + "/public/img/logo.png", "AVIV Studio logo", "100px, 150px", "(max-width: 400px) 100vw, 150px" %} #}
         </a>
@@ -26,7 +26,7 @@
         {# loop though site.languages #}
         <div class="text-sm relative text-gray-400 font-medium flex items-center px-4 group cursor-pointer">
           <img src="/img/flags/{{ metadata.languages | filter('code', lang) | field('flag') | first }}" width="20" class="mr-1" alt="{{ lang }}" loading="lazy"/> {{ lang | upper }}
-          <div class="absolute inset-x-0 top-full shadow z-[1000000] bg-white pt-2 px-4 opacity-0 group-hover:opacity-100 transition">
+          <div class="absolute inset-x-0 top-full shadow-sm z-1000000 bg-white pt-2 px-4 opacity-0 group-hover:opacity-100 transition">
             {% for lgg in metadata.languages %}
               {% if lgg.code != lang %}
                 <a href="/{{ lgg.code }}/" class="flex mb-2 text-center hover:text-black text-sm">
@@ -43,7 +43,7 @@
         <!-- Mobile menu button -->
         <button
           type="button"
-          class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 focus:outline-none focus:ring-2
+          class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 focus:outline-hidden focus:ring-2
             focus:ring-inset focus:ring-gray-500"
           aria-controls="mobile-menu"
           aria-expanded="false"

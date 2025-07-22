@@ -4,7 +4,7 @@ eleventyComputed:
     facebook_image: "{% getImage eleventy.env.root + '/src' + image, '900px' %}"
 ---
 
-<div class="bg-amber-50/30 shadow px-6 py-10 lg:py-16">
+<div class="bg-amber-50/30 shadow-sm px-6 py-10 lg:py-16">
     <div class="">
         <div class="max-w-prose mx-auto ">
             <a href="/{{ lang }}" class="hover:underline no-underline text-gray-500 text-sm">HOME</a>
@@ -37,7 +37,7 @@ eleventyComputed:
                     </a>
                 {% endif %}
             </div>
-            <div class="prose mx-auto prose-headings:text-primary-800 prose-strong:text-primary-800 [&_img]:shadow">
+            <div class="prose mx-auto prose-headings:text-primary-800 prose-strong:text-primary-800 [&_img]:shadow-sm">
                 {{ content | safe }}
             </div>
         </div>

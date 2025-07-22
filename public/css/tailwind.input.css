@@ -1,19 +1,66 @@
-@import "./core.css";
+@import "./core.css" layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-.default-container {
-	@apply max-w-7xl mx-auto;
+@plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+	--font-noto: "Noto Sans Thai", ui-sans-serif, system-ui, sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+	--color-primary-50: #dceefb;
+	--color-primary-100: #b6e0fe;
+	--color-primary-200: #84c5f4;
+	--color-primary-300: #62b0e8;
+	--color-primary-400: #4098d7;
+	--color-primary-500: #2680c2;
+	--color-primary-600: #186faf;
+	--color-primary-700: #0f609b;
+	--color-primary-800: #0a558c;
+	--color-primary-900: #003e6b;
+
+	--color-secondary-50: #fffbea;
+	--color-secondary-100: #fff3c4;
+	--color-secondary-200: #fce588;
+	--color-secondary-300: #fadb5f;
+	--color-secondary-400: #f7c948;
+	--color-secondary-500: #f0b429;
+	--color-secondary-600: #de911d;
+	--color-secondary-700: #cb6e17;
+	--color-secondary-800: #b44d12;
+	--color-secondary-900: #8d2b0b;
+
+	--color-neutral-50: #faf9f7;
+	--color-neutral-100: #e8e6e1;
+	--color-neutral-200: #d3cec4;
+	--color-neutral-300: #b8b2a7;
+	--color-neutral-400: #a39e93;
+	--color-neutral-500: #857f72;
+	--color-neutral-600: #625d52;
+	--color-neutral-700: #504a40;
+	--color-neutral-800: #423d33;
+	--color-neutral-900: #27241d;
 }
 
-.stretched-link::after {
-	content: "";
-	@apply z-10 absolute inset-0 bg-transparent pointer-events-auto;
-}
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
 
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
 @layer base {
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentcolor);
+	}
+
 	h1 {
 		@apply text-4xl font-semibold;
 	}
@@ -33,28 +80,46 @@
 
 @layer components {
 	.btn-primary-sm {
-		@apply bg-primary-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-800 transition;
+		@apply bg-primary-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-primary-700 focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-800 transition;
 	}
+
 	.btn-primary {
-		@apply bg-primary-800 px-4 py-3 font-semibold text-white shadow-sm hover:bg-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-800 transition;
+		@apply bg-primary-800 px-4 py-3 font-semibold text-white shadow-xs hover:bg-primary-700 focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-800 transition;
 	}
+
 	.btn-primary-lg {
-		@apply bg-primary-800 px-6 py-4 text-lg font-semibold text-white shadow-sm hover:bg-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-800 transition;
+		@apply bg-primary-800 px-6 py-4 text-lg font-semibold text-white shadow-xs hover:bg-primary-700 focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-800 transition;
 	}
+
 	.btn-primary-xl {
-		@apply bg-primary-800 px-8 py-5 text-xl font-semibold text-white shadow-sm hover:bg-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-800 transition;
+		@apply bg-primary-800 px-8 py-5 text-xl font-semibold text-white shadow-xs hover:bg-primary-700 focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-800 transition;
 	}
+
 	.btn-sm {
-		@apply px-3.5 py-2.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-800 transition;
+		@apply px-3.5 py-2.5 text-sm font-semibold shadow-xs focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-800 transition;
 	}
+
 	.btn {
-		@apply px-4 py-3 font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-800 transition;
+		@apply px-4 py-3 font-semibold shadow-xs focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-800 transition;
 	}
+
 	.btn-lg {
-		@apply px-6 py-4 text-lg font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-800 transition;
+		@apply px-6 py-4 text-lg font-semibold shadow-xs focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-800 transition;
 	}
+
 	.btn-xl {
-		@apply px-8 py-5 text-xl font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-800 transition;
+		@apply px-8 py-5 text-xl font-semibold shadow-xs focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-800 transition;
+	}
+}
+
+@layer utilities {
+	.default-container {
+		@apply max-w-7xl mx-auto;
+	}
+
+	.stretched-link::after {
+		content: "";
+		@apply z-10 absolute inset-0 bg-transparent pointer-events-auto;
 	}
 }
 

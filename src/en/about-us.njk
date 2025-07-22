@@ -17,7 +17,7 @@ eleventyNavigation:
             </div>
             <div class="text-gray-600 md:col-span-2 flex flex-col justify-center">
                 <p class="mb-6 tracking-wider leading-relaxed text-white font-extralight">
-                    <span class="text-transparent font-bold bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600 text-xl">FIREWORK</span>
+                    <span class="text-transparent font-bold bg-clip-text bg-linear-to-r from-orange-400 to-orange-600 text-xl">FIREWORK</span>
                     was born out of a love for creating websites that are both good-looking and hassle-free. Our founder (that’s me!) and
                     the rest of the team enjoy solving the problems that come with building and maintaining websites, so you don’t have to.
                     We’re a small, close-knit crew, and we like to keep things friendly, straightforward. When you work with us, we’re not
@@ -43,7 +43,7 @@ eleventyNavigation:
             Together, these four visionary leaders shaped FIREWORK into what it is today: a company driven by creativity,
             effectiveness, and futuristic outlook, whose business practices are as unconventional as they are successful.
         </p>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-10 [&_img]:shadow">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-10 [&_img]:shadow-sm">
             <div>
                 {% image eleventy.env.root + '/src/static/img/sully.jpg', 'Sully', '400px' %}
                 <p class="mt-4 font-semibold">Sully</p>
@@ -69,7 +69,7 @@ eleventyNavigation:
 </div>
 <!-- Cal to action -->
 <div class="group bg-sky-950 flex flex-wrap items-center relative">
-    <div class="[&_img]:grayscale group-hover:[&_img]:grayscale-0 [&_*]:transition md:w-[40%] bg-yellow-50 self-stretch
+    <div class="[&_img]:grayscale [&_img]:group-hover:grayscale-0 **:transition md:w-[40%] bg-yellow-50 self-stretch
             [&_img]:h-full [&_img]:object-cover [&_img]:duration-500 [&_img]:max-h-[250px] md:[&_img]:max-h-[500px]">
         {% image eleventy.env.root + '/src/static/img/james-salmon-sunny.jpg', 'Firework', '1920px' %}
     </div>
