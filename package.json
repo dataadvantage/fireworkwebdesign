@@ -17,7 +17,7 @@
 		"email": "dataadvantage.co@gmail.com"
 	},
 	"engines": {
-		"node": ">=14"
+		"node": ">=20"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^2.0.1",
