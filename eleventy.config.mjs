@@ -1,22 +1,19 @@
-const { DateTime } = require("luxon");
-const yaml = require("js-yaml");
-const markdownItAnchor = require("markdown-it-anchor");
+import { DateTime } from "luxon";
+import yaml from "js-yaml";
+import markdownItAnchor from "markdown-it-anchor";
 
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginBundle = require("@11ty/eleventy-plugin-bundle");
-const pluginNavigation = require("@11ty/eleventy-navigation");
-const {
-	EleventyHtmlBasePlugin,
-	EleventyI18nPlugin,
-} = require("@11ty/eleventy");
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import pluginBundle from "@11ty/eleventy-plugin-bundle";
+import pluginNavigation from "@11ty/eleventy-navigation";
+import { EleventyHtmlBasePlugin, EleventyI18nPlugin } from "@11ty/eleventy";
 
-const pluginDrafts = require("./eleventy.config.drafts.js");
-const pluginImages = require("./eleventy.config.images.js");
-const customCollections = require("./eleventy.config.collection.js");
+import pluginDrafts from "./eleventy.config.drafts.js";
+import pluginImages from "./eleventy.config.images.js";
+import customCollections from "./eleventy.config.collection.js";
 
 /** @param {import('@11ty/eleventy').UserConfig} eleventyConfig */
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
 	// To Support .yaml Extension in _data
 	// You may remove this if you can use JSON
 	eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
@@ -164,4 +161,4 @@ module.exports = function (eleventyConfig) {
 		// folder name and does **not** affect where things go in the output folder.
 		pathPrefix: "/",
 	};
-};
+}
