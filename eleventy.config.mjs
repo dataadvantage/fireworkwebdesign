@@ -32,6 +32,8 @@ export default function (eleventyConfig) {
 		"./node_modules/svg-country-flags/png100px/": "/img/flags/",
 		"./src/admin/config.yml": "./admin/config.yml",
 		"./src/static/img": "/static/img",
+		// "./node_modules/aos/dist/aos.css": "/css/aos.css",
+		// "./node_modules/aos/dist/aos.js": "/js/aos.js",
 	});
 
 	// Run Eleventy when these files change:

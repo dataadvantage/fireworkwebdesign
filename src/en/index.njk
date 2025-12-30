@@ -6,7 +6,10 @@ eleventyNavigation:
 ---
 
 <!-- Hero -->
-<div class="bg-linear-to-br from-primary-800 to-primary-500 from-40% overflow-hidden relative">
+<div
+    class="bg-linear-to-br from-primary-800 to-primary-500 from-40% overflow-hidden relative"
+    data-aos="fade-up"
+    data-aos-offset="300">
     <div class="default-container py-40 md:py-56 px-6">
         <h1 class="text-center font-sans text-4xl md:text-6xl font-bold mb-8 text-white">
             Modern Business <br/>Web Design & Development
@@ -32,7 +35,7 @@ eleventyNavigation:
         lg:-top-[700px] lg:-right-[2020px]"></div>
 </div>
 <!-- Services -->
-<div class="bg-zinc-50 py-20 md:py-32 px-6">
+<div class="bg-zinc-50 py-20 md:py-32 px-6" data-aos="fade-up" data-aos-offset="300">
     <div class="default-container lg:px-0">
         <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
             <div class="border-r-primary-800 border-2 border-transparent md:col-span-2 pr-4">
@@ -88,7 +91,7 @@ eleventyNavigation:
     </div>
 </div>
 <!-- Portfolio -->
-<div class="bg-white py-20 md:py-24 px-6">
+<div class="bg-white py-20 md:py-24 px-6" data-aos="fade-up" data-aos-offset="300">
     <div class="default-container lg:px-0">
         <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
             <div class="border-r-primary-800 border-2 border-transparent md:col-span-2 md:col-start-3 pr-4">
@@ -139,7 +142,7 @@ eleventyNavigation:
     </div>
 </div>
 <!-- Why Choose Us -->
-<div class="py-20 md:py-32 relative overflow-hidden">
+<div class="py-20 md:py-32 relative overflow-hidden" data-aos="fade-up" data-aos-offset="300">
     <div class="absolute w-[500px] left-[200px] aspect-square bg-primary-100 rounded-full blur-[200px] -z-10"></div>
     <div class="absolute w-[300px] right-[400px] bottom-0 aspect-square bg-secondary-100 rounded-full blur-[200px] -z-10"></div>
     <div class="default-container px-6 lg:px-0">
@@ -205,7 +208,7 @@ eleventyNavigation:
     {% include '_includes/components/pricing.njk' %}
 </div>
 <!-- Who We Are -->
-<div class="relative">
+<div class="relative" data-aos="fade-up" data-aos-offset="300">
     <div class="max-w-4xl mx-auto py-20 px-8">
         <h2 class="uppercase text-primary-800 text-sm mb-12 text-center">Who We Are</h2>
         <div class="grid md:grid-cols-3 gap-8">
@@ -244,7 +247,7 @@ eleventyNavigation:
     </div>
 </div>
 <!-- Call to action -->
-<div class="group bg-sky-950 flex flex-wrap items-center relative">
+<div class="group bg-sky-950 flex flex-wrap items-center relative" data-aos="fade-up" data-aos-offset="300">
     <div class="[&_img]:grayscale [&_img]:group-hover:grayscale-0 **:transition md:w-[40%] bg-yellow-50 self-stretch
             [&_img]:h-full [&_img]:object-cover [&_img]:duration-500">
         {% image eleventy.env.root + '/src/static/img/firework-1.jpg', 'Firework', '1920px' %}
@@ -296,7 +299,7 @@ eleventyNavigation:
         image.style.transform = `rotate(${deg}deg)`;
         image.style.filter = `grayscale(${grayScale}%)`;
         if (times >= 5) {
-            spinMeText.innerHTML = '<a href="/                            {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
+            spinMeText.innerHTML = '<a href="/                                        {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
             spinMeText.classList.remove('opacity-0')
         } else {
             spinMeText.textContent = ('You have spun me ' + times + ' times');
