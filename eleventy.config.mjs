@@ -33,7 +33,7 @@ export default function (eleventyConfig) {
 		"./src/admin/config.yml": "./admin/config.yml",
 		"./src/static/img": "/static/img",
 		// "./node_modules/aos/dist/aos.css": "/css/aos.css",
-		// "./node_modules/aos/dist/aos.js": "/js/aos.js",
+		"./node_modules/aos/dist/aos.js": "/js/aos.js",
 	});
 
 	// Run Eleventy when these files change:
