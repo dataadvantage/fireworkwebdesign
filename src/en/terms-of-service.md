@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 eleventyNavigation:
-  key: Terms of Service
+  key: Terms of service
   header: false
   footer: true
   order: 10
