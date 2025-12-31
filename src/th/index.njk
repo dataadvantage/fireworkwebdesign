@@ -6,11 +6,8 @@ eleventyNavigation:
 ---
 
 <!-- Hero -->
-<div
-    class="bg-linear-to-br from-primary-800 to-primary-500 from-40% overflow-hidden relative font-noto"
-    data-aos="fade-up"
-    data-aos-offset="300">
-    <div class="default-container py-40 md:py-56 px-6">
+<div class="bg-linear-to-br from-primary-800 to-primary-500 from-40% overflow-hidden relative">
+    <div class="default-container py-40 md:py-56 px-6" data-aos="fade-up" data-aos-duration="1000">
         <h1 class="text-center font-noto text-4xl md:text-6xl mb-8 text-white">
             พัฒนาเว็บไซต์<br/>ด้วยทีมงานมืออาชีพ
         </h1>
@@ -305,7 +302,7 @@ eleventyNavigation:
         image.style.transform = `rotate(${deg}deg)`;
         image.style.filter = `grayscale(${grayScale}%)`;
         if (times >= 5) {
-            spinMeText.innerHTML = '<a href="/            {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
+            spinMeText.innerHTML = '<a href="/              {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
             spinMeText.classList.remove('opacity-0')
         } else {
             spinMeText.textContent = ('You have spun me ' + times + ' times');
