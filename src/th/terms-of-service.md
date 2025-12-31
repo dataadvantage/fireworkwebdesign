@@ -1,5 +1,6 @@
 ---
 layout: layouts/base.njk
+title: เงื่อนไขการให้บริการ - Firework Web Design
 eleventyNavigation:
   key: เงื่อนไขบริการ
   header: false

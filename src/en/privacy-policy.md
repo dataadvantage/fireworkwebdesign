@@ -1,5 +1,6 @@
 ---
 layout: layouts/base.njk
+title: Privacy Policy - Firework Web Design
 eleventyNavigation:
   key: Privacy policy
   header: false

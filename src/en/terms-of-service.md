@@ -1,5 +1,6 @@
 ---
 layout: layouts/base.njk
+title: Terms of Service - Firework Web Design
 eleventyNavigation:
   key: Terms of service
   header: false
