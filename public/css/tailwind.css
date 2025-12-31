@@ -2340,6 +2340,11 @@
       color: var(--color-primary-800);
     }
   }
+  .\[\&_a\.header-anchor\]\:text-gray-400 {
+    & a.header-anchor {
+      color: var(--color-gray-400);
+    }
+  }
   .\[\&_img\]\:relative {
     & img {
       position: relative;

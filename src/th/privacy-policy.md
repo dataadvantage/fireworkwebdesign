@@ -8,9 +8,9 @@ eleventyNavigation:
   order: 10
 ---
 
-<div class="max-w-5xl mx-auto prose pt-24 px-8">
+<div class="max-w-5xl mx-auto prose pt-24 px-8 prose-headings:text-primary-800 [&_a.header-anchor]:text-gray-400">
 
-# นโยบายความเป็นส่วนตัว (Privacy Policy)
+# นโยบายความเป็นส่วนตัว
 
 อัปเดตล่าสุด: 31 ธันวาคม 2025
 
