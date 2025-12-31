@@ -1353,6 +1353,9 @@
   .pt-24 {
     padding-top: calc(var(--spacing) * 24);
   }
+  .pt-32 {
+    padding-top: calc(var(--spacing) * 32);
+  }
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
   }
@@ -2068,6 +2071,11 @@
   .md\:self-stretch {
     @media (width >= 48rem) {
       align-self: stretch;
+    }
+  }
+  .md\:px-0 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 0);
     }
   }
   .md\:px-16 {

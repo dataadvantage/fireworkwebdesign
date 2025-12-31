@@ -19,7 +19,7 @@
                 <li class="cs-nav-li">
                     <span class="cs-header">Quick links</span>
                 </li>
-                {% for item in collections.all | eleventyNavigation | filter("locale", locale) %}
+                {% for item in collections.all | eleventyNavigation | filter("locale", locale) | filter("footer", true) %}
                     <li class="cs-nav-li">
                         <a class="cs-nav-link" href="{{ item.url }}">{{ item.key }}</a>
                     </li>
@@ -30,10 +30,16 @@
                     <span class="cs-header">Contact</span>
                 </li>
                 <li class="cs-contact-li pb-4">
-                    Data Advantage Co.,Ltd.
+                    Data Advantage Co.,Ltd.<br/>
+                    <div class="text-gray-500">
+                        230 M.2 San Klang, San Kam Pang,<br/> Chiang Mai, Thailand 50200
+                    </div>
                 </li>
                 <li class="cs-contact-li">
                     <a class="cs-contact-link" href="mailto:{{ contacts.email }}">{{ contacts.email }}</a>
+                </li>
+                <li class="cs-contact-li">
+                    <a class="cs-contact-link" href="phone:+66882246883">+66882246883</a>
                 </li>
             </ul>
         </div>
