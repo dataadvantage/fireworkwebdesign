@@ -34,7 +34,7 @@ eleventyNavigation:
         lg:-top-[700px] lg:-right-[2020px]"></div>
 </div>
 <!-- Services -->
-<div class="bg-zinc-50 py-20 md:py-32 px-6" data-aos="fade-up" data-aos-offset="300">
+<div class="bg-zinc-50 py-20 md:py-32 px-6">
     <div class="default-container lg:px-0">
         <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
             <div class="border-r-primary-800 border-2 border-transparent md:col-span-2 pr-4">
@@ -46,8 +46,8 @@ eleventyNavigation:
                 </p>
             </div>
         </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 **:duration-500">
-            <div class="group">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 **:duration-500" id="service-list-container">
+            <div class="group" data-aos="fade-left" data-aos-anchor="#service-list-container" data-aos-offset="200">
                 <div class="md:[&_img]:h-[250px] [&_img]:h-[200px] [&_img]:object-cover [&_img]:group-hover:scale-110 overflow-hidden
                         **:transition-transform">
                     {% image eleventy.env.root + '/src/static/img/our-services-web-design.jpg', 'Custom web design', '400px' %}
@@ -55,7 +55,12 @@ eleventyNavigation:
                 <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Custom Web Design</p>
                 <p class="text-neutral-600">Beautiful, user-friendly designs tailored to your brand.</p>
             </div>
-            <div class="group">
+            <div
+                class="group"
+                data-aos="fade-left"
+                data-aos-anchor="#service-list-container"
+                data-aos-offset="200"
+                data-aos-delay="200">
                 <div class="md:[&_img]:h-[250px] [&_img]:h-[200px] [&_img]:object-cover [&_img]:group-hover:scale-110 overflow-hidden
                         **:transition-transform">
                     {% image eleventy.env.root + '/src/static/img/our-services-web-development.jpg', 'Web development', '400px' %}
@@ -63,7 +68,12 @@ eleventyNavigation:
                 <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Web Development</p>
                 <p class="text-neutral-600">High-quality coding to ensure your site is fast, secure, and easy to maintain.</p>
             </div>
-            <div class="group">
+            <div
+                class="group"
+                data-aos="fade-left"
+                data-aos-anchor="#service-list-container"
+                data-aos-offset="200"
+                data-aos-delay="400">
                 <div class="md:[&_img]:h-[250px] [&_img]:h-[200px] [&_img]:object-cover [&_img]:group-hover:scale-110 overflow-hidden
                         **:transition-transform">
                     {% image eleventy.env.root + '/src/static/img/our-services-web-analytics.jpg', 'Web development', '400px' %}
@@ -71,7 +81,12 @@ eleventyNavigation:
                 <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Web Analytics</p>
                 <p class="text-neutral-600">Track your site performance with modern analytic tools.</p>
             </div>
-            <div class="group">
+            <div
+                class="group"
+                data-aos="fade-left"
+                data-aos-anchor="#service-list-container"
+                data-aos-offset="200"
+                data-aos-delay="600">
                 <div class="md:[&_img]:h-[250px] [&_img]:h-[200px] [&_img]:object-cover [&_img]:group-hover:scale-110 overflow-hidden
                         **:transition-transform">
                     {% image eleventy.env.root + '/src/static/img/our-services-responsive-design.jpg', 'Responsive design', '400px' %}
@@ -90,7 +105,7 @@ eleventyNavigation:
     </div>
 </div>
 <!-- Portfolio -->
-<div class="bg-white py-20 md:py-24 px-6" data-aos="fade-up" data-aos-offset="300">
+<div class="bg-white py-20 md:py-24 px-6">
     <div class="default-container lg:px-0">
         <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
             <div class="border-r-primary-800 border-2 border-transparent md:col-span-2 md:col-start-3 pr-4">
@@ -100,7 +115,7 @@ eleventyNavigation:
                 </p>
             </div>
         </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10" data-aos="fade-up" data-aos-offset="300">
             {% for project in collections.portfolio | filter("featured", true) | filter("lang", lang) | reverse | head(3) %}
                 <div>
                     <div class="relative group">
@@ -141,7 +156,7 @@ eleventyNavigation:
     </div>
 </div>
 <!-- Why Choose Us -->
-<div class="py-20 md:py-32 relative overflow-hidden" data-aos="fade-up" data-aos-offset="300">
+<div class="py-20 md:py-32 relative overflow-hidden">
     <div class="absolute w-[500px] left-[200px] aspect-square bg-primary-100 rounded-full blur-[200px] -z-10"></div>
     <div class="absolute w-[300px] right-[400px] bottom-0 aspect-square bg-secondary-100 rounded-full blur-[200px] -z-10"></div>
     <div class="default-container px-6 lg:px-0">
@@ -246,7 +261,7 @@ eleventyNavigation:
     </div>
 </div>
 <!-- Call to action -->
-<div class="group bg-sky-950 flex flex-wrap items-center relative" data-aos="fade-up" data-aos-offset="300">
+<div class="group bg-sky-950 flex flex-wrap items-center relative">
     <div class="[&_img]:grayscale [&_img]:group-hover:grayscale-0 **:transition md:w-[40%] bg-yellow-50 self-stretch
             [&_img]:h-full [&_img]:object-cover [&_img]:duration-500">
         {% image eleventy.env.root + '/src/static/img/firework-1.jpg', 'Firework', '1920px' %}
@@ -298,7 +313,7 @@ eleventyNavigation:
         image.style.transform = `rotate(${deg}deg)`;
         image.style.filter = `grayscale(${grayScale}%)`;
         if (times >= 5) {
-            spinMeText.innerHTML = '<a href="/                                            {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
+            spinMeText.innerHTML = '<a href="/                                                           {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
             spinMeText.classList.remove('opacity-0')
         } else {
             spinMeText.textContent = ('You have spun me ' + times + ' times');
