@@ -27,6 +27,16 @@
             </ul>
             <ul class="mb-6">
                 <li class="cs-nav-li">
+                    <span class="cs-header">Legal</span>
+                </li>
+                {% for item in collections.all | eleventyNavigation | filter("locale", locale) | filter("footer-legal", true) %}
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="{{ item.url }}">{{ item.key }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+            <ul class="mb-6">
+                <li class="cs-nav-li">
                     <span class="cs-header">Contact</span>
                 </li>
                 <li class="cs-contact-li pb-4">

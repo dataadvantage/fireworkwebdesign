@@ -4,7 +4,8 @@ title: เงื่อนไขการให้บริการ - Firework W
 eleventyNavigation:
   key: เงื่อนไขบริการ
   header: false
-  footer: true
+  footer: false
+  footer-legal: true
   order: 10
 ---
 

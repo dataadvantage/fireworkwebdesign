@@ -4,7 +4,8 @@ title: นโยบายความเป็นส่วนตัว - Firewor
 eleventyNavigation:
   key: นโยบายความเป็นส่วนตัว
   header: false
-  footer: true
+  footer: false
+  footer-legal: true
   order: 10
 ---
 

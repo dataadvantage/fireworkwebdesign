@@ -4,7 +4,8 @@ title: Privacy Policy - Firework Web Design
 eleventyNavigation:
   key: Privacy policy
   header: false
-  footer: true
+  footer: false
+  footer-legal: true
   order: 10
 ---
 

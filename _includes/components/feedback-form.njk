@@ -1,0 +1,115 @@
+<form
+    action="/{{ lang }}/submission-complete/"
+    method="POST"
+    class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
+    name="feedback form"
+    netlify>
+    <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+        <div class="grid grid-cols-1 gap-y-6">
+            <div>
+                <label for="name" class="block text-sm font-semibold leading-6 text-gray-900">
+                    {% if lang == 'en' %}
+                        Name
+                    {% elif lang == 'th' %}
+                        ชื่อ
+                    {% endif %}
+                </label>
+                <div class="mt-2.5">
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        autocomplete="given-name"
+                        required
+                        class="block w-full border-0 px-3.5 py-2 rounded-0 text-gray-900 shadow-xs ring-1 ring-inset ring-gray-300
+                            placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></div>
+                </div>
+                <div>
+                    <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">
+                        {% if lang == 'en' %}
+                            Company / Organization (optional)
+                        {% elif lang == 'th' %}
+                            บริษัท / องค์กร (ถ้ามี)
+                        {% endif %}
+                    </label>
+                    <div class="mt-2.5">
+                        <input
+                            type="text"
+                            name="company"
+                            id="company"
+                            autocomplete="company"
+                            class="block w-full border-0 px-3.5 py-2 rounded-0 text-gray-900 shadow-xs ring-1 ring-inset ring-gray-300
+                                placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></div>
+                    </div>
+                    <div class="">
+                        <label for="testimonial" class="block text-sm font-semibold leading-6 text-gray-900">
+                            {% if lang == 'en' %}
+                                Your Testimonial
+                            {% elif lang == 'th' %}
+                                คำติชม
+                            {% endif %}
+                        </label>
+                        <div class="text-gray-500 text-sm">
+                            {% if lang == 'en' %}
+                                What did you like about our service or results?
+                            {% elif lang == 'th' %}
+                                คุณชอบอะไรในการร่วมงานกับเรา
+                            {% endif %}
+                        </div>
+                        <div class="mt-2.5">
+                            <textarea
+                                name="testimonial"
+                                id="testimonial"
+                                rows="4"
+                                required
+                                class="block w-full border-0 px-3.5 py-2 rounded-0 text-gray-900 shadow-xs ring-1 ring-inset ring-gray-300
+                                    placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold leading-6 text-gray-900">
+                            {% if lang == 'en' %}
+                                Can we use your testimonial for marketing purposes?
+                            {% elif lang == 'th' %}
+                                เราสามารถใช้คำติชมของคุณเพื่อการตลาดได้หรือไม่
+                            {% endif %}
+                        </label>
+                        <div class="mt-2.5">
+                            <select
+                                name="permission"
+                                id="permission"
+                                required
+                                class="block w-full border-0 px-2 py-2 rounded-0 text-gray-900 shadow-xs ring-1 ring-inset ring-gray-300
+                                    placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                <option value="yes" selected>
+                                    {% if lang == 'en' %}
+                                        Yes, with my name & organization.
+                                    {% elif lang == 'th' %}
+                                        ใช้ได้ พร้อมชื่อและองค์กร
+                                    {% endif %}
+                                </option>
+                                <option value="yes-anonymous">
+                                    {% if lang == 'en' %}
+                                        Yes, but keep me anonymous.
+                                    {% elif lang == 'th' %}
+                                        ใช้ได้ แต่ขอไม่เปิดเผยชื่อ
+                                    {% endif %}
+                                </option>
+                                <option value="no">
+                                    {% if lang == 'en' %}
+                                        No, do not use my testimonial.
+                                    {% elif lang == 'th' %}
+                                        ไม่อนุญาตให้ใช้คำติชมเพื่อการตลาด
+                                    {% endif %}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 flex justify-end">
+                    <button type="submit" class="btn-primary uppercase">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </form>

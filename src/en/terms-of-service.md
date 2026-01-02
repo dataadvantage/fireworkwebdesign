@@ -4,7 +4,8 @@ title: Terms of Service - Firework Web Design
 eleventyNavigation:
   key: Terms of service
   header: false
-  footer: true
+  footer: false
+  footer-legal: true
   order: 10
 ---
 
