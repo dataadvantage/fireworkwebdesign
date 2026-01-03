@@ -17,6 +17,13 @@
               <div class="z-10 bg-white shadow overflow-y-hidden max-h-0 group-hover:max-h-none opacity-0 group-hover:opacity-100 px-4
                   absolute right-0 top-full transition-all">
                 {% for child in item.children %}
+                  {% if child.menu_title %}
+                    <div class="px-1">
+                      <strong class="text-xs uppercase text-orange-700">
+                        {{ child.menu_title }}
+                      </strong>
+                    </div>
+                  {% endif %}
                   <a href="{{ child.url }}" class="block text-sm after:duration-300 after:inset-0 overflow-x-hidden relative after:-translate-x-[105%] hover:after:-translate-x-100 after:transition after:content-[''] after:absolute after:border-b-2 after:border-primary-900 my-2 items-center px-1 font-medium {% if page.url == child.url %}text-primary-900{% else %}text-neutral-400{% endif %} hover:text-primary-900 transition text-nowrap">{{ child.key | upper }}</a>
                 {% endfor %}
               </div>
@@ -98,6 +105,13 @@
           {% if item.children | length > 0 %}
             <div class="pl-6 transition-all" x-show="subMenuOpen" x-cloak x-transition>
               {% for child in item.children %}
+                {% if child.menu_title %}
+                  <div class="px-1">
+                    <strong class="text-xs uppercase text-orange-700">
+                      {{ child.menu_title }}
+                    </strong>
+                  </div>
+                {% endif %}
                 <a href="{{ child.url }}" class="block my-3 items-center px-1 font-medium {% if page.url == child.url %}text-primary-900 active{% else %}text-neutral-400{% endif %} hover:text-primary-900 transition">{{ child.key | upper }}</a>
               {% endfor %}
             </div>
