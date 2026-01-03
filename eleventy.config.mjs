@@ -26,15 +26,14 @@ export default function (eleventyConfig) {
 		defaultLanguage: "en", // Required, this site uses "en"
 	});
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-		// widths: ["auto"],
-		// htmlOptions: {
-		// 	imgAttributes: {
-		// 		loading: "lazy",
-		// 		decoding: "async",
-		// 		alt: "",
-		// 	},
-		// 	pictureAttributes: {},
-		// },
+		htmlOptions: {
+			imgAttributes: {
+				loading: "lazy",
+				decoding: "async",
+				// alt: "",
+			},
+			pictureAttributes: {},
+		},
 	});
 
 	eleventyConfig.addPassthroughCopy({
