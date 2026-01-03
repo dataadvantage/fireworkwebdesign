@@ -5,7 +5,6 @@
         <a href="/{{ lang }}/" class="uppercase font-bold text-primary-900 tracking-widest inline-block">
           <span class="text-transparent bg-clip-text bg-linear-to-r from-orange-500 to-orange-700">Firework</span><br/>
           <span class="font-light">Web Design</span>
-          {# {% image eleventy.env.root + "/public/img/logo.png", "AVIV Studio logo", "100px, 150px", "(max-width: 400px) 100vw, 150px" %} #}
         </a>
       </div>
       <div class="hidden sm:ml-6 lg:flex">
@@ -32,12 +31,12 @@
         {% endfor %}
         {# loop though site.languages #}
         <div class="text-sm relative text-gray-400 font-medium flex items-center px-4 group cursor-pointer">
-          <img src="/img/flags/{{ metadata.languages | filter('code', lang) | field('flag') | first }}" width="20" class="mr-1" alt="{{ lang }}" loading="lazy"/> {{ lang | upper }}
+          <img src="/static/img/flags/{{ metadata.languages | filter('code', lang) | field('flag') | first }}" width="20" class="mr-1" alt="{{ lang }}" loading="lazy"/> {{ lang | upper }}
           <div class="absolute inset-x-0 top-full shadow-sm z-1000000 bg-white pt-2 px-4 opacity-0 group-hover:opacity-100 transition">
             {% for lgg in metadata.languages %}
               {% if lgg.code != lang %}
                 <a href="/{{ lgg.code }}/" class="flex mb-2 text-center hover:text-black text-sm">
-                  <img src="/img/flags/{{ lgg.flag }}" width="20" class="mr-1" alt="{{ lgg.name }}" loading="lazy"/>
+                  <img src="/static/img/flags/{{ lgg.flag }}" width="20" class="mr-1" alt="{{ lgg.name }}" loading="lazy"/>
                   <span class="text-sm">{{ lgg.code | upper }}</span>
                 </a>
               {% endif %}
@@ -139,7 +138,7 @@
               href="/{{ lgg.code }}"
               class="flex my-3 items-center px-1 font-medium {% if lgg.code == lang %}text-primary-900{% else %}text-neutral-400{%
                 endif %} hover:text-primary-900 transition">
-              <img src="/img/flags/{{ lgg.flag }}" width="20" class="mr-2" alt="{{ lgg.name }}" loading="lazy"/>
+              <img src="/static/img/flags/{{ lgg.flag }}" width="20" class="mr-2" alt="{{ lgg.name }}" loading="lazy"/>
               <span>{{ lgg.code | upper }}</span>
             </a>
           {% endfor %}

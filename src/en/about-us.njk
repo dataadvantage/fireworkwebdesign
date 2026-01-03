@@ -15,7 +15,7 @@ eleventyNavigation:
             <div
                 id="portrait-container"
                 class="text-center [&_img]:mx-auto [&_img]:w-3/4 md:[&_img]:w-full [&_img]:transition [&_img]:duration-500">
-                {% image eleventy.env.root + '/src/static/img/james-2.jpg', 'James', '400px' %}
+                <img src='/static/img/james-2.jpg' alt='James' width='400px'/>
             </div>
             <div class="text-gray-600 md:col-span-2 flex flex-col justify-center">
                 <p class="mb-6 tracking-wider leading-relaxed text-white font-extralight">
@@ -47,22 +47,21 @@ eleventyNavigation:
         </p>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-10 [&_img]:shadow-sm">
             <div>
-                {% image eleventy.env.root + '/src/static/img/sully.jpg', 'Sully', '400px' %}
-                <p class="mt-4 font-semibold">Sully</p>
+                <img src='/static/img/sully.jpg' alt="cat" width="400"/>
                 <p class="text-sm text-gray-600">Snack Time Supervisor</p>
             </div>
             <div>
-                {% image eleventy.env.root + '/src/static/img/salmon.jpg', 'Sully', '400px' %}
+                <img src='/static/img/salmon.jpg' alt="cat" width="400"/>
                 <p class="mt-4 font-semibold">Salmon</p>
                 <p class="text-sm text-gray-600">Chief Nap Officer</p>
             </div>
             <div class="[&_img]:-scale-x-100">
-                {% image eleventy.env.root + '/src/static/img/sunny.png', 'Sully', '400px' %}
+                <img src='/static/img/sunny.png' alt="cat" width="400"/>
                 <p class="mt-4 font-semibold">Sunny</p>
                 <p class="text-sm text-gray-600">Director of Box Testing</p>
             </div>
             <div>
-                {% image eleventy.env.root + '/src/static/img/summer.jpg', 'Sully', '400px' %}
+                <img src='/static/img/summer.jpg' alt="cat" width="400"/>
                 <p class="mt-4 font-semibold">Summer</p>
                 <p class="text-sm text-gray-600">Head of Disruptions</p>
             </div>
@@ -73,7 +72,7 @@ eleventyNavigation:
 <div class="group bg-sky-950 flex flex-wrap items-center relative">
     <div class="[&_img]:grayscale [&_img]:group-hover:grayscale-0 **:transition md:w-[40%] bg-yellow-50 self-stretch
             [&_img]:h-full [&_img]:object-cover [&_img]:duration-500 [&_img]:max-h-[250px] md:[&_img]:max-h-[500px]">
-        {% image eleventy.env.root + '/src/static/img/james-salmon-sunny.jpg', 'Firework', '1920px' %}
+        <img src='/static/img/james-salmon-sunny.jpg' alt="a man with a cat" width='1920px'/>
     </div>
     <div class="pt-24 md:pt-16 md:pb-20 pb-28 px-8 md:px-16 lg:px-32 md:flex-1 relative overflow-hidden">
         <p class="uppercase text-orange-600 mb-2 text-sm md:text-base font-semibold">Let me help you . . .</p>

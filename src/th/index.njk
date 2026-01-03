@@ -50,7 +50,7 @@ eleventyNavigation:
             <div class="group" data-aos="fade-left" data-aos-anchor="#service-list-container" data-aos-offset="200">
                 <div class="md:[&_img]:h-[250px] [&_img]:h-[200px] [&_img]:object-cover [&_img]:group-hover:scale-110 overflow-hidden
                         **:transition-transform">
-                    {% image eleventy.env.root + '/src/static/img/our-services-web-design.jpg', 'Custom web design', '400px' %}
+                    <img src='/static/img/our-services-web-design.jpg' alt='' width='400px'/>
                 </div>
                 <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Web Design</p>
                 <p class="text-neutral-600 font-noto">
@@ -65,7 +65,7 @@ eleventyNavigation:
                 data-aos-delay="200">
                 <div class="md:[&_img]:h-[250px] [&_img]:h-[200px] [&_img]:object-cover [&_img]:group-hover:scale-110 overflow-hidden
                         **:transition-transform">
-                    {% image eleventy.env.root + '/src/static/img/our-services-web-development.jpg', 'Web development', '400px' %}
+                    <img src='/static/img/our-services-web-development.jpg' alt='' width='400px'/>
                 </div>
                 <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Web Development</p>
                 <p class="text-neutral-600 font-noto">
@@ -80,7 +80,7 @@ eleventyNavigation:
                 data-aos-delay="400">
                 <div class="md:[&_img]:h-[250px] [&_img]:h-[200px] [&_img]:object-cover [&_img]:group-hover:scale-110 overflow-hidden
                         **:transition-transform">
-                    {% image eleventy.env.root + '/src/static/img/our-services-web-analytics.jpg', 'Web development', '400px' %}
+                    <img src='/static/img/our-services-web-analytics.jpg' alt='' width='400px'/>
                 </div>
                 <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Web Analytics</p>
                 <p class="text-neutral-600 font-noto">
@@ -95,7 +95,7 @@ eleventyNavigation:
                 data-aos-delay="600">
                 <div class="md:[&_img]:h-[250px] [&_img]:h-[200px] [&_img]:object-cover [&_img]:group-hover:scale-110 overflow-hidden
                         **:transition-transform">
-                    {% image eleventy.env.root + '/src/static/img/our-services-responsive-design.jpg', 'Responsive design', '400px' %}
+                    <img src='/static/img/our-services-responsive-design.jpg' alt='' width='400px'/>
                 </div>
                 <p class="font-semibold text-xl text-zinc-900 mt-4 mb-2">Responsive Design</p>
                 <p class="text-neutral-600 font-noto">
@@ -128,7 +128,7 @@ eleventyNavigation:
                 <div>
                     <div class="relative group">
                         <div class="mb-4 h-[250px] [&_img]:h-full [&_img]:object-cover [&_img]:object-center shadow-sm">
-                            {% image eleventy.env.root + '/src' + project.data.image, project.data.imageAlt, "600px" %}
+                            <img src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}" width="600px"/>
                         </div>
                         <div class="mb-4 flex flex-wrap gap-2 font-light">
                             {% for s in project.data.tagged %}
@@ -251,7 +251,7 @@ eleventyNavigation:
                 id="portrait-container"
                 class="text-center [&_img]:mx-auto [&_img]:w-3/4 md:[&_img]:w-full [&_img]:transition [&_img]:duration-500
                     [&_img]:shadow-sm">
-                {% image eleventy.env.root + '/src/static/img/james-2.jpg', 'James', '400px' %}
+                <img src='/static/img/james-2.jpg' alt='' width='400px'/>
                 <p class="text-center md:hidden mt-8">
                     <span class="text-lg font-semibold tracking-wider">James</span><br/>
                     <span class="text-sm text-gray-400">Owner & Developer</span>
@@ -271,7 +271,7 @@ eleventyNavigation:
 <div class="group bg-sky-950 flex flex-wrap items-center relative">
     <div class="[&_img]:grayscale [&_img]:group-hover:grayscale-0 **:transition md:w-[40%] bg-yellow-50 self-stretch
             [&_img]:h-full [&_img]:object-cover [&_img]:duration-500">
-        {% image eleventy.env.root + '/src/static/img/firework-1.jpg', 'Firework', '1920px' %}
+        <img src='/static/img/firework-1.jpg' alt='' width='1920px'/>
     </div>
     <div class="pt-24 pb-28 px-8 md:px-16 lg:px-32 md:flex-1 relative">
         <p class="uppercase text-orange-600 mb-2 text-sm md:text-base font-noto">ยังมีข้อสงสัย</p>
@@ -319,7 +319,7 @@ eleventyNavigation:
         image.style.transform = `rotate(${deg}deg)`;
         image.style.filter = `grayscale(${grayScale}%)`;
         if (times >= 5) {
-            spinMeText.innerHTML = '<a href="/                        {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
+            spinMeText.innerHTML = '<a href="/                           {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
             spinMeText.classList.remove('opacity-0')
         } else {
             spinMeText.textContent = ('You have spun me ' + times + ' times');

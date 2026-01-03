@@ -3,7 +3,7 @@ name: Tibicos Sparkling
 url: tibicos-sparkling
 description: Tibicos sparkling is a healthy drink made from fermented water kefir grains. It is a natural probiotic drink that is rich in vitamins and minerals.
 image: /static/img/tibicos.jpg
-imageAlt: Made in Hundred
+imageAlt:
 liveUrl: www.tibicossparkling.com
 portfolioUrl: www.tibicossparkling.com
 featured: true
@@ -32,13 +32,13 @@ Firework Web Design worked with Tibicos Sparkling to create a dynamic and functi
 - **Custom Web Design and Development:**  
   We designed and developed a visually stunning website that aligns with Tibicos Sparkling’s branding, while ensuring easy navigation for customers. The website reflects the natural, fresh, and effervescent spirit of the brand.
 
-{% image eleventy.env.root + "/src/static/img/tibicos-design-1.png", "Tibicos products", "800px" %}
-{% image eleventy.env.root + "/src/static/img/tibicos-design-2.png", "Tibicos products", "800px" %}
+<img src="/static/img/tibicos-design-1.png" alt="Tibicos products" width="800px" />
+<img src="/static/img/tibicos-design-2.png" alt="Tibicos products" width="800px" />
 
 - **E-commerce with WooCommerce Integration:**  
   To enable online sales, we integrated **WooCommerce** into the WordPress platform. Customers can easily browse products, add them to their cart, and complete their purchases through a secure payment gateway.
 
-{% image eleventy.env.root + "/src/static/img/tibicos-products.png", "Tibicos products", "800px" %}
+<img src="/static/img/tibicos-products.png" alt="Tibicos products" width="800px" />
 
 - **Custom Shipping and Discounts:**  
   We added custom shipping methods and discounts based on the items in customers’ carts. This functionality provided a personalized experience for customers, ensuring shipping options and offers suited to their purchase choices.

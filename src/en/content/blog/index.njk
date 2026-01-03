@@ -11,7 +11,7 @@ permalink: "{{ locale }}/blogs/index.html"
         {% for blog in collections.blog %}
             <div class="relative group py-6 flex gap-4 md:gap-8">
                 <div class="order-3 md:order-1">
-                    {% image eleventy.env.root + '/src' + blog.data.image, "", "400px" %}
+                    <img src="{{ blog.data.image }}" alt="{{ blog.data.imageAlt }}" width="400px"/>
                 </div>
                 <div class="order-2">
                     <p class="mb-4 font-bold text-lg group-hover:underline">

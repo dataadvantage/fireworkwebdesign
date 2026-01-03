@@ -21,7 +21,7 @@ eleventyComputed:
         </div>
         <div class="max-w-5xl mx-auto prose">
             <div class="[&_img]:mx-auto">
-                {% image eleventy.env.root + "/src" + image, imageAlt, "600px, 1200px", "(max-width: 600px) 600px, 1200px", false %}
+                <img src="{{ image }}" alt="{{ imageAlt }}" eleventy:widths="600px, 1200px" loading="lazy"/>
             </div>
             <div class="mt-4 max-w-prose mx-auto mb-4">
                 {% if liveUrl %}
@@ -44,7 +44,7 @@ eleventyComputed:
     </div>
     <div class="grid md:grid-cols-2 gap-6">
         {% for image in images %}
-            {% image eleventy.env.root + '/src' + image.src, image.alt, "1000px" %}
+            <img src="{{ image.src }}" alt="{{ image.alt }}" width="1000px"/>
         {% endfor %}
     </div>
 </div>

@@ -1,15 +1,18 @@
 import { DateTime } from "luxon";
 import yaml from "js-yaml";
 import markdownItAnchor from "markdown-it-anchor";
+import path from "path";
 
 import pluginRss from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginBundle from "@11ty/eleventy-plugin-bundle";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { EleventyHtmlBasePlugin, EleventyI18nPlugin } from "@11ty/eleventy";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import eleventyImage from "@11ty/eleventy-img";
 
 import pluginDrafts from "./eleventy.config.drafts.js";
-import pluginImages from "./eleventy.config.images.js";
+// import pluginImages from "./eleventy.config.images.js";
 import customCollections from "./eleventy.config.collection.js";
 
 /** @param {import('@11ty/eleventy').UserConfig} eleventyConfig */
@@ -21,6 +24,17 @@ export default function (eleventyConfig) {
 	eleventyConfig.addPlugin(EleventyI18nPlugin, {
 		// any valid BCP 47-compatible language tag is supported
 		defaultLanguage: "en", // Required, this site uses "en"
+	});
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		// widths: ["auto"],
+		// htmlOptions: {
+		// 	imgAttributes: {
+		// 		loading: "lazy",
+		// 		decoding: "async",
+		// 		alt: "",
+		// 	},
+		// 	pictureAttributes: {},
+		// },
 	});
 
 	eleventyConfig.addPassthroughCopy({
@@ -44,7 +58,7 @@ export default function (eleventyConfig) {
 
 	// App plugins
 	eleventyConfig.addPlugin(pluginDrafts);
-	eleventyConfig.addPlugin(pluginImages);
+	// eleventyConfig.addPlugin(pluginImages);
 	eleventyConfig.addPlugin(customCollections);
 
 	// Official plugins
@@ -131,6 +145,41 @@ export default function (eleventyConfig) {
 	// https://www.11ty.dev/docs/copy/#emulate-passthrough-copy-during-serve
 
 	// eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+	function isFullUrl(url) {
+		try {
+			new URL(url);
+			return true;
+		} catch (e) {
+			return false;
+		}
+	}
+
+	function relativeToInputPath(inputPath, relativeFilePath) {
+		let split = inputPath.split("/");
+		split.pop();
+
+		return path.resolve(split.join(path.sep), relativeFilePath);
+	}
+
+	eleventyConfig.addAsyncShortcode(
+		"getImage",
+		async function getImage(src, width) {
+			let input;
+			if (isFullUrl(src)) {
+				input = src;
+			} else {
+				input = relativeToInputPath(this.page.inputPath, src);
+			}
+
+			let metadata = await eleventyImage(input, {
+				widths: [width],
+				formats: ["webp"],
+				outputDir: path.join(eleventyConfig.dir.output, "img"), // Advanced usage note: `eleventyConfig.dir` works here because we’re using addPlugin.
+			});
+
+			return metadata["webp"][0].url;
+		}
+	);
 
 	return {
 		// Control which files Eleventy will process
