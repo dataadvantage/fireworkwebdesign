@@ -1710,6 +1710,16 @@
       }
     }
   }
+  .group-has-\[\.active\]\:\!text-primary-900 {
+    &:is(:where(.group):has(*:is(.active)) *) {
+      color: var(--color-primary-900) !important;
+    }
+  }
+  .group-has-\[\.active\]\:text-primary-800 {
+    &:is(:where(.group):has(*:is(.active)) *) {
+      color: var(--color-primary-800);
+    }
+  }
   .peer-hover\:opacity-100 {
     &:is(:where(.peer):hover ~ *) {
       @media (hover: hover) {
@@ -1903,6 +1913,16 @@
   .focus\:ring-inset {
     &:focus {
       --tw-ring-inset: inset;
+    }
+  }
+  .has-\[\.active\]\:\!text-primary-900 {
+    &:has(*:is(.active)) {
+      color: var(--color-primary-900) !important;
+    }
+  }
+  .has-\[\.active\]\:text-primary-900 {
+    &:has(*:is(.active)) {
+      color: var(--color-primary-900);
     }
   }
   .sm\:col-span-2 {
