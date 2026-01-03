@@ -17,7 +17,7 @@ tagged:
 
 Made In Hundred approached Firework Web Design with a clear vision for their website’s design but needed technical assistance to bring it to life. Our role was to take their initial design and ideas and set everything up, offering suggestions along the way. The final website was built on **Squarespace**, giving the client the flexibility to update both the content and design as their business evolves.
 
-<img src="/static/img/made-in-hundred-overview.png" alt="Made in Hundred overview" width="800px" />
+<img src="/static/img/made-in-hundred-overview.png" alt="Made in Hundred overview" width="800" />
 
 **Key Features:**
 
@@ -30,9 +30,9 @@ Made In Hundred approached Firework Web Design with a clear vision for their web
 - **Custom Email Setup:**  
   In addition to the website, we helped Made In Hundred set up custom emails for their team, further professionalizing their online presence.
 
-<img src="/static/img/made-in-hundred-clients.png" alt="Made in Hundred clients gallery" width="800px" />
+<img src="/static/img/made-in-hundred-clients.png" alt="Made in Hundred clients gallery" width="800" />
 
-<img src="/static/img/made-in-hundred-client.png" alt="Made in Hundred's works" width="800px" />
+<img src="/static/img/made-in-hundred-client.png" alt="Made in Hundred's works" width="800" />
 
 <p class="text-gray-500 w-4/5 text-xs mx-auto text-center italic">Images from the Made In Hundred website</p>
 

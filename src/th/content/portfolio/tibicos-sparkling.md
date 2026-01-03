@@ -33,13 +33,13 @@ Firework Web Design worked with Tibicos Sparkling to create a dynamic and functi
 - **Custom Web Design and Development:**  
   We designed and developed a visually stunning website that aligns with Tibicos Sparkling’s branding, while ensuring easy navigation for customers. The website reflects the natural, fresh, and effervescent spirit of the brand.
 
-<img src="/static/img/tibicos-design-1.png" alt="Tibicos products" width="800px" />
-<img src="/static/img/tibicos-design-2.png" alt="Tibicos products" width="800px" />
+<img src="/static/img/tibicos-design-1.png" alt="Tibicos products" width="800" />
+<img src="/static/img/tibicos-design-2.png" alt="Tibicos products" width="800" />
 
 - **E-commerce with WooCommerce Integration:**  
   To enable online sales, we integrated **WooCommerce** into the WordPress platform. Customers can easily browse products, add them to their cart, and complete their purchases through a secure payment gateway.
 
-<img src="/static/img/tibicos-products.png" alt="Tibicos products" width="800px" />
+<img src="/static/img/tibicos-products.png" alt="Tibicos products" width="800" />
 
 - **Custom Shipping and Discounts:**  
   We added custom shipping methods and discounts based on the items in customers’ carts. This functionality provided a personalized experience for customers, ensuring shipping options and offers suited to their purchase choices.

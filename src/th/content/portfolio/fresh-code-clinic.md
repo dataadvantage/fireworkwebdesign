@@ -19,7 +19,7 @@ tagged:
 
 Firework Web Design partnered with Fresh Code Clinic to create a custom-designed website that showcases the clinic’s beauty services, promotions, and customer reviews. Built on **WordPress**, the site is both visually appealing and easy for the client to manage through a custom Content Management System (CMS). The website supports four languages: Thai, English, Mandarin, and Arabic, expanding the clinic’s reach to a broader audience.
 
-<img src="/static/img/freshcode-products.png" alt="Fresh Code Clinic offers and services" width="800px" />
+<img src="/static/img/freshcode-products.png" alt="Fresh Code Clinic offers and services" width="800" />
 
 **Key Features:**
 
@@ -35,6 +35,6 @@ Firework Web Design partnered with Fresh Code Clinic to create a custom-designed
 - **CMS Integration:**  
   Using WordPress as the platform, we built an easy-to-use CMS, allowing Fresh Code Clinic to update services, promotions, and customer reviews independently. The flexibility of WordPress gives the client full control without needing technical expertise.
 
-<img src="/static/img/freshcode-about.png" alt="About us content from Fresh Code Clinic" width="800px" />
+<img src="/static/img/freshcode-about.png" alt="About us content from Fresh Code Clinic" width="800" />
 
 With the launch of the new website, Fresh Code Clinic has significantly expanded its reach to international customers who prefer browsing in their own language. The custom WordPress CMS enables the client to keep content fresh and up-to-date, helping them highlight new promotions and services quickly and efficiently. The multilingual functionality has also contributed to an increase in traffic from non-Thai-speaking customers, helping Fresh Code Clinic grow its customer base.

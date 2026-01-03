@@ -5,46 +5,46 @@ eleventyComputed:
 ---
 
 <div class="bg-amber-50/30 shadow-sm px-6 py-10 lg:py-16">
-    <div class="">
-        <div class="max-w-prose mx-auto ">
-            <a href="/{{ lang }}" class="hover:underline no-underline text-gray-500 text-sm">HOME</a>
-            /
-            <a href="/{{ lang }}/portfolio/" class="no-underline hover:underline text-primary-800 text-sm">PORTFOLIO</a>
-            <h1 class="mb-4">{{ name }}</h1>
-            <div class="mb-4 flex flex-wrap font-light gap-2">
-                {% for s in tagged %}
-                    <span class="{{ s.style }} px-2 py-1 rounded-full text-xs">
-                        {{ s.title }}
-                    </span>
-                {% endfor %}
-            </div>
-        </div>
-        <div class="max-w-5xl mx-auto prose">
-            <div class="[&_img]:mx-auto">
-                <img src="{{ image }}" alt="{{ imageAlt }}" eleventy:widths="600px, 1200px" loading="lazy"/>
-            </div>
-            <div class="mt-4 max-w-prose mx-auto mb-4">
-                {% if liveUrl %}
-                    <a
-                        href="https://{{ liveUrl }}"
-                        class="font-light text-primary-400 hover:text-primary-500 hover:underline text-sm no-underline"
-                        target="_blank">
-                        {{ liveUrl }}
-                    </a>
-                {% elif portfolioUrl %}
-                    <a href="{{ portfolioBaseUrl + portfolioUrl + "/index.html" }}" class="font-light text-gray-400 hover:text-gray-500 hover:underline text-sm no-underline" target="_blank">
-                        Backup
-                    </a>
-                {% endif %}
-            </div>
-            <div class="prose mx-auto prose-headings:text-primary-800 prose-strong:text-primary-800 [&_img]:shadow-sm">
-                {{ content | safe }}
-            </div>
-        </div>
-    </div>
-    <div class="grid md:grid-cols-2 gap-6">
-        {% for image in images %}
-            <img src="{{ image.src }}" alt="{{ image.alt }}" width="1000px"/>
+  <div class="">
+    <div class="max-w-prose mx-auto ">
+      <a href="/{{ lang }}" class="hover:underline no-underline text-gray-500 text-sm">HOME</a>
+      /
+      <a href="/{{ lang }}/portfolio/" class="no-underline hover:underline text-primary-800 text-sm">PORTFOLIO</a>
+      <h1 class="mb-4">{{ name }}</h1>
+      <div class="mb-4 flex flex-wrap font-light gap-2">
+        {% for s in tagged %}
+          <span class="{{ s.style }} px-2 py-1 rounded-full text-xs">
+            {{ s.title }}
+          </span>
         {% endfor %}
+      </div>
     </div>
+    <div class="max-w-5xl mx-auto prose">
+      <div class="[&_img]:mx-auto">
+        <img src="{{ image }}" alt="{{ imageAlt }}" eleventy:widths="600px, 1200px" loading="lazy"/>
+      </div>
+      <div class="mt-4 max-w-prose mx-auto mb-4">
+        {% if liveUrl %}
+          <a
+            href="https://{{ liveUrl }}"
+            class="font-light text-primary-400 hover:text-primary-500 hover:underline text-sm no-underline"
+            target="_blank">
+            {{ liveUrl }}
+          </a>
+        {% elif portfolioUrl %}
+          <a href="{{ portfolioBaseUrl + portfolioUrl + "/index.html" }}" class="font-light text-gray-400 hover:text-gray-500 hover:underline text-sm no-underline" target="_blank">
+            Backup
+          </a>
+        {% endif %}
+      </div>
+      <div class="prose mx-auto prose-headings:text-primary-800 prose-strong:text-primary-800 [&_img]:shadow-sm">
+        {{ content | safe }}
+      </div>
+    </div>
+  </div>
+  <div class="grid md:grid-cols-2 gap-6">
+    {% for image in images %}
+      <img src="{{ image.src }}" alt="{{ image.alt }}" width="1000"/>
+    {% endfor %}
+  </div>
 </div>
