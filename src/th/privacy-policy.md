@@ -9,7 +9,8 @@ eleventyNavigation:
   order: 10
 ---
 
-<div class="max-w-5xl mx-auto prose pt-24 px-8 prose-headings:text-primary-800 [&_a.header-anchor]:text-gray-400">
+<div class="shadow pb-24">
+  <div class="max-w-5xl mx-auto prose pt-24 px-8 prose-headings:text-primary-800 [&_a.header-anchor]:text-gray-400">
 
 # นโยบายความเป็นส่วนตัว
 
@@ -145,11 +146,12 @@ eleventyNavigation:
 หากคุณมีข้อสงสัย คำร้องขอ หรือข้อกังวลเกี่ยวกับนโยบายความเป็นส่วนตัว กรุณาติดต่อ
 
 **บริษัท ดาต้า แอดแวนเทจ จำกัด**  
-อีเมล: contact@fireworkwebdesign.com  
-ที่อยู่: 230 ม.2 ต.เชิงดอย อ.ดอยสะเก็ด จ.เชียงใหม่ 50220 ประเทศไทย
+ อีเมล: contact@fireworkwebdesign.com  
+ ที่อยู่: 230 ม.2 ต.เชิงดอย อ.ดอยสะเก็ด จ.เชียงใหม่ 50220 ประเทศไทย
 
 ---
 
 การใช้เว็บไซต์หรือบริการของบริษัท ถือว่าคุณได้อ่านและยอมรับนโยบายความเป็นส่วนตัวฉบับนี้แล้ว
 
-</div>
+  </div>
+  </div>

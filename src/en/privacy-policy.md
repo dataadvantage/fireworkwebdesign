@@ -9,7 +9,8 @@ eleventyNavigation:
   order: 10
 ---
 
-<div class="max-w-5xl mx-auto prose pt-24 px-8 prose-headings:text-primary-800 [&_a.header-anchor]:text-gray-400">
+<div class="shadow pb-24">
+  <div class="max-w-5xl mx-auto prose pt-24 px-8 prose-headings:text-primary-800 [&_a.header-anchor]:text-gray-400">
 
 # Privacy Policy
 
@@ -146,11 +147,13 @@ We reserve the right to update or modify this Privacy Policy at any time. Change
 If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us at:
 
 **Data Advantage Co., Ltd.**  
-Email: contact@fireworkwebdesign.com  
-Address: 230 M.2 Cherng Doi, Doi Saket, Chiang Mai 50220, Thailand
+ Email: contact@fireworkwebdesign.com  
+ Address: 230 M.2 Cherng Doi, Doi Saket, Chiang Mai 50220, Thailand
 
 ---
 
 By using our website or services, you acknowledge that you have read and agree to this Privacy Policy.
+
+  </div>
 
 </div>

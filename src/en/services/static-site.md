@@ -47,7 +47,7 @@ Static websites load instantly because there’s no server-side processing. Fast
 - Improved SEO rankings
 - Fewer visitors leaving before your page loads
 
-Speed isn’t a luxury, it directly impacts conversions.
+Speed directly impacts conversions.
 
 ### Built-In Security
 

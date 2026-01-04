@@ -9,7 +9,8 @@ eleventyNavigation:
   order: 10
 ---
 
-<div class="max-w-5xl mx-auto prose pt-24 px-8 prose-headings:text-primary-800 [&_a.header-anchor]:text-gray-400">
+<div class="shadow pb-24">
+  <div class="max-w-5xl mx-auto prose pt-24 px-8 prose-headings:text-primary-800 [&_a.header-anchor]:text-gray-400">
 
 # เงื่อนไขการให้บริการ
 
@@ -31,4 +32,5 @@ eleventyNavigation:
 
 บริษัทขอสงวนสิทธิ์ในการแก้ไขหรือเปลี่ยนแปลงเงื่อนไขการให้บริการโดยไม่ต้องแจ้งให้ทราบล่วงหน้า
 
+  </div>
 </div>
