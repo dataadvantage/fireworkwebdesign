@@ -23,7 +23,7 @@ Static websites are designed to load instantly, perform consistently, and focus 
 
 Take a look at this website's PageSpeed Insights score:
 
-<img src="/static/img/pagespeed.png" alt="this website pagespeed insights" width="920,1960"/>
+<img src="/static/img/pagespeed.png" alt="this website pagespeed insights" eleventy:widths="920,1960"/>
 
 ## Why Choose a Static Website?
 
