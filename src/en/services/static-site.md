@@ -1,17 +1,15 @@
 ---
 layout: layouts/service.njk
 eleventyNavigation:
-  key: Web Design
+  key: Static Web Design
   parent: Services
   header: true
   footer: true
   menu_title: Static Website
   order: 1
-title: Static Web Development - Firework Web Design
+title: Static Web Development
 description: Discover the benefits of static website development with Firework Web Design.
 ---
-
-[Services]({{ "/services" | locale_url }}) » Static Website Development
 
 # Static Website Development
 

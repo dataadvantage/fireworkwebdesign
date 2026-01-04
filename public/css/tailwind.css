@@ -93,6 +93,7 @@
     --container-lg: 32rem;
     --container-xl: 36rem;
     --container-2xl: 42rem;
+    --container-3xl: 48rem;
     --container-4xl: 56rem;
     --container-5xl: 64rem;
     --container-6xl: 72rem;
@@ -313,9 +314,6 @@
   }
   .static {
     position: static;
-  }
-  .-inset-0 {
-    inset: calc(var(--spacing) * -0);
   }
   .-inset-0\.5 {
     inset: calc(var(--spacing) * -0.5);
@@ -933,9 +931,6 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
-  .h-3 {
-    height: calc(var(--spacing) * 3);
-  }
   .h-3\/4 {
     height: calc(3/4 * 100%);
   }
@@ -966,14 +961,8 @@
   .max-h-0 {
     max-height: calc(var(--spacing) * 0);
   }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
-  }
   .w-3\/4 {
     width: calc(3/4 * 100%);
-  }
-  .w-4 {
-    width: calc(var(--spacing) * 4);
   }
   .w-4\/5 {
     width: calc(4/5 * 100%);
@@ -1008,6 +997,9 @@
   .max-w-2xl {
     max-width: var(--container-2xl);
   }
+  .max-w-3xl {
+    max-width: var(--container-3xl);
+  }
   .max-w-4xl {
     max-width: var(--container-4xl);
   }
@@ -1035,14 +1027,8 @@
   .flex-none {
     flex: none;
   }
-  .flex-grow {
-    flex-grow: 1;
-  }
   .grow {
     flex-grow: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .rotate-180 {
     rotate: 180deg;
@@ -1052,9 +1038,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1164,9 +1147,6 @@
   .border-r-primary-800 {
     border-right-color: var(--color-primary-800);
   }
-  .bg-amber-50 {
-    background-color: var(--color-amber-50);
-  }
   .bg-amber-50\/10 {
     background-color: color-mix(in srgb, oklch(98.7% 0.022 95.277) 10%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1209,9 +1189,6 @@
   .bg-primary-100 {
     background-color: var(--color-primary-100);
   }
-  .bg-primary-700 {
-    background-color: var(--color-primary-700);
-  }
   .bg-primary-700\/50 {
     background-color: color-mix(in srgb, #0f609b 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1247,9 +1224,6 @@
   }
   .bg-zinc-50 {
     background-color: var(--color-zinc-50);
-  }
-  .bg-zinc-200 {
-    background-color: var(--color-zinc-200);
   }
   .bg-zinc-200\/50 {
     background-color: color-mix(in srgb, oklch(92% 0.004 286.32) 50%, transparent);
@@ -1321,9 +1295,6 @@
   .stroke-gray-200 {
     stroke: var(--color-gray-200);
   }
-  .stroke-sky-900 {
-    stroke: var(--color-sky-900);
-  }
   .stroke-sky-900\/15 {
     stroke: color-mix(in srgb, oklch(39.1% 0.09 240.876) 15%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1344,9 +1315,6 @@
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
-  }
-  .px-3 {
-    padding-inline: calc(var(--spacing) * 3);
   }
   .px-3\.5 {
     padding-inline: calc(var(--spacing) * 3.5);
@@ -1545,9 +1513,6 @@
   .text-nowrap {
     text-wrap: nowrap;
   }
-  .text-wrap {
-    text-wrap: wrap;
-  }
   .text-blue-600 {
     color: var(--color-blue-600);
   }
@@ -1691,18 +1656,11 @@
   .ring-gray-300 {
     --tw-ring-color: var(--color-gray-300);
   }
-  .ring-gray-900 {
-    --tw-ring-color: var(--color-gray-900);
-  }
   .ring-gray-900\/10 {
     --tw-ring-color: color-mix(in srgb, oklch(21% 0.034 264.665) 10%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       --tw-ring-color: color-mix(in oklab, var(--color-gray-900) 10%, transparent);
     }
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .blur-\[200px\] {
     --tw-blur: blur(200px);
@@ -1993,6 +1951,11 @@
   .sm\:ml-6 {
     @media (width >= 40rem) {
       margin-left: calc(var(--spacing) * 6);
+    }
+  }
+  .sm\:py-24 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 24);
     }
   }
   .sm\:py-32 {
@@ -3368,11 +3331,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -3465,6 +3423,11 @@
   inherits: false;
   initial-value: 1;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -3501,7 +3464,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
@@ -3523,6 +3485,7 @@
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
+      --tw-outline-style: solid;
     }
   }
 }

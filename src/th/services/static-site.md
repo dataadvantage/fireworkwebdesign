@@ -7,12 +7,10 @@ eleventyNavigation:
   footer: true
   menu_title: Static Website
   order: 1
-title: Static Web Development - Firework Web Design
+title: Static Web Development
 description: Discover the benefits of static website development with Firework Web Design.
 alert: เนื้อหาในหน้านี้รองรับเฉพาะภาษาอังกฤษ
 ---
-
-[Services]({{ "/services" | locale_url }}) » Static Website Development
 
 # Static Website Development
 
