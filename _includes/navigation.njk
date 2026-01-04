@@ -10,7 +10,7 @@
       <div class="hidden sm:ml-6 lg:flex">
         {% for item in collections.all | eleventyNavigation | filter('locale', locale) | filter('header', true) %}
           <div class="relative flex px-4 py-10 group">
-            <a href="{{ item.url }}" class="text-sm after:duration-300 after:inset-0 overflow-x-hidden relative after:-translate-x-[105%] hover:after:translate-x-0 after:transition after:content-[''] after:absolute after:border-b-2 after:border-primary-900 inline-flex items-center px-1 font-medium {% if page.url == item.url %}text-primary-900 after:translate-x-0{% else %}text-neutral-400{% endif %} hover:text-primary-900 transition group-has-[.active]:!text-primary-900">{{ item.key | upper }}</a>
+            <a href="{{ item.url }}" class="{% if lang == 'en' %}text-sm{% endif %} after:duration-300 after:inset-0 overflow-x-hidden relative after:-translate-x-[105%] hover:after:translate-x-0 after:transition after:content-[''] after:absolute after:border-b-2 after:border-primary-900 inline-flex items-center px-1 font-medium {% if page.url == item.url %}text-primary-900 after:translate-x-0{% else %}text-neutral-400{% endif %} hover:text-primary-900 transition group-has-[.active]:!text-primary-900">{{ item.key | upper }}</a>
             {% if item.children | length > 0 %}
               <span class="text-primary-800 cursor-pointer pl-2">&#9660;</span>
               <div class="z-10 bg-white shadow overflow-y-hidden max-h-0 group-hover:max-h-none opacity-0 group-hover:opacity-100 px-4
@@ -23,7 +23,7 @@
                       </strong>
                     </div>
                   {% endif %}
-                  <a href="{{ child.url }}" class="block text-sm after:duration-300 after:inset-0 overflow-x-hidden relative after:-translate-x-[105%] hover:after:-translate-x-100 after:transition after:content-[''] after:absolute after:border-b-2 after:border-primary-900 my-2 items-center px-1 font-medium {% if page.url == child.url %}text-primary-900{% else %}text-neutral-400{% endif %} hover:text-primary-900 transition text-nowrap">{{ child.key | upper }}</a>
+                  <a href="{{ child.url }}" class="block {% if lang == 'en' %}text-sm{% endif %} after:duration-300 after:inset-0 overflow-x-hidden relative after:-translate-x-[105%] hover:after:-translate-x-100 after:transition after:content-[''] after:absolute after:border-b-2 after:border-primary-900 my-2 items-center px-1 font-medium {% if page.url == child.url %}text-primary-900{% else %}text-neutral-400{% endif %} hover:text-primary-900 transition text-nowrap">{{ child.key | upper }}</a>
                 {% endfor %}
               </div>
             {% endif %}
