@@ -34,7 +34,7 @@ eleventyNavigation:
     lg:-top-[700px] lg:-right-[2020px]"></div>
 </div>
 <!-- Services -->
-<div class="bg-zinc-50 py-20 md:py-32 px-6">
+<div class="bg-zinc-50 py-20 md:py-32 px-6 overflow-x-hidden">
   <div class="default-container lg:px-0">
     <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
       <div class="border-r-primary-800 border-2 border-transparent md:col-span-2 pr-4">
@@ -127,7 +127,7 @@ eleventyNavigation:
       {% for project in collections.portfolio | filter("featured", true) | filter("lang", lang) | reverse | head(3) %}
         <div>
           <div class="relative group">
-            <div class="mb-4 h-[250px] [&_img]:h-full [&_img]:object-cover [&_img]:object-center shadow-sm">
+            <div class="mb-4 h-[250px] [&_img]:h-full [&_img]:object-cover [&_img]:object-center">
               <img src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}" width="600"/>
             </div>
             <div class="mb-4 flex flex-wrap gap-2 font-light">
@@ -319,7 +319,7 @@ eleventyNavigation:
     image.style.transform = `rotate(${deg}deg)`;
     image.style.filter = `grayscale(${grayScale}%)`;
     if (times >= 5) {
-      spinMeText.innerHTML = '<a href="/                             {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
+      spinMeText.innerHTML = '<a href="/                               {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
       spinMeText.classList.remove('opacity-0')
     } else {
       spinMeText.textContent = ('You have spun me ' + times + ' times');

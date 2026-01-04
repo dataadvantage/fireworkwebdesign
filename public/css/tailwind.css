@@ -1007,6 +1007,12 @@
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
+  .max-w-dvw {
+    max-width: 100dvw;
+  }
+  .max-w-full {
+    max-width: 100%;
+  }
   .max-w-prose {
     max-width: 65ch;
   }
@@ -2491,6 +2497,16 @@
       & img {
         width: 100%;
       }
+    }
+  }
+  .\[\&_picture\]\:flex {
+    & picture {
+      display: flex;
+    }
+  }
+  .\[\&_picture\]\:items-center {
+    & picture {
+      align-items: center;
     }
   }
 }

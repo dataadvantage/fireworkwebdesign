@@ -35,7 +35,9 @@
           <div class="absolute inset-x-0 top-full shadow-sm z-1000000 bg-white pt-2 px-4 opacity-0 group-hover:opacity-100 transition">
             {% for lgg in metadata.languages %}
               {% if lgg.code != lang %}
-                <a href="/{{ lgg.code }}/" class="flex mb-2 text-center hover:text-black text-sm">
+                <a
+                  href="/{{ lgg.code }}/"
+                  class="flex mb-2 text-center hover:text-black text-sm [&_picture]:flex [&_picture]:items-center">
                   <img src="/static/img/flags/{{ lgg.flag }}" width="20" class="mr-1" alt="{{ lgg.name }}" loading="lazy"/>
                   <span class="text-sm">{{ lgg.code | upper }}</span>
                 </a>

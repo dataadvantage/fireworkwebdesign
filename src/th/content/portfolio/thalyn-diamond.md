@@ -2,7 +2,7 @@
 name: Thalyn Diamond
 url: thalyn-diamond
 description: Thalyn Diamond, the first lab-grown diamond studio in Chiang Mai, Thailand
-image: /static/img/thalyn-diamond-thumbnail.png
+image: /static/img/projects/thalyndiamond.com.png
 imageAlt: Thalyn Diamond
 liveUrl: www.thalyndiamond.com
 portfolioUrl: www.thalyndiamond.com
