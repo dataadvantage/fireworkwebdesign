@@ -108,7 +108,11 @@
                 </div>
                 <div class="mt-8 flex justify-end">
                     <button type="submit" class="btn-primary uppercase">
-                        Submit
+                        {% if lang == 'en' %}
+                            Submit
+                        {% elif lang == 'th' %}
+                            ส่งข้อความ
+                        {% endif %}
                     </button>
                 </div>
             </div>
