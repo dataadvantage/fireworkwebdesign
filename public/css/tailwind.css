@@ -944,9 +944,6 @@
   .h-\[250px\] {
     height: 250px;
   }
-  .h-\[600px\] {
-    height: 600px;
-  }
   .h-\[1800px\] {
     height: 1800px;
   }
@@ -1128,9 +1125,6 @@
   }
   .rounded-md {
     border-radius: var(--radius-md);
-  }
-  .rounded-xl {
-    border-radius: var(--radius-xl);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -2065,11 +2059,6 @@
       display: inline;
     }
   }
-  .md\:h-\[700px\] {
-    @media (width >= 48rem) {
-      height: 700px;
-    }
-  }
   .md\:w-1\/2 {
     @media (width >= 48rem) {
       width: calc(1/2 * 100%);
@@ -2277,11 +2266,6 @@
   .lg\:hidden {
     @media (width >= 64rem) {
       display: none;
-    }
-  }
-  .lg\:h-\[750px\] {
-    @media (width >= 64rem) {
-      height: 750px;
     }
   }
   .lg\:w-1\/2 {

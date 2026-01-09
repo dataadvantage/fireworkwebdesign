@@ -2,7 +2,7 @@
 layout: layouts/service.njk
 eleventyNavigation:
   key: Rybbit Web Analytics
-  parent: Services
+  parent: บริการ
   header: true
   footer: true
   menu_title: Other Services
