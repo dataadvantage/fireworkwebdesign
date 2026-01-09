@@ -6,7 +6,7 @@ eleventyNavigation:
   header: true
   footer: true
   menu_title: Other Services
-  order: 1
+  order: 31
 title: Web Analytics with  Rybbit
 description: Website analytics and tracking solutions with Rybbit to help you understand your audience and improve your online presence.
 ---
