@@ -4,38 +4,37 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ title or metadata.title[lang] }}</title>
-        <meta name="description" content="{{ description or metadata.description[lang] }}"> {#- Atom and JSON feeds included by default #}
-        <meta property="og:title"              content="{{ title or metadata.title[lang] }}" />
-        <meta property="og:description"        content="{{ description or metadata.description[lang] }}" />
-        <meta property="og:image"              content="{{ metadata.url}}{{ facebook_image or "/img/social-banner.jpg" }}"/>
+        <meta
+        name="description" content="{{ description or metadata.description[lang] }}"> {#- Atom and JSON feeds included by default #}
+        <meta property="og:title" content="{{ title or metadata.title[lang] }}"/>
+        <meta property="og:description" content="{{ description or metadata.description[lang] }}"/>
+        <meta property="og:image" content="{{ metadata.url }}{{ facebook_image or "/img/social-banner.jpg" }}"/>
         <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title[lang] }}">
         <link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title[lang] }}"> {#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
         {#- <meta name="generator" content="{{ eleventy.generator }}"> #}
         {#-
-        		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
-        		1. You can add to them using `{% css %}`
-        		2. You can get from them using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
-        		3. You can do the same for JS: {% js %}{% endjs %} and <script>{% getBundle "js" %}</script>
-        		4. Learn more: https://github.com/11ty/eleventy-plugin-bundle
-        		#}
-        {#- Add an arbitrary string to the bundle #}
-        {%- css %}* { box-sizing: border-box; }{% endcss %}
-        {%- css %}[x-cloak] { display: none !important; }{% endcss %}
-        {#- Add the contents of a file to the bundle #}
-        {%- css %}{% include "public/css/tailwind.css" %}{% endcss %}
-        {%- css %}{% include "public/css/aos.css" %}{% endcss %}
-        {%- css 'fontawesome' %}{% include "public/css/fontawesome.min.css" %}{% endcss %}
+                		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
+                		1. You can add to them using `{% css %}`
+                		2. You can get from them using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
+                		3. You can do the same for JS: {% js %}{% endjs %} and <script>{% getBundle "js" %}</script>
+                		4. Learn more: https://github.com/11ty/eleventy-plugin-bundle
+                		#}
+        {#- Add an arbitrary string to the bundle #}{%- css %}* { box-sizing: border-box; }
+        {% endcss %}{%- css %}[x-cloak] { display: none !important; }
+        {% endcss %}
+        {#- Add the contents of a file to the bundle #}{%- css %}{% include "public/css/tailwind.css" %}
+        {% endcss %}{%- css %}{% include "public/css/aos.css" %}
+        {% endcss %}{%- css 'fontawesome' %}{% include "public/css/fontawesome.min.css" %}
+        {% endcss %}
         {#- Or add from node_modules #}
-        {# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
-        <script defer src="/js/alpine.intersect.js"></script>
+        {# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}<script defer src="/js/alpine.intersect.js"> </script>
         <script defer src="/js/alpine.js"></script>
         <script defer src="/js/index.js"></script>
         <script src="/js/aos.js"></script>
         {#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
         <style>{% getBundle "css" %}</style>
         {#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
-        <link
-        rel="preload" href="{% getBundleFileUrl "css", "fontawesome" %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" href="{% getBundleFileUrl "css", "fontawesome" %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -48,29 +47,29 @@
         <script defer src="https://www.googletagmanager.com/gtag/js?id=G-Q31QHX2E1K"></script>
         <script defer>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag() {
+                dataLayer.push(arguments);
+            }
             gtag('js', new Date());
 
             gtag('config', 'G-Q31QHX2E1K');
         </script>
-        <script
-            src="https://a.fireworkwebdesign.com/api/script.js"
-            data-site-id="2717527b4dac"
-            defer
-        ></script>
+        <script src="https://a.fireworkwebdesign.com/api/script.js" data-site-id="2717527b4dac" defer></script>
 
         {# Fonts #}
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet">
     </head>
-    <body>
+    <body class="font-open-sans">
         {% if alert %}
-        <div class="bg-yellow-200 py-2 text-gray-700">
-            <div class="default-container px-4 font-noto">
-                {{ alert | safe }}
+            <div class="bg-yellow-200 py-2 text-gray-700">
+                <div class="default-container px-4 font-noto">
+                    {{ alert | safe }}
+                </div>
             </div>
-        </div>
         {% endif %}
         {% include 'navigation.njk' %}
         <main id="skip">
@@ -79,7 +78,7 @@
         {% include 'footer.njk' %}
         <!-- This page `{{ page.url | htmlBaseUrl }}` was built on {% currentBuildDate %} -->
         <script>
-              AOS.init();
+            AOS.init();
         </script>
     </body>
 </html>
