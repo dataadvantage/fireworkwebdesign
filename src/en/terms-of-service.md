@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/content-with-toc.njk
 title: Terms of Service - Firework Web Design
 eleventyNavigation:
   key: Terms of service
@@ -8,9 +8,6 @@ eleventyNavigation:
   footer-legal: true
   order: 10
 ---
-
-<div class="shadow pb-24">
-<div class="max-w-5xl mx-auto prose pt-24 px-8 prose-headings:text-primary-800 [&_a.header-anchor]:text-gray-400">
 
 # Terms of Service
 
@@ -31,7 +28,3 @@ Services shall be deemed completed upon fulfillment of the agreed scope of work 
 **All payments made are non-refundable under any circumstances.**
 
 The Service Provider reserves the right to amend or update these Terms and Conditions at any time without prior notice.
-
-</div>
-
-</div>

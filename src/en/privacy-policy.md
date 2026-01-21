@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/content-with-toc.njk
 title: Privacy Policy - Firework Web Design
 eleventyNavigation:
   key: Privacy policy
@@ -9,8 +9,6 @@ eleventyNavigation:
   order: 10
 ---
 
-<div class="shadow pb-24">
-  <div class="max-w-5xl mx-auto prose pt-24 px-8 prose-headings:text-primary-800 [&_a.header-anchor]:text-gray-400">
 
 # Privacy Policy
 
@@ -20,7 +18,7 @@ This Privacy Policy explains how **Data Advantage Co., Ltd.** ("we", "us", or "o
 
 By accessing or using our services, you acknowledge that you have read and understood this Privacy Policy.
 
----
+
 
 ## 1. Information We Collect
 
@@ -52,7 +50,7 @@ Automatically collected information may include:
 
 We may use cookies or similar technologies to improve website functionality, analyze usage, and enhance user experience. You may disable cookies through your browser settings, though this may affect website functionality.
 
----
+
 
 ## 2. How We Use Your Information
 
@@ -65,7 +63,7 @@ We use collected information for purposes including:
 - Maintaining security and preventing fraud
 - Complying with legal and regulatory obligations
 
----
+
 
 ## 3. Legal Basis for Processing (Where Applicable)
 
@@ -76,7 +74,7 @@ We process personal data based on one or more of the following legal grounds:
 - Compliance with legal obligations
 - Legitimate business interests, provided such interests do not override your rights
 
----
+
 
 ## 4. Information Sharing and Disclosure
 
@@ -89,19 +87,19 @@ We do not sell or rent your personal information. We may share information only 
 
 All third parties are required to protect your information and use it only for authorized purposes.
 
----
+
 
 ## 5. Data Retention
 
 We retain personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, comply with legal obligations, resolve disputes, and enforce agreements.
 
----
+
 
 ## 6. Data Security
 
 We implement reasonable administrative, technical, and organizational measures to protect personal information against unauthorized access, disclosure, alteration, or destruction. However, no method of transmission over the internet is completely secure, and we cannot guarantee absolute security.
 
----
+
 
 ## 7. Your Rights
 
@@ -116,31 +114,31 @@ Depending on your location and applicable laws, you may have the right to:
 
 To exercise your rights, please contact us using the details below.
 
----
+
 
 ## 8. International Data Transfers
 
 Your information may be transferred to and processed in countries other than your own. We take appropriate measures to ensure that such transfers comply with applicable data protection laws.
 
----
+
 
 ## 9. Third-Party Links
 
 Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of such websites. We encourage you to review their privacy policies independently.
 
----
+
 
 ## 10. Children's Privacy
 
 Our services are not intended for individuals under the age of 18. We do not knowingly collect personal information from children. If you believe that a child has provided us with personal data, please contact us immediately.
 
----
+
 
 ## 11. Changes to This Privacy Policy
 
 We reserve the right to update or modify this Privacy Policy at any time. Changes will be effective immediately upon posting on this page. Your continued use of the website or services constitutes acceptance of the updated policy.
 
----
+
 
 ## 12. Contact Information
 
@@ -150,10 +148,6 @@ If you have any questions, concerns, or requests regarding this Privacy Policy o
  Email: contact@fireworkwebdesign.com  
  Address: 230 M.2 Cherng Doi, Doi Saket, Chiang Mai 50220, Thailand
 
----
+
 
 By using our website or services, you acknowledge that you have read and agree to this Privacy Policy.
-
-  </div>
-
-</div>
