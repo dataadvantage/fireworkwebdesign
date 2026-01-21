@@ -17,7 +17,8 @@ eleventyComputed:
     <div class="md:col-span-2">
         <aside class="max-sm:hidden top-4 sticky">
             <p class="text-orange-700 font-semibold text-lg mb-2">Table of Contents</p>
-            <div class="border-l-3 border-gray-200 pl-3 [&_li]:hover:underline">
+            <div class="[&_li]:hover:underline [&_.active]:text-primary-800 [&_.active]:font-semibold [&_li]:border-l-3
+                    [&_li]:border-gray-100 [&_li]:pl-2 [&_li]:py-1 [&_li]:has-[.active]:border-primary-800 [&_li_a]:text-gray-600">
                 {{ content | toc | safe }}
             </div>
         </aside>
@@ -71,3 +72,4 @@ eleventyComputed:
         </svg>
     </div>
 </div>
+<script defer src="/js/toc.js"></script>

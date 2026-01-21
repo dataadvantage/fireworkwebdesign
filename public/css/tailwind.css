@@ -63,6 +63,7 @@
     --color-green-700: oklch(52.7% 0.154 150.069);
     --color-sky-900: oklch(39.1% 0.09 240.876);
     --color-sky-950: oklch(29.3% 0.066 243.157);
+    --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-blue-800: oklch(42.4% 0.199 265.638);
@@ -70,6 +71,7 @@
     --color-indigo-600: oklch(51.1% 0.262 276.966);
     --color-slate-700: oklch(37.2% 0.044 257.287);
     --color-gray-50: oklch(98.5% 0.002 247.839);
+    --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
@@ -298,6 +300,9 @@
   }
 }
 @layer utilities {
+  .visible {
+    visibility: visible;
+  }
   .sr-only {
     position: absolute;
     width: 1px;
@@ -2657,6 +2662,28 @@
       margin-block: calc(var(--spacing) * 0);
     }
   }
+  .\[\&_\.active\]\:font-bold {
+    & .active {
+      --tw-font-weight: var(--font-weight-bold);
+      font-weight: var(--font-weight-bold);
+    }
+  }
+  .\[\&_\.active\]\:font-semibold {
+    & .active {
+      --tw-font-weight: var(--font-weight-semibold);
+      font-weight: var(--font-weight-semibold);
+    }
+  }
+  .\[\&_\.active\]\:text-blue-500 {
+    & .active {
+      color: var(--color-blue-500);
+    }
+  }
+  .\[\&_\.active\]\:text-primary-800 {
+    & .active {
+      color: var(--color-primary-800);
+    }
+  }
   .\[\&_\.header-anchor\]\:text-orange-200 {
     & .header-anchor {
       color: var(--color-orange-200);
@@ -2786,6 +2813,37 @@
       }
     }
   }
+  .\[\&_li\]\:border-l-3 {
+    & li {
+      border-left-style: var(--tw-border-style);
+      border-left-width: 3px;
+    }
+  }
+  .\[\&_li\]\:border-gray-100 {
+    & li {
+      border-color: var(--color-gray-100);
+    }
+  }
+  .\[\&_li\]\:border-gray-200 {
+    & li {
+      border-color: var(--color-gray-200);
+    }
+  }
+  .\[\&_li\]\:py-1 {
+    & li {
+      padding-block: calc(var(--spacing) * 1);
+    }
+  }
+  .\[\&_li\]\:py-2 {
+    & li {
+      padding-block: calc(var(--spacing) * 2);
+    }
+  }
+  .\[\&_li\]\:pl-2 {
+    & li {
+      padding-left: calc(var(--spacing) * 2);
+    }
+  }
   .\[\&_li\]\:hover\:underline {
     & li {
       &:hover {
@@ -2793,6 +2851,33 @@
           text-decoration-line: underline;
         }
       }
+    }
+  }
+  .\[\&_li\]\:has-\[\.active\]\:border-primary-800 {
+    & li {
+      &:has(*:is(.active)) {
+        border-color: var(--color-primary-800);
+      }
+    }
+  }
+  .\[\&_li_a\]\:text-gray-300 {
+    & li a {
+      color: var(--color-gray-300);
+    }
+  }
+  .\[\&_li_a\]\:text-gray-400 {
+    & li a {
+      color: var(--color-gray-400);
+    }
+  }
+  .\[\&_li_a\]\:text-gray-500 {
+    & li a {
+      color: var(--color-gray-500);
+    }
+  }
+  .\[\&_li_a\]\:text-gray-600 {
+    & li a {
+      color: var(--color-gray-600);
     }
   }
   .\[\&_picture\]\:flex {
