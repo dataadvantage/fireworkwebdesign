@@ -52,14 +52,4 @@ This service is ideal if you:
 - Want analytics without complex consent systems
 - Prefer owning your data long-term
 
-## How I Help
-
-I handle the full setup:
-
-- Rybbit installation on your server
-- Secure and privacy-friendly configuration
-- Website integration
-
-You get insights that are easy to understand and actually useful.
-
 [Learn more about Rybbit →](https://rybbit.com/)
