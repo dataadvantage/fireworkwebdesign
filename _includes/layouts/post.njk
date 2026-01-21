@@ -4,10 +4,10 @@ eleventyComputed:
     facebook_image: "{% getImage eleventy.env.root + '/src' + image, '900px' %}"
 ---
 
-<div class="py-10 sm:py-24 px-4 md:px-6 bg-amber-50/10">
+<div class="py-10 sm:py-24 px-4 md:px-6 bg-amber-50/40">
     <div class="prose max-w-3xl mx-auto prose-headings:text-primary-800 prose-strong:text-primary-800 [&_img]:shadow-sm
-            [&_.header-anchor]:text-orange-200 prose-h1:border-l-4 prose-h1:pl-2 prose-h1:border-orange-600 prose-h2:border-l-4
-            prose-h2:pl-2 prose-h2:border-orange-600 prose-li:my-0">
+            [&_.header-anchor]:text-orange-200 prose-h1:max-sm:text-3xl prose-h1:border-l-4 prose-h1:pl-2 prose-h1:border-orange-600
+            prose-h2:border-l-4 prose-h2:pl-2 prose-h2:border-orange-600 prose-li:my-0">
         <div class="mb-2">
             <a href='{{ "/blogs" | locale_url }}'>Blogs</a>
             / {{ title }}

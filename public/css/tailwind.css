@@ -1186,6 +1186,12 @@
       background-color: color-mix(in oklab, var(--color-amber-50) 10%, transparent);
     }
   }
+  .bg-amber-50\/20 {
+    background-color: color-mix(in srgb, oklch(98.7% 0.022 95.277) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-amber-50) 20%, transparent);
+    }
+  }
   .bg-amber-50\/25 {
     background-color: color-mix(in srgb, oklch(98.7% 0.022 95.277) 25%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1196,6 +1202,12 @@
     background-color: color-mix(in srgb, oklch(98.7% 0.022 95.277) 30%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-amber-50) 30%, transparent);
+    }
+  }
+  .bg-amber-50\/40 {
+    background-color: color-mix(in srgb, oklch(98.7% 0.022 95.277) 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-amber-50) 40%, transparent);
     }
   }
   .bg-amber-50\/50 {
@@ -1393,6 +1405,9 @@
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
+  }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
   }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
@@ -2452,9 +2467,44 @@
       line-height: var(--tw-leading, var(--text-6xl--line-height));
     }
   }
+  .prose-headings\:mt-6 {
+    & :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      margin-top: calc(var(--spacing) * 6);
+    }
+  }
+  .prose-headings\:pt-6 {
+    & :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      padding-top: calc(var(--spacing) * 6);
+    }
+  }
   .prose-headings\:text-primary-800 {
     & :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       color: var(--color-primary-800);
+    }
+  }
+  .prose-headings\:before\:block {
+    & :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &::before {
+        content: var(--tw-content);
+        display: block;
+      }
+    }
+  }
+  .prose-headings\:before\:h-6 {
+    & :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &::before {
+        content: var(--tw-content);
+        height: calc(var(--spacing) * 6);
+      }
+    }
+  }
+  .prose-headings\:before\:content-\[\'\'\] {
+    & :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &::before {
+        content: var(--tw-content);
+        --tw-content: '';
+        content: var(--tw-content);
+      }
     }
   }
   .prose-h1\:border-l-4 {
@@ -2471,6 +2521,22 @@
   .prose-h1\:pl-2 {
     & :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       padding-left: calc(var(--spacing) * 2);
+    }
+  }
+  .prose-h1\:max-sm\:text-2xl {
+    & :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      @media (width < 40rem) {
+        font-size: var(--text-2xl);
+        line-height: var(--tw-leading, var(--text-2xl--line-height));
+      }
+    }
+  }
+  .prose-h1\:max-sm\:text-3xl {
+    & :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      @media (width < 40rem) {
+        font-size: var(--text-3xl);
+        line-height: var(--tw-leading, var(--text-3xl--line-height));
+      }
     }
   }
   .prose-h2\:border-l-4 {

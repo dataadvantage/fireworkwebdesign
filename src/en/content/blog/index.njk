@@ -11,10 +11,10 @@ eleventyNavigation:
 ---
 
 <div class="bg-amber-50/25 shadow-sm">
-  <div class="max-w-4xl mx-auto py-24 px-6 ">
+  <div class="max-w-4xl mx-auto py-12 md:py-24 px-6 ">
     <h1 class="mb-8 uppercase font-semibold text-orange-600">Blog posts</h1>
     {% for blog in collections.blog|filter("lang", lang) %}
-      <div class="relative group py-6 grid gap-4 md:gap-8 grid-cols-1 md:grid-cols-3">
+      <div class="relative group grid gap-4 md:gap-8 grid-cols-2 md:grid-cols-3">
         <div class="order-3 md:order-1">
           <img src="{{ blog.data.image }}" alt="{{ blog.data.imageAlt }}" width="400" class="aspect-[5/3] object-cover object-center"/>
         </div>
