@@ -266,19 +266,15 @@ eleventyNavigation:
       [&_img]:h-full [&_img]:object-cover [&_img]:duration-500">
     <img src='/static/img/firework-1.jpg' alt='' eleventy:widths='960,1920'/>
   </div>
-  <div class="pt-24 pb-28 px-8 md:px-16 lg:px-32 md:flex-1 relative">
-    <p class="uppercase text-orange-600 mb-2 text-sm md:text-base font-semibold">Ready to spark your next project?</p>
+  <div class="py-24 px-8 md:px-16 lg:px-32 md:flex-1 relative">
+    <p class="uppercase text-orange-600 mb-2 text-sm md:text-base font-semibold">Ready to start?</p>
     <p class="font-semibold text-3xl lg:text-4xl text-white mb-6">
-      Let’s Build Something<br/> Great Together!
-    </p>
-    <p class="text-white mb-12 lg:max-w-[80%]">
-      Whether you're starting from scratch or looking to revamp your current site, we are here to make it happen. Let’s
-      discuss how we can help you build the perfect website for your business.
+      Build the website you always wanted
     </p>
     <a
-      class="btn-primary-lg bg-orange-600 hover:bg-orange-700 text-white hover:text-gray-200 uppercase"
-      href="/contact-us/">
-      Get a free consultation
+      class="inline-block btn-primary-lg bg-orange-600 hover:bg-orange-700 text-white hover:text-gray-200 uppercase"
+      href="/en/contact-us/">
+      Get started today
     </a>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -313,7 +309,7 @@ eleventyNavigation:
     image.style.transform = `rotate(${deg}deg)`;
     image.style.filter = `grayscale(${grayScale}%)`;
     if (times >= 5) {
-      spinMeText.innerHTML = '<a href="/        {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
+      spinMeText.innerHTML = '<a href="/              {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
       spinMeText.classList.remove('opacity-0')
     } else {
       spinMeText.textContent = ('You have spun me ' + times + ' times');

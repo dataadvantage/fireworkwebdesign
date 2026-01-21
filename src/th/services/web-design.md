@@ -5,7 +5,7 @@ eleventyNavigation:
   parent: บริการ
   header: true
   footer: true
-  menu_title: Static Website
+  menu_title: ออกแบบเว็บไซต์
   order: 1
 title: Static Web Development
 description: Discover the benefits of static website development with Firework Web Design.

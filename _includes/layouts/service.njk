@@ -19,18 +19,28 @@ layout: layouts/base.njk
         <img src='/static/img/firework-1.jpg' alt='' eleventy:widths='960,1920'/>
     </div>
     <div class="pt-24 pb-28 px-8 md:px-16 lg:px-32 md:flex-1 relative">
-        <p class="uppercase text-orange-600 mb-2 text-sm md:text-base font-semibold">Ready to spark your next project?</p>
-        <p class="font-semibold text-3xl lg:text-4xl text-white mb-6">
-            Let’s Build Something<br/> Great Together!
+        <p class="uppercase text-orange-600 mb-2 text-sm md:text-base font-semibold">
+            {% if lang == 'en' %}
+                Ready to get started?
+            {% elif lang == 'th' %}
+                อยากเริ่มต้นทำเว็บไซต์
+            {% endif %}
         </p>
-        <p class="text-white mb-12 lg:max-w-[80%]">
-            Whether you're starting from scratch or looking to revamp your current site, we are here to make it happen. Let’s
-            discuss how we can help you build the perfect website for your business.
+        <p class="font-semibold text-3xl lg:text-4xl text-white mb-6">
+            {% if lang == 'en' %}
+                Build the website you always wanted
+            {% elif lang == 'th' %}
+                สร้างเว็บไซต์ในแบบที่คุณต้องการ
+            {% endif %}
         </p>
         <a
-            class="btn-primary-lg bg-orange-600 hover:bg-orange-700 text-white hover:text-gray-200 uppercase"
-            href="/contact-us/">
-            Get a free consultation
+            class="inline-block btn-primary-lg bg-orange-600 hover:bg-orange-700 text-white hover:text-gray-200 uppercase"
+            href="/{{ lang|lower }}/contact-us/">
+            {% if lang == 'en' %}
+                Get started today
+            {% elif lang == 'th' %}
+                เริ่มต้นทันที
+            {% endif %}
         </a>
         <svg
             xmlns="http://www.w3.org/2000/svg"

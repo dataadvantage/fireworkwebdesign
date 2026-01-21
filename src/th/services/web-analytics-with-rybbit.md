@@ -1,11 +1,11 @@
 ---
 layout: layouts/service.njk
 eleventyNavigation:
-  key: Rybbit Web Analytics
+  key: วิเคราะห์เว็บด้วย Rybbit
   parent: บริการ
   header: true
   footer: true
-  menu_title: Other Services
+  menu_title: บริการอื่นๆ
   order: 31
 title: Web Analytics with  Rybbit
 description: Website analytics and tracking solutions with Rybbit to help you understand your audience and improve your online presence.
