@@ -3,21 +3,26 @@ layout: layouts/base.njk
 title: Blogs - FIREWORK Web Design
 override:tags: false
 permalink: "{{ locale }}/blogs/index.html"
+eleventyNavigation:
+  key: Blogs
+  header: true
+  footer: true
+  order: 4
 ---
 
 <div class="bg-amber-50/25 shadow-sm">
   <div class="max-w-4xl mx-auto py-24 px-6 ">
-    <h1 class="mb-12">Blog posts</h1>
-    {% for blog in collections.blog %}
-      <div class="relative group py-6 flex gap-4 md:gap-8">
+    <h1 class="mb-8 uppercase font-semibold text-orange-600">Blog posts</h1>
+    {% for blog in collections.blog|filter("lang", lang) %}
+      <div class="relative group py-6 grid gap-4 md:gap-8 grid-cols-1 md:grid-cols-3">
         <div class="order-3 md:order-1">
-          <img src="{{ blog.data.image }}" alt="{{ blog.data.imageAlt }}" width="400"/>
+          <img src="{{ blog.data.image }}" alt="{{ blog.data.imageAlt }}" width="400" class="aspect-[5/3] object-cover object-center"/>
         </div>
-        <div class="order-2">
-          <p class="mb-4 font-bold text-lg group-hover:underline">
+        <div class="order-2 md:col-span-2">
+          <p class="mb-2 font-semibold text-lg group-hover:underline text-primary-700">
             {{ blog.data.title }}
           </p>
-          <p class="text-gray-600 group-hover:underline">
+          <p class="text-gray-600 group-hover:underline max-sm:hidden">
             {{ blog.data.description }}
           </p>
         </div>
