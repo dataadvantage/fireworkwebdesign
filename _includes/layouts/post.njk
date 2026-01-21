@@ -4,7 +4,7 @@ eleventyComputed:
     facebook_image: "{% getImage eleventy.env.root + '/src' + image, '900px' %}"
 ---
 
-<div class="py-10 lg:py-24 px-4 md:px-6 bg-amber-50/40 md:grid md:grid-cols-6">
+<div class="py-10 lg:py-24 px-4 md:px-6 bg-amber-50/20 md:grid md:grid-cols-6">
     <article class="prose max-w-3xl ml-auto prose-headings:text-primary-800 prose-strong:text-primary-800 [&_img]:shadow-sm
             [&_.header-anchor]:text-orange-200 prose-h1:max-lg:text-3xl prose-h1:border-l-4 prose-h1:pl-2 prose-h1:border-orange-600
             prose-h2:border-l-4 prose-h2:pl-2 prose-h2:border-orange-600 prose-li:my-0 md:col-span-4">
@@ -23,8 +23,8 @@ eleventyComputed:
                     สารบัญ
                 {% endif %}
             </p>
-            <div class="[&_li]:hover:underline [&_.active]:text-primary-800 [&_.active]:font-semibold [&_li]:border-l-3
-                    [&_li]:border-gray-100 [&_li]:pl-2 [&_li]:py-1 [&_li]:has-[.active]:border-primary-800 [&_li_a]:text-gray-600">
+            <div class="[&_.active]:text-primary-800 [&_.active]:font-semibold [&_li]:border-l-3 [&_li]:border-gray-100 [&_li]:pl-2
+                    [&_li]:py-1 [&_li]:has-[.active]:border-primary-800 [&_li_a]:text-gray-600 [&_li]:underline">
                 {{ content | toc | safe }}
             </div>
         </aside>
