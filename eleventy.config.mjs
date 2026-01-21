@@ -8,6 +8,7 @@ import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginBundle from "@11ty/eleventy-plugin-bundle";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { EleventyHtmlBasePlugin, EleventyI18nPlugin } from "@11ty/eleventy";
+import pluginTOC from 'eleventy-plugin-nesting-toc';
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import eleventyImage from "@11ty/eleventy-img";
 
@@ -20,6 +21,7 @@ export default function (eleventyConfig) {
 	// To Support .yaml Extension in _data
 	// You may remove this if you can use JSON
 	eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
+	eleventyConfig.addPlugin(pluginTOC);
 
 	eleventyConfig.addPlugin(EleventyI18nPlugin, {
 		// any valid BCP 47-compatible language tag is supported
