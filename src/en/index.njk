@@ -41,7 +41,7 @@ eleventyNavigation:
         <h2 class="uppercase text-primary-800 text-sm mb-2">Our Services</h2>
         <p class="font-bold text-3xl md:text-4xl">
           At
-          <span class="text-orange-600 font-extrabold uppercase">Firework</span>
+          <span class="text-orange-600 font-extrabold uppercase group-[.loaded]/root:text-blue-500!">Firework</span>
           , we offer a full suite of web services tailored to your business needs
         </p>
       </div>
@@ -309,7 +309,7 @@ eleventyNavigation:
     image.style.transform = `rotate(${deg}deg)`;
     image.style.filter = `grayscale(${grayScale}%)`;
     if (times >= 5) {
-      spinMeText.innerHTML = '<a href="/              {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
+      spinMeText.innerHTML = '<a href="/                   {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
       spinMeText.classList.remove('opacity-0')
     } else {
       spinMeText.textContent = ('You have spun me ' + times + ' times');

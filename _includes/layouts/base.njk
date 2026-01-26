@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ lang }}" class="scroll-smooth">
+<html x-data="{loaded: false}" lang="{{ lang }}" class="group/root scroll-smooth" x-init="loaded = true" :class="loaded && 'loaded'">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">

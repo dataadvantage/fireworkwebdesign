@@ -62,6 +62,7 @@
     --color-green-700: oklch(52.7% 0.154 150.069);
     --color-sky-900: oklch(39.1% 0.09 240.876);
     --color-sky-950: oklch(29.3% 0.066 243.157);
+    --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-blue-800: oklch(42.4% 0.199 265.638);
@@ -1191,12 +1192,6 @@
       background-color: color-mix(in oklab, var(--color-amber-50) 30%, transparent);
     }
   }
-  .bg-amber-50\/40 {
-    background-color: color-mix(in srgb, oklch(98.7% 0.022 95.277) 40%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-amber-50) 40%, transparent);
-    }
-  }
   .bg-amber-50\/50 {
     background-color: color-mix(in srgb, oklch(98.7% 0.022 95.277) 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1779,6 +1774,21 @@
   .group-has-\[\.active\]\:text-primary-800 {
     &:is(:where(.group):has(*:is(.active)) *) {
       color: var(--color-primary-800);
+    }
+  }
+  .group-has-\[\.loaded\]\/root\:text-blue-500\! {
+    &:is(:where(.group\/root):has(*:is(.loaded)) *) {
+      color: var(--color-blue-500) !important;
+    }
+  }
+  .group-\[\.loaded\]\:text-blue-500\! {
+    &:is(:where(.group):is(.loaded) *) {
+      color: var(--color-blue-500) !important;
+    }
+  }
+  .group-\[\.loaded\]\/root\:text-blue-500\! {
+    &:is(:where(.group\/root):is(.loaded) *) {
+      color: var(--color-blue-500) !important;
     }
   }
   .peer-hover\:opacity-100 {
@@ -2528,11 +2538,6 @@
       color: var(--color-orange-200);
     }
   }
-  .\[\&_a\.header-anchor\]\:text-gray-400 {
-    & a.header-anchor {
-      color: var(--color-gray-400);
-    }
-  }
   .\[\&_img\]\:relative {
     & img {
       position: relative;
@@ -2678,25 +2683,6 @@
       text-decoration-line: underline;
     }
   }
-  .\[\&_li\]\:hover\:border-b-2 {
-    & li {
-      &:hover {
-        @media (hover: hover) {
-          border-bottom-style: var(--tw-border-style);
-          border-bottom-width: 2px;
-        }
-      }
-    }
-  }
-  .\[\&_li\]\:hover\:underline {
-    & li {
-      &:hover {
-        @media (hover: hover) {
-          text-decoration-line: underline;
-        }
-      }
-    }
-  }
   .\[\&_li\]\:has-\[\.active\]\:border-primary-800 {
     & li {
       &:has(*:is(.active)) {
@@ -2707,11 +2693,6 @@
   .\[\&_li_a\]\:text-gray-600 {
     & li a {
       color: var(--color-gray-600);
-    }
-  }
-  .\[\&_nav\>ol\>li\]\:pl-2 {
-    & nav>ol>li {
-      padding-left: calc(var(--spacing) * 2);
     }
   }
   .\[\&_picture\]\:flex {
