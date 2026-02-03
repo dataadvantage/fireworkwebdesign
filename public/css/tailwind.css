@@ -1781,6 +1781,14 @@
       color: var(--color-primary-800);
     }
   }
+<<<<<<< Updated upstream
+=======
+  .group-\[\.loaded\]\/root\:text-blue-500\! {
+    &:is(:where(.group\/root):is(.loaded) *) {
+      color: var(--color-blue-500) !important;
+    }
+  }
+>>>>>>> Stashed changes
   .peer-hover\:opacity-100 {
     &:is(:where(.peer):hover ~ *) {
       @media (hover: hover) {
@@ -2462,6 +2470,11 @@
       color: var(--color-primary-800);
     }
   }
+  .prose-h1\:scroll-mt-4 {
+    & :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      scroll-margin-top: calc(var(--spacing) * 4);
+    }
+  }
   .prose-h1\:border-l-4 {
     & :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       border-left-style: var(--tw-border-style);
@@ -2486,6 +2499,11 @@
       }
     }
   }
+  .prose-h2\:scroll-mt-4 {
+    & :is(:where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      scroll-margin-top: calc(var(--spacing) * 4);
+    }
+  }
   .prose-h2\:border-l-4 {
     & :is(:where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       border-left-style: var(--tw-border-style);
@@ -2500,6 +2518,16 @@
   .prose-h2\:pl-2 {
     & :is(:where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       padding-left: calc(var(--spacing) * 2);
+    }
+  }
+  .prose-h3\:scroll-mt-2 {
+    & :is(:where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      scroll-margin-top: calc(var(--spacing) * 2);
+    }
+  }
+  .prose-h3\:scroll-mt-4 {
+    & :is(:where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      scroll-margin-top: calc(var(--spacing) * 4);
     }
   }
   .prose-strong\:text-primary-800 {
