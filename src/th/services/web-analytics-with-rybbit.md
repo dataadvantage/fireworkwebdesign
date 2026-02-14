@@ -16,6 +16,13 @@ alert: เนื้อหาในหน้านี้รองรับเฉ�
 
 With **self-hosted Rybbit**, you get clear, useful analytics, while keeping full ownership of your data.
 
+<iframe src="https://a.fireworkwebdesign.com/8/main?timeMode=range&bucket=day&stat=users&wellKnown=last-30-days" class="w-full h-[700px]">
+</iframe>
+
+<p class="text-center text-gray-500 text-sm">
+Demo dashboard showing 30-day user stats from Rybbit. See <a href="https://a.fireworkwebdesign.com/8/main?timeMode=range&bucket=day&stat=users&wellKnown=last-30-days" target="_blank">live demo</a>.
+</p>
+
 ## What is Rybbit?
 
 [Rybbit](https://rybbit.com/) is a privacy-focused website analytics tool.
