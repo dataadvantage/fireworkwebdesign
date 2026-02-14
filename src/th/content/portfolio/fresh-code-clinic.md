@@ -7,6 +7,7 @@ imageAlt: Fresh Code Clinic
 portfolioUrl: www.freshcodeclinic.com
 featured: false
 alert: เนื้อหาในหน้านี้รองรับเฉพาะภาษาอังกฤษ
+date: 2025-01-01
 tagged:
   - title: WordPress
     style: bg-blue-900 text-white

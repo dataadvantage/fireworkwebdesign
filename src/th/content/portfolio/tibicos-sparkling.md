@@ -7,6 +7,7 @@ imageAlt: Tibicos Sparkling
 liveUrl: www.tibicossparkling.com
 portfolioUrl: www.tibicossparkling.com
 featured: false
+date: 2025-01-02
 images:
   - src: /static/img/tibicos-home-1.png
     alt: Tibicos Sparkling homepage

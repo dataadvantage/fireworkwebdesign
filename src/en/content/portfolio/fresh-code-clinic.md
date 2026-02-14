@@ -6,6 +6,7 @@ image: /static/img/projects/freshcodeclinic.com.png
 imageAlt: Fresh Code Clinic
 portfolioUrl: www.freshcodeclinic.com
 featured: false
+date: 2025-01-01
 tagged:
   - title: WordPress
     style: bg-blue-900 text-white
