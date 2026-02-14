@@ -7,6 +7,7 @@ imageAlt: Thalyn Diamond
 liveUrl: www.thalyndiamond.com
 portfolioUrl: www.thalyndiamond.com
 featured: true
+date: 2025-12-01
 tagged:
   - title: Static Site
     style: bg-green-700 text-white

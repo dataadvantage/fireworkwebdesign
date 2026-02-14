@@ -8,6 +8,7 @@ liveUrl: www.thalyndiamond.com
 portfolioUrl: www.thalyndiamond.com
 featured: true
 alert: เนื้อหาในหน้านี้รองรับเฉพาะภาษาอังกฤษ
+date: 2025-12-01
 tagged:
   - title: Static Site
     style: bg-green-700 text-white

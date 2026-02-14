@@ -6,7 +6,7 @@ image: /static/img/projects/tibicossparkling.com.png
 imageAlt: Tibicos Sparkling
 liveUrl: www.tibicossparkling.com
 portfolioUrl: www.tibicossparkling.com
-featured: true
+featured: false
 images:
   - src: /static/img/tibicos-home-1.png
     alt: Tibicos Sparkling homepage

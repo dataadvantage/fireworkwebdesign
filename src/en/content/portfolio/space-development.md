@@ -6,6 +6,7 @@ image: /static/img/projects/space.co.th.png
 imageAlt: Space Technology
 liveUrl: www.space.co.th
 portfolioUrl: www.space.co.th
+date: 2026-02-01
 featured: true
 ---
 

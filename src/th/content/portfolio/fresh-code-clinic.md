@@ -5,7 +5,7 @@ description: Fresh Code Clinic is a beauty clinic based in Bangkok, offering ser
 image: /static/img/projects/freshcodeclinic.com.png
 imageAlt: Fresh Code Clinic
 portfolioUrl: www.freshcodeclinic.com
-featured: true
+featured: false
 alert: เนื้อหาในหน้านี้รองรับเฉพาะภาษาอังกฤษ
 tagged:
   - title: WordPress

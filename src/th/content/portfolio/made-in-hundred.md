@@ -8,9 +8,7 @@ liveUrl: www.madeinhundred.com
 portfolioUrl: www.madeinhundred.com
 featured: true
 alert: เนื้อหาในหน้านี้รองรับเฉพาะภาษาอังกฤษ
-tagged:
-  - title: Squarespace
-    style: bg-green-700 text-white
+date: 2025-12-15
 ---
 
 **Project Overview:**

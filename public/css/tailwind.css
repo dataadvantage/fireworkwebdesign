@@ -1219,9 +1219,6 @@
       background-color: color-mix(in oklab, var(--color-amber-50) 50%, transparent);
     }
   }
-  .bg-blue-600 {
-    background-color: var(--color-blue-600);
-  }
   .bg-blue-800 {
     background-color: var(--color-blue-800);
   }

@@ -8,6 +8,7 @@ liveUrl: www.space.co.th
 portfolioUrl: www.space.co.th
 alert: เนื้อหาในหน้านี้รองรับเฉพาะภาษาอังกฤษ
 featured: true
+date: 2026-02-01
 ---
 
 **Project Overview:**
