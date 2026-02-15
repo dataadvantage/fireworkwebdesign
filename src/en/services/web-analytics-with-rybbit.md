@@ -13,6 +13,11 @@ description: Website analytics and tracking solutions with Rybbit to help you un
 
 # Web Analytics with Rybbit
 
+<div class="bg-green-50 mb-6 p-4 text-sm">
+All our clients get free web analytics with Rybbit. We set it up for you, and you can access it anytime to see how your website is performing.
+</div>
+
+
 With **self-hosted Rybbit**, you get clear, useful analytics, while keeping full ownership of your data.
 
 <iframe src="https://a.fireworkwebdesign.com/8/main?timeMode=range&bucket=day&stat=users&wellKnown=last-30-days" class="w-full h-[700px]">
