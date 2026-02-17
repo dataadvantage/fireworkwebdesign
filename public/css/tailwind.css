@@ -429,6 +429,9 @@
   .order-3 {
     order: 3;
   }
+  .-mx-\[200px\] {
+    margin-inline: calc(200px * -1);
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -437,6 +440,9 @@
   }
   .my-3 {
     margin-block: calc(var(--spacing) * 3);
+  }
+  .my-6 {
+    margin-block: calc(var(--spacing) * 6);
   }
   .my-8 {
     margin-block: calc(var(--spacing) * 8);
