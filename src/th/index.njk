@@ -128,7 +128,7 @@ eleventyNavigation:
         <div>
           <div class="relative group">
             <div class="mb-4 h-[250px] [&_img]:h-full [&_img]:object-cover [&_img]:object-center">
-              <img src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}" width="600"/>
+              <img src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}" width="920"/>
             </div>
             <div class="mb-4 flex flex-wrap gap-2 font-light">
               {% for s in project.data.tagged %}
@@ -319,7 +319,7 @@ eleventyNavigation:
     image.style.transform = `rotate(${deg}deg)`;
     image.style.filter = `grayscale(${grayScale}%)`;
     if (times >= 5) {
-      spinMeText.innerHTML = '<a href="/                                {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
+      spinMeText.innerHTML = '<a href="/                                 {{ lang }}/contact-us/" class="text-xs text-gray-500 text-primary-600 underline">Get in touch</a> so I can feed my 4 cats';
       spinMeText.classList.remove('opacity-0')
     } else {
       spinMeText.textContent = ('You have spun me ' + times + ' times');
