@@ -429,9 +429,6 @@
   .order-3 {
     order: 3;
   }
-  .-mx-\[200px\] {
-    margin-inline: calc(200px * -1);
-  }
   .mx-auto {
     margin-inline: auto;
   }
