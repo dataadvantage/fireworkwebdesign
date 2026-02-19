@@ -2590,6 +2590,21 @@
       height: 200px;
     }
   }
+  .\[\&_img\]\:h-\[220px\] {
+    & img {
+      height: 220px;
+    }
+  }
+  .\[\&_img\]\:h-\[250px\] {
+    & img {
+      height: 250px;
+    }
+  }
+  .\[\&_img\]\:h-\[300px\] {
+    & img {
+      height: 300px;
+    }
+  }
   .\[\&_img\]\:h-full {
     & img {
       height: 100%;
@@ -2603,6 +2618,22 @@
   .\[\&_img\]\:w-3\/4 {
     & img {
       width: calc(3/4 * 100%);
+    }
+  }
+  .\[\&_img\]\:scale-125 {
+    & img {
+      --tw-scale-x: 125%;
+      --tw-scale-y: 125%;
+      --tw-scale-z: 125%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+  .\[\&_img\]\:scale-150 {
+    & img {
+      --tw-scale-x: 150%;
+      --tw-scale-y: 150%;
+      --tw-scale-z: 150%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
     }
   }
   .\[\&_img\]\:-scale-x-100 {
@@ -2668,6 +2699,20 @@
       }
     }
   }
+  .\[\&_img\]\:md\:h-\[230px\] {
+    & img {
+      @media (width >= 48rem) {
+        height: 230px;
+      }
+    }
+  }
+  .\[\&_img\]\:md\:h-\[250px\] {
+    & img {
+      @media (width >= 48rem) {
+        height: 250px;
+      }
+    }
+  }
   .md\:\[\&_img\]\:h-\[250px\] {
     @media (width >= 48rem) {
       & img {
@@ -2686,6 +2731,13 @@
     @media (width >= 48rem) {
       & img {
         width: 100%;
+      }
+    }
+  }
+  .\[\&_img\]\:lg\:h-\[250px\] {
+    & img {
+      @media (width >= 64rem) {
+        height: 250px;
       }
     }
   }

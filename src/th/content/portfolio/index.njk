@@ -24,7 +24,7 @@ alert: เนื้อหาในหน้านี้รองรับเฉ�
       {% for project in collections.portfolio | filter('locale', lang) | reverse %}
         <div>
           <div class="relative group">
-            <div class="mb-4 h-[250px] [&_img]:h-full [&_img]:object-cover [&_img]:object-center">
+            <div class="[&_img]:h-[220px] [&_img]:md:h-[230px] [&_img]:lg:h-[250px] [&_img]:object-cover [&_img]:object-center">
               <img src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}" width="920"/>
             </div>
             <div class="mb-4 flex flex-wrap gap-2 font-light">
